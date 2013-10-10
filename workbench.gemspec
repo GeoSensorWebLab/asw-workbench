@@ -7,13 +7,13 @@ require "workbench/version"
 Gem::Specification.new do |s|
   s.name        = "workbench"
   s.version     = Workbench::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Workbench."
-  s.description = "TODO: Description of Workbench."
+  s.authors     = ["James Badger"]
+  s.email       = ["jpbadger@ucalgary.ca"]
+  s.homepage    = ""
+  s.summary     = ""
+  s.description = "GeoCENS Workbench"
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*", "Rakefile", "README.markdown"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 4.0.0"
