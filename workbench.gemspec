@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 4.0.0"
 
-  s.add_dependency "bootstrap-sass"
+  s.add_dependency "bootstrap-sass-rails"
   s.add_dependency "coffee-rails"
   s.add_dependency "font-awesome-rails"
   s.add_dependency "haml"

@@ -1,4 +1,4 @@
-require "bootstrap-sass"
+require "bootstrap-sass-rails"
 require "font-awesome-rails"
 require "haml"
 require "jquery-rails"
