@@ -1,3 +1,4 @@
+require "backbone-rails"
 require "bootstrap-sass-rails"
 require "font-awesome-rails"
 require "haml"
