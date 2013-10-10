@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = ""
   s.description = "GeoCENS Workbench"
 
-  s.files = Dir["{app,config,db,lib}/**/*", "Rakefile", "README.markdown"]
+  s.files = Dir["{app,config,db,lib,vendor}/**/*", "Rakefile", "README.markdown"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 4.0.0"
