@@ -1,4 +1,5 @@
 require "bootstrap-sass"
+require "font-awesome-rails"
 require "haml"
 
 module Workbench
