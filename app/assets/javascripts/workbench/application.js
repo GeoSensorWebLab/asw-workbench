@@ -15,4 +15,8 @@
 //= require highstock
 //= require highcharts-exporting
 //= require leaflet
-//= require_tree .
+//= require json2
+//= require underscore
+//= require backbone
+//
+//= require workbench/workbench
