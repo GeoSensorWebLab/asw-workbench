@@ -14,3 +14,7 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
   show: (id) ->
     console.log "loading show route", id
     # render show view
+    showView = new Workbench.Views.SensorShowView
+      model: new Workbench.Models.Sensor(@sensor)
+      el: $("#sensorView")
+    showView.render()

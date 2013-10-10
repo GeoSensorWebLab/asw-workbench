@@ -1,54 +1,55 @@
-.page-header
-	%h1 Sensor X1
+#sensorView
+	.page-header
+		%h1.sensor-name Loading
 
-#dataView
-	%ul.list-unstyled
-		%li.datastream
-			%h2 Datastream A
+	#dataView
+		%ul.list-unstyled
+			%li.datastream
+				%h2 Datastream A
 
-			.data.row
-				#chart_nonce1.chart.col-md-9 Loading&hellip;
+				.data.row
+					#chart_nonce1.chart.col-md-9 Loading&hellip;
 
-				.chartSideView.col-md-3
-					#latest_nonce1.latest
-						%p.value Loading&hellip;
-						%p
-							%date
+					.chartSideView.col-md-3
+						#latest_nonce1.latest
+							%p.value Loading&hellip;
+							%p
+								%date
 
-					%button.btn.btn-primary.btn-lg{type: "button"} Add Value
+						%button.btn.btn-primary.btn-lg{type: "button"} Add Value
 
-#apiView
-	%h2 Workbench Logger
+	#apiView
+		%h2 Workbench Logger
 
-	#logger.well
+		#logger.well
 
-	%dl
-		%dt API Endpoint
-		%dd http://www.example.com/sensors/asdfasdfadsf
+		%dl
+			%dt API Endpoint
+			%dd.sensor-endpoint Loading
 
-#metadataView
-	%h2 Sensor Metadata
+	#metadataView
+		%h2 Sensor Metadata
 
-	.row
-		.col-md-9
-			%dl
-				%dt Sensor Name
-				%dd Sensor X1
+		.row
+			.col-md-9
+				%dl
+					%dt Sensor Name
+					%dd.sensor-name Loading
 
-				%dt Sensor Description
-				%dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					%dt Sensor Description
+					%dd.sensor-description Loading
 
-				%dt Datastreams
-				%dd 2
+					%dt Datastreams
+					%dd.sensor-datastream-count Loading
 
-				%dt Owner
-				%dd James
+					%dt Owner
+					%dd.sensor-owner Loading
 
-				%dt Owner Contact
-				%dd james@example.com
+					%dt Owner Contact
+					%dd.sensor-contact Loading
 
-		.col-md-3
-			#map &nbsp;
+			.col-md-3
+				#map &nbsp;
 
 :javascript
 	$(function() {
@@ -59,7 +60,8 @@
 			name: "Sensor X1",
 			id: "asdf5555",
 			description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-			owner: "James"
+			owner: "James",
+			contact: "james@example.com"
 		};
 
 		window.appRouter = new Workbench.Routers.WorkbenchRouter({ sensor: sensor });
