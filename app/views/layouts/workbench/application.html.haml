@@ -1,0 +1,14 @@
+!!! 5
+%html
+	%head
+		%title Workbench
+
+		= stylesheet_link_tag    "workbench/application", media: "all"
+		= javascript_include_tag "workbench/application"
+		= csrf_meta_tags
+
+	%body
+		.container
+			%h2 GeoCENS
+
+			= yield
