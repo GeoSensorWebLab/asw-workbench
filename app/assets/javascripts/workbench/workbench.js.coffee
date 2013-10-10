@@ -7,6 +7,3 @@ window.Workbench =
   Models: {}
   Routers: {}
   Views: {}
-
-$ ->
-  Backbone.history.start(root: "/workbench/sensors")

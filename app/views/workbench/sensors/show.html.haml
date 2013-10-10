@@ -53,6 +53,21 @@
 :javascript
 	$(function() {
 
+		// Backbone-related
+
+		var sensor = {
+			name: "Sensor X1",
+			id: "asdf5555",
+			description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+			owner: "James"
+		};
+
+		window.appRouter = new Workbench.Routers.WorkbenchRouter({ sensor: sensor });
+
+		var result = Backbone.history.start({ pushState: true, root: "/workbench/sensors/" });
+
+		// Dummy drawing
+
 	  var addChart = function(id, id2) {
 	    $.getJSON('http://www.highcharts.com/samples/data/jsonp.php?filename=aapl-c.json&callback=?', function(data) {
 	        // Create the chart
