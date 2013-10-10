@@ -1,2 +1,3 @@
 Workbench::Engine.routes.draw do
+  resources :sensors, only: :show
 end
