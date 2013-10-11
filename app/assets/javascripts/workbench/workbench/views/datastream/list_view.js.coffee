@@ -1,13 +1,11 @@
 class Workbench.Views.DatastreamListView extends Backbone.View
-  template: JST["workbench/workbench/templates/datastream_list"]
-
   initialize: ->
     @views = []
 
-  addAll: (datastreams) ->
+  addAll: (datastreams) =>
     datastreams.each @addOne
 
-  addOne: (datastream) ->
+  addOne: (datastream) =>
     datastreamView = new Workbench.Views.DatastreamShowView
       model: datastream
 
@@ -18,6 +16,5 @@ class Workbench.Views.DatastreamListView extends Backbone.View
     @$el.append datastreamView.render().el
 
   render: ->
-    @$el.html(@template())
     @addAll(@collection)
     this

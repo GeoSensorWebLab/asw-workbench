@@ -6,7 +6,7 @@ class Workbench.Views.SensorShowView extends Backbone.View
     )
 
     @datastreamListView = new Workbench.Views.DatastreamListView(
-      el: @$("#dataView")
+      el: @$("#dataView ul")
       collection: @model.datastreams
     )
 
