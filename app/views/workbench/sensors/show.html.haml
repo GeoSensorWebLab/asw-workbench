@@ -86,37 +86,4 @@
 
 		var result = Backbone.history.start({ pushState: true, root: "/workbench/sensors/" });
 
-		// Dummy drawing
-
-	  var addChart = function(id, id2) {
-	    $.getJSON('http://www.highcharts.com/samples/data/jsonp.php?filename=aapl-c.json&callback=?', function(data) {
-	        // Create the chart
-	        $(id).highcharts('StockChart', {
-	          rangeSelector : {
-	            selected : 1
-	          },
-
-	          title : {
-	            text : 'Datastream A'
-	          },
-
-	          series : [{
-	            name : 'AAPL',
-	            data : data,
-	            tooltip: {
-	              valueDecimals: 2
-	            }
-	          }]
-	        });
-
-	        var lastPair = data[data.length - 1];
-
-	        $(id2).find(".value").text(lastPair[1]);
-	        $(id2).find("date").text(new Date(lastPair[0]));
-	      });
-
-	  };
-
-	  addChart("#chart_nonce1", "#latest_nonce1");
-
 	});
