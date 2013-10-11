@@ -5,7 +5,13 @@ class Workbench.Views.DatastreamShowView extends Backbone.View
   className: "datastream"
 
   initialize: ->
+    @chartView = new Workbench.Views.DatastreamChartView
+      data: @model.get("data")
 
   render: ->
     @$el.html(@template(@model.toJSON()))
+
+    _.delay(=>
+      @chartView.setElement(@$(".chart")).render()
+    , 0)
     this
