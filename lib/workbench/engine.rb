@@ -1,5 +1,6 @@
 require "backbone-rails"
 require "bootstrap-sass-rails"
+require "ejs"
 require "font-awesome-rails"
 require "haml"
 require "jquery-rails"

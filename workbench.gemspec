@@ -21,6 +21,7 @@ Gem::Specification.new do |s|
   s.add_dependency "backbone-rails"
   s.add_dependency "bootstrap-sass-rails"
   s.add_dependency "coffee-rails"
+  s.add_dependency "ejs"
   s.add_dependency "font-awesome-rails"
   s.add_dependency "haml"
   s.add_dependency "jquery-rails"
