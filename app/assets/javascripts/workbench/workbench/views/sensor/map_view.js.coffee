@@ -1,8 +1,5 @@
 class Workbench.Views.SensorMapView extends Backbone.View
   initialize: ->
-    # This should be put somewhere else
-    L.Icon.Default.imagePath = '/assets'
-
     @location = [@model.get("latitude"), @model.get("longitude")]
     @zoom = 13
 
