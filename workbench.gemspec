@@ -29,5 +29,6 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency "httparty"
   s.add_development_dependency "json"
+  s.add_development_dependency "parallel"
   s.add_development_dependency "slop"
 end
