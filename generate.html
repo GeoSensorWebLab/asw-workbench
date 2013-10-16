@@ -87,13 +87,13 @@ Zepto(function($) {
     switch($("#distribution").val()) {
       case "normal":
       dist_func = function() {
-        return rand_normal(0, 10);
+        return rand_normal();
       };
       break;
       case "uniform":
       default:
       dist_func = function() {
-        return rand_uniform();
+        return rand_uniform(0, 10);
       };
     }
 
