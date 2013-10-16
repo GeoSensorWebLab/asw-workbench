@@ -26,4 +26,8 @@ Gem::Specification.new do |s|
   s.add_dependency "haml"
   s.add_dependency "jquery-rails"
   s.add_dependency "sass-rails"
+
+  s.add_development_dependency "httparty"
+  s.add_development_dependency "json"
+  s.add_development_dependency "slop"
 end
