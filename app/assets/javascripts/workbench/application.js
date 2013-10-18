@@ -19,5 +19,6 @@
 //= require underscore
 //= require backbone
 //= require geocens
+//= require geocens-chart
 //
 //= require workbench/workbench

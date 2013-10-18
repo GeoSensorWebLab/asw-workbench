@@ -1,5 +1,6 @@
 class Workbench.Views.DatastreamChartView extends Backbone.View
   initialize: ->
+    @name = @options.name
     @data = @options.data
 
   render: ->
@@ -11,7 +12,7 @@ class Workbench.Views.DatastreamChartView extends Backbone.View
         text: 'Chart Title'
 
       series: [{
-        name: 'Series Name'
+        name: @name
         data: @data
         tooltip:
           valueDecimals: 2

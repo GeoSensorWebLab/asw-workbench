@@ -3,11 +3,13 @@ class Workbench.Views.DatastreamLatestView extends Backbone.View
 
   initialize: ->
     @data = @options.data
+    @unit = @options.unit
 
   render: ->
     latest = _.last(@data)
     @$el.html(@template({
-      latest: latest[1],
+      latest: latest[1]
       date:   new Date(latest[0])
+      unit:   @unit
     }))
     this

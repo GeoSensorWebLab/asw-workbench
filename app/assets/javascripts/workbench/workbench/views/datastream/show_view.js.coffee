@@ -6,10 +6,12 @@ class Workbench.Views.DatastreamShowView extends Backbone.View
 
   initialize: ->
     @chartView = new Workbench.Views.DatastreamChartView
-      data: @model.get("data")
+      data: @model.seriesData()
+      name: @model.get("id")
 
     @latestView = new Workbench.Views.DatastreamLatestView
-      data: @model.get("data")
+      data: @model.seriesData()
+      unit: @model.get("unit")
 
   render: ->
     @$el.html(@template(@model.toJSON()))
