@@ -2,6 +2,7 @@ require "backbone-rails"
 require "bootstrap-sass-rails"
 require "ejs"
 require "font-awesome-rails"
+require "geocens-js-api-rails"
 require "haml"
 require "jquery-rails"
 

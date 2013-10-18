@@ -1,3 +1,10 @@
+GIT
+  remote: git@git.geocens.ca:rpi/geocens-js-api-rails.git
+  revision: 11794e94e7f0b3f6cffc3ae2f79b9c43bf19dc5c
+  specs:
+    geocens-js-api-rails (1.0.1)
+      railties (>= 3.1, < 5.0)
+
 PATH
   remote: .
   specs:
@@ -124,6 +131,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  geocens-js-api-rails!
   httparty
   json
   parallel

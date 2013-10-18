@@ -10,5 +10,7 @@ gemspec
 # Git. Remember to move these dependencies to your gemspec before releasing
 # your gem to rubygems.org.
 
+gem "geocens-js-api-rails", git: "git@git.geocens.ca:rpi/geocens-js-api-rails.git"
+
 # To use debugger
 # gem 'debugger'
