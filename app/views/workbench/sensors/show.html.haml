@@ -42,6 +42,43 @@
 	$(function() {
 		L.Icon.Default.imagePath = '/assets';
 
+		// Demo user API Key
+		var apiKey = "3359a8ffba94a54978aa6c645e3c617a";
+
+		var dsSource = new Geocens.DataService({ api_key: apiKey });
+
+		// Loading from GeoCENS
+		var sensorUid = "f9b0b42d4b742638f96dfea960ef4735";
+		// TODO: Load datastream uids with call to sensor object
+		var datastreamUids = ["5933c4e32b8f9fe2fcbc991b91913e15", "d0b0f8858dc96f9f0b6463a9c9176627"];
+
+		_.each(datastreamUids, function(datastreamUid) {
+		  dsSource.getDatastream({
+			sensor_id: sensorUid,
+			datastream_id: datastreamUid,
+			done: function (datastream) {
+				console.log("Retrieved from GeoCENS:", datastream);
+
+				// Retrieve time series data
+				datastream.getTimeSeries({
+					start: new Date("2013-10-01 00:00:00Z"),
+					end:   new Date("2013-10-16 00:00:00Z"),
+					done:  function (seriesData) {
+						console.log("Retrieved from GeoCENS:", seriesData);
+
+						// Update window with datastream information
+						Workbench.Events.trigger("addDatastream", {
+							id: datastream.datastream_id,
+							name: datastream._attributes.id,
+							data: seriesData,
+							unit: datastream._attributes.unit
+						});
+					}
+				});
+			}
+		  });
+		});
+
 		// Backbone-related
 
 		var sensor = {
@@ -57,22 +94,4 @@
 		window.appRouter = new Workbench.Routers.WorkbenchRouter({ sensor: sensor });
 
 		var result = Backbone.history.start({ pushState: true, root: "/workbench/sensors/" });
-
-		var streams = [{
-			id: "2f9e9df6bd52c1a871b735c18e3434e0",
-			name: "Datastream A",
-			data: [
-				[1367366400000,439.29],
-				[1367452800000,445.52],
-				[1367539200000,449.98],
-				[1367798400000,460.71],
-				[1367884800000,458.66],
-				[1367971200000,463.84],
-				[1368057600000,456.77],
-				[1368144000000,452.97]
-			],
-			unit: "USD"
-		}];
-
-		Workbench.Events.trigger("addDatastream", streams[0]);
 	});
