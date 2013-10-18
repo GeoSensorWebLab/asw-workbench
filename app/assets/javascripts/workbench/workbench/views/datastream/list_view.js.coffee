@@ -2,6 +2,9 @@ class Workbench.Views.DatastreamListView extends Backbone.View
   initialize: ->
     @views = []
 
+    @listenTo @collection, "add", (datastream) =>
+      @addOne datastream
+
   addAll: (datastreams) =>
     datastreams.each @addOne
 

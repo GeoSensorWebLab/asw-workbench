@@ -51,26 +51,28 @@
 			owner: "James",
 			contact: "james@example.com",
 			latitude: "51.055",
-			longitude: "-114",
-			datastreams: [{
-				id: "2f9e9df6bd52c1a871b735c18e3434e0",
-				name: "Datastream A",
-				data: [
-					[1367366400000,439.29],
-					[1367452800000,445.52],
-					[1367539200000,449.98],
-					[1367798400000,460.71],
-					[1367884800000,458.66],
-					[1367971200000,463.84],
-					[1368057600000,456.77],
-					[1368144000000,452.97]
-				],
-				unit: "USD"
-			}]
+			longitude: "-114"
 		};
 
 		window.appRouter = new Workbench.Routers.WorkbenchRouter({ sensor: sensor });
 
 		var result = Backbone.history.start({ pushState: true, root: "/workbench/sensors/" });
 
+		var streams = [{
+			id: "2f9e9df6bd52c1a871b735c18e3434e0",
+			name: "Datastream A",
+			data: [
+				[1367366400000,439.29],
+				[1367452800000,445.52],
+				[1367539200000,449.98],
+				[1367798400000,460.71],
+				[1367884800000,458.66],
+				[1367971200000,463.84],
+				[1368057600000,456.77],
+				[1368144000000,452.97]
+			],
+			unit: "USD"
+		}];
+
+		Workbench.Events.trigger("addDatastream", streams[0]);
 	});

@@ -7,5 +7,8 @@ class Workbench.Models.Sensor extends Backbone.Model
 
     @datastreams = new Workbench.Collections.DatastreamsCollection(@get("datastreams"))
 
+    @listenTo Workbench.Events, "addDatastream", (datastream) =>
+      @datastreams.add [datastream]
+
 class Workbench.Collections.SensorsCollection extends Backbone.Collection
   model: Workbench.Models.Sensor
