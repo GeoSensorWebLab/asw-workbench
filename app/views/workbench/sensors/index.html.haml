@@ -1,0 +1,11 @@
+#apiView
+	This page would list the sensors for the API.
+
+:javascript
+	$(function() {
+		L.Icon.Default.imagePath = '/assets';
+
+		window.appRouter = new Workbench.Routers.WorkbenchRouter();
+
+		var result = Backbone.history.start({ pushState: true, root: "/workbench/sensors/" });
+	});
