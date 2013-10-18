@@ -5,7 +5,7 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
 
   routes:
     '': 'index'
-    ':id/': 'show'
+    ':id(/)': 'show'
 
   index: ->
     console.log "loading index route"
