@@ -2,14 +2,12 @@ class Workbench.Views.DatastreamLatestView extends Backbone.View
   template: JST["workbench/workbench/templates/latest"]
 
   initialize: ->
-    @data = @options.data
-    @unit = @options.unit
 
   render: ->
-    latest = _.last(@data)
+    latest = _.last(@model.get("seriesData"))
     @$el.html(@template({
-      latest: latest[1]
-      date:   new Date(latest[0])
-      unit:   @unit
+      latest: latest.value
+      date:   new Date(latest.timestamp)
+      unit:   @model.get("unit")
     }))
     this

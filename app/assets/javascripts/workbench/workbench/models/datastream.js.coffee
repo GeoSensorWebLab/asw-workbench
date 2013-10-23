@@ -1,18 +1,26 @@
 class Workbench.Models.Datastream extends Backbone.Model
+  idAttribute: "uid"
+
   initialize: ->
+    @getTimeSeries()
+
+  getTimeSeries: ->
+    datastream = new Geocens.Datastream(@attributes)
+    datastream.service = Workbench.source
+
+    datastream.getTimeSeries
+      start: new Date("2013-10-01 00:00:00Z")
+      end: new Date("2013-10-16 00:00:00Z")
+      done: (seriesData) =>
+        # Data is returned in newest-first order, so reverse it
+        @set("seriesData", seriesData.reverse())
+
+  seriesData: ->
+    @get("seriesData")
 
   # name is alias for id
   name: ->
     @get("id")
-
-  # seriesData is alias for data
-  seriesData: ->
-    @get("data")
-
-  # Raw chart data format
-  simpleData: ->
-    _.collect @get("data"), (datapoint) ->
-      [datapoint.timestamp, datapoint.value]
 
   # units is alias for unit
   units: ->
@@ -25,5 +33,7 @@ class Workbench.Collections.DatastreamsCollection extends Backbone.Collection
   fetch: (options) ->
     options.sensor.getDatastreams
       raw: (data) =>
+        _.each data, (datastream) =>
+          datastream.sensor_id = options.sensor.sensor_id
         @set data
     this

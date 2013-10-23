@@ -4,8 +4,7 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
       @sensor_uid = options.sensor_uid
       @navigate(@sensor_uid)
 
-    if options.api_key?
-      @api_key = options.api_key
+    Workbench.source = options.source
 
   routes:
     '': 'index'
@@ -19,7 +18,7 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
     console.log "loading show route", id
     # render show view
     sensor = new Workbench.Models.Sensor
-      api_key: @api_key
+      source: Workbench.source
       uid: @sensor_uid
     sensor.fetch()
 

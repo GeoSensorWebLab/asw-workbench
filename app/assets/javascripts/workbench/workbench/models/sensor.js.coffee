@@ -11,8 +11,7 @@ class Workbench.Models.Sensor extends Backbone.Model
 
   # Custom fetch function using GeoCENS JS API
   fetch: ->
-    Geocens.DataService.getSensor
-        api_key:   @get("api_key")
+    @get("source").getSensor
         sensor_id: @id
         done: (sensor) =>
             @set(sensor.metadata)
