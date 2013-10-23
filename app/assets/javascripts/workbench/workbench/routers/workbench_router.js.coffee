@@ -4,6 +4,9 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
       @sensor_uid = options.sensor_uid
       @navigate(@sensor_uid)
 
+    if options.api_key?
+      @api_key = options.api_key
+
   routes:
     '': 'index'
     ':id(/)': 'show'
@@ -15,7 +18,9 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
   show: (id) ->
     console.log "loading show route", id
     # render show view
-    sensor = new Workbench.Models.Sensor(id: @sensor_uid)
+    sensor = new Workbench.Models.Sensor
+      api_key: @api_key
+      uid: @sensor_uid
     sensor.fetch()
 
     showView = new Workbench.Views.SensorShowView

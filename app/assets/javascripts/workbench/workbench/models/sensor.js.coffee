@@ -1,4 +1,6 @@
 class Workbench.Models.Sensor extends Backbone.Model
+  idAttribute: "uid"
+
   defaults:
     datastreams: []
 
@@ -12,6 +14,12 @@ class Workbench.Models.Sensor extends Backbone.Model
 
   # Custom fetch function using GeoCENS JS API
   fetch: ->
+    Geocens.DataService.getSensor
+        api_key:   @get("api_key")
+        sensor_id: @get("uid")
+        done: (sensor) =>
+            @set(sensor.metadata)
+    return this
 
 class Workbench.Collections.SensorsCollection extends Backbone.Collection
   model: Workbench.Models.Sensor
