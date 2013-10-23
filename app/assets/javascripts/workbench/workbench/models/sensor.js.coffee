@@ -11,14 +11,20 @@ class Workbench.Models.Sensor extends Backbone.Model
 
     @listenTo Workbench.Events, "addDatastream", (datastream) =>
       @datastreams.add [datastream]
+      @trigger "change:datastreams"
+
+    @on "change:loc", =>
+      @set("latitude", @get("loc")[0])
+      @set("longitude", @get("loc")[1])
 
   # Custom fetch function using GeoCENS JS API
   fetch: ->
     Geocens.DataService.getSensor
         api_key:   @get("api_key")
-        sensor_id: @get("uid")
+        sensor_id: @id
         done: (sensor) =>
             @set(sensor.metadata)
+            @trigger("sensorLoaded")
     return this
 
 class Workbench.Collections.SensorsCollection extends Backbone.Collection
