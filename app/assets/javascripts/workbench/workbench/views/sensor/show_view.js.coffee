@@ -7,7 +7,7 @@ class Workbench.Views.SensorShowView extends Backbone.View
 
     @datastreamListView = new Workbench.Views.DatastreamListView(
       el: @$("#dataView ul")
-      collection: @model.datastreams
+      collection: @model.get("datastreams")
     )
 
     @listenTo @model, "sensorLoaded", =>
@@ -21,7 +21,6 @@ class Workbench.Views.SensorShowView extends Backbone.View
     this
 
   render: ->
-    console.log @model
     @$(".sensor-name").text(@model.get("title"))
     @$(".sensor-endpoint").text(@model.get("endpoint"))
     @$(".sensor-description").text(@model.get("description"))
@@ -34,5 +33,5 @@ class Workbench.Views.SensorShowView extends Backbone.View
     this
 
   updateDatastreamCount: ->
-    @$(".sensor-datastream-count").text(@model.datastreams.length)
+    @$(".sensor-datastream-count").text(@model.get("datastreams").length)
     this

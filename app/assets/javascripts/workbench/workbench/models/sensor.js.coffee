@@ -1,17 +1,9 @@
 class Workbench.Models.Sensor extends Backbone.Model
   idAttribute: "uid"
 
-  defaults:
-    datastreams: []
-
   initialize: ->
     @set("endpoint", "http://www.example.com/sensors/#{@id}")
-
-    @datastreams = new Workbench.Collections.DatastreamsCollection(@get("datastreams"))
-
-    @listenTo Workbench.Events, "addDatastream", (datastream) =>
-      @datastreams.add [datastream]
-      @trigger "change:datastreams"
+    @set("datastreams", new Workbench.Collections.DatastreamsCollection())
 
     @on "change:loc", =>
       @set("latitude", @get("loc")[0])
@@ -25,6 +17,7 @@ class Workbench.Models.Sensor extends Backbone.Model
         done: (sensor) =>
             @set(sensor.metadata)
             @trigger("sensorLoaded")
+            @get("datastreams").fetch(sensor: sensor)
     return this
 
 class Workbench.Collections.SensorsCollection extends Backbone.Collection
