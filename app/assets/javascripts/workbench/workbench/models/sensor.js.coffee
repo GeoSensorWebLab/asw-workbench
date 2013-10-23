@@ -10,5 +10,8 @@ class Workbench.Models.Sensor extends Backbone.Model
     @listenTo Workbench.Events, "addDatastream", (datastream) =>
       @datastreams.add [datastream]
 
+  # Custom fetch function using GeoCENS JS API
+  fetch: ->
+
 class Workbench.Collections.SensorsCollection extends Backbone.Collection
   model: Workbench.Models.Sensor

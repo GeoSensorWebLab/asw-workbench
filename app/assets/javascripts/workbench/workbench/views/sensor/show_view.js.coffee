@@ -10,6 +10,10 @@ class Workbench.Views.SensorShowView extends Backbone.View
       collection: @model.datastreams
     )
 
+  # Render without sensor information
+  renderBasic: ->
+    this
+
   render: ->
     @$(".sensor-name").text(@model.get("name"))
     @$(".sensor-endpoint").text(@model.get("endpoint"))
