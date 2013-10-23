@@ -12,7 +12,7 @@ gemspec
 
 gem "geocens-js-api-rails",
   git: "git@git.geocens.ca:rpi/geocens-js-api-rails.git",
-  tag: "v1.0.1"
+  tag: "v1.1.0"
 
 # To use debugger
 # gem 'debugger'
