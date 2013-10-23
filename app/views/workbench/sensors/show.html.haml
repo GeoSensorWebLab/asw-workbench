@@ -44,35 +44,8 @@
 
 		// Demo user API Key
 		var apiKey = "3359a8ffba94a54978aa6c645e3c617a";
-
 		var dsSource = new Geocens.DataService({ api_key: apiKey });
-
-		// Loading from GeoCENS
 		var sensorUid = "f9b0b42d4b742638f96dfea960ef4735";
-		// TODO: Load datastream uids with call to sensor object
-		var datastreamUids = ["5933c4e32b8f9fe2fcbc991b91913e15", "d0b0f8858dc96f9f0b6463a9c9176627"];
-
-		_.each(datastreamUids, function(datastreamUid) {
-		  dsSource.getDatastream({
-			sensor_id: sensorUid,
-			datastream_id: datastreamUid,
-			done: function (datastream) {
-
-				// Retrieve time series data
-				datastream.getTimeSeries({
-					start: new Date("2013-10-01 00:00:00Z"),
-					end:   new Date("2013-10-16 00:00:00Z"),
-					done:  function (seriesData) {
-
-						// Update window with datastream information
-						Workbench.Events.trigger("addDatastream", _.extend(datastream._attributes, { data: datastream._data }));
-					}
-				});
-			}
-		  });
-		});
-
-		// Backbone-related
 
 		window.appRouter = new Workbench.Routers.WorkbenchRouter({
 			source: dsSource,
