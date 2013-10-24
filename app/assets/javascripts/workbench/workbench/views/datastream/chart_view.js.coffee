@@ -3,7 +3,7 @@ class Workbench.Views.DatastreamChartView extends Backbone.View
 
   render: ->
       @chart = @$el.GeocensChart
-        datastream: @model
+        datastream: @model.object
 
         chart:
           rangeSelector:

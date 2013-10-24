@@ -2,13 +2,9 @@ class Workbench.Models.Datastream extends Backbone.Model
   idAttribute: "uid"
 
   initialize: ->
-    @getTimeSeries()
 
   getTimeSeries: ->
-    datastream = new Geocens.Datastream(@attributes)
-    datastream.service = Workbench.source
-
-    datastream.getTimeSeries
+    @object.getTimeSeries
       start: new Date("2013-10-01 00:00:00Z")
       end: new Date("2013-10-16 00:00:00Z")
       done: (seriesData) =>
@@ -37,5 +33,6 @@ class Workbench.Collections.DatastreamsCollection extends Backbone.Collection
         _.each datastreams, (datastream) =>
           stream = new Workbench.Models.Datastream(datastream._attributes)
           stream.object = datastream
+          stream.getTimeSeries()
           @push(stream)
     this
