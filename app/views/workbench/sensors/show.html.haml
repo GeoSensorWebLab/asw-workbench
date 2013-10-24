@@ -41,6 +41,7 @@
 :javascript
 	$(function() {
 		L.Icon.Default.imagePath = '/assets';
+		SlowAjax.activate(2000);
 
 		window.appRouter = new Workbench.Routers.WorkbenchRouter();
 		var result = Backbone.history.start({ pushState: true, root: "/workbench/sensors/" });
