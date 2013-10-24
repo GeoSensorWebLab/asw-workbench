@@ -32,8 +32,10 @@ class Workbench.Collections.DatastreamsCollection extends Backbone.Collection
   # Retrieve a list of datastreams from the GeoCENS JS API
   fetch: (options) ->
     options.sensor.getDatastreams
-      raw: (data) =>
-        _.each data, (datastream) =>
-          datastream.sensor_id = options.sensor.sensor_id
-        @set data
+      done: (datastreams) =>
+        @reset()
+        _.each datastreams, (datastream) =>
+          stream = new Workbench.Models.Datastream(datastream._attributes)
+          stream.object = datastream
+          @push(stream)
     this
