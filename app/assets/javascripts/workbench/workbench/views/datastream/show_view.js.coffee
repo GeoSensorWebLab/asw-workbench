@@ -19,7 +19,7 @@ class Workbench.Views.DatastreamShowView extends Backbone.View
       @latestView.setElement(@$(".latest")).render()
 
   render: ->
-    @$el.html(@template(@model.toJSON()))
+    @$el.animate("min-height": 200).promise().done(=>
+      @$el.html(@template(@model.toJSON()))
+    )
     this
-
-
