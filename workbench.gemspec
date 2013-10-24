@@ -5,7 +5,7 @@ require "workbench/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "workbench"
+  s.name        = "rpi-workbench"
   s.version     = Workbench::VERSION
   s.authors     = ["James Badger"]
   s.email       = ["jpbadger@ucalgary.ca"]
