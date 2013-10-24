@@ -1,10 +1,17 @@
 class Workbench.Routers.WorkbenchRouter extends Backbone.Router
   initialize: (options) ->
+    if (location.search.length < 1)
+      # Demo user read-only key
+      apiKey = "3359a8ffba94a54978aa6c645e3c617a"
+    else
+      params = $.deparam(location.search.split('?')[1])
+      apiKey = params.api_key
+
+    Workbench.source = new Geocens.DataService({ api_key: apiKey })
+
     if options.sensor_uid?
       @sensor_uid = options.sensor_uid
       @navigate(@sensor_uid)
-
-    Workbench.source = options.source
 
   routes:
     '': 'index'

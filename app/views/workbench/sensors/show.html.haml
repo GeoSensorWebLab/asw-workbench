@@ -41,14 +41,9 @@
 :javascript
 	$(function() {
 		L.Icon.Default.imagePath = '/assets';
-
-		// Demo user API Key
-		var apiKey = "3359a8ffba94a54978aa6c645e3c617a";
-		var dsSource = new Geocens.DataService({ api_key: apiKey });
 		var sensorUid = "f9b0b42d4b742638f96dfea960ef4735";
 
 		window.appRouter = new Workbench.Routers.WorkbenchRouter({
-			source: dsSource,
 			sensor_uid: sensorUid
 		});
 

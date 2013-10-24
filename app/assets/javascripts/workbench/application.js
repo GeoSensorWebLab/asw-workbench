@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery-deparam
 //= require twitter/bootstrap
 //= require highstock
 //= require highcharts-exporting
