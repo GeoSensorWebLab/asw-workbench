@@ -2,6 +2,7 @@ class Workbench.Views.DatastreamChartView extends Backbone.View
   initialize: ->
 
   render: ->
+    @$el.animate(height: 400).promise().done(=>
       @chart = @$el.GeocensChart
         datastream: @model.object
 
@@ -31,5 +32,6 @@ class Workbench.Views.DatastreamChartView extends Backbone.View
               type: 'all'
               text: "All"
             }]
+    )
 
     this
