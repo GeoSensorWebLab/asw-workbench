@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery-deparam
+//= require workbench/slow-ajax
 //= require twitter/bootstrap
 //= require highstock
 //= require highcharts-exporting
