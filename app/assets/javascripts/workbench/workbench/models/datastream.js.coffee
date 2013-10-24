@@ -27,7 +27,7 @@ class Workbench.Collections.DatastreamsCollection extends Backbone.Collection
 
   # Retrieve a list of datastreams from the GeoCENS JS API
   fetch: (options) ->
-    options.sensor.getDatastreams
+    xhr = options.sensor.getDatastreams
       done: (datastreams) =>
         @reset()
         _.each datastreams, (datastream) =>
@@ -35,4 +35,6 @@ class Workbench.Collections.DatastreamsCollection extends Backbone.Collection
           stream.object = datastream
           stream.getTimeSeries()
           @push(stream)
+
+    @trigger "request", this, xhr
     this

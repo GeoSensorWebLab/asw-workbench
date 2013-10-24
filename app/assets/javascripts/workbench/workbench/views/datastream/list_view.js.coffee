@@ -1,6 +1,14 @@
 class Workbench.Views.DatastreamListView extends Backbone.View
+  loadingTemplate: JST["workbench/workbench/templates/loading"]
+
   initialize: ->
     @views = []
+
+    @listenTo @collection, "request", =>
+      @$el.append(@loadingTemplate())
+
+    @listenTo @collection, "reset", =>
+      @$el.empty()
 
     @listenTo @collection, "add", (datastream) =>
       @addOne datastream
