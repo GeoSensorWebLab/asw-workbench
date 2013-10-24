@@ -15,8 +15,9 @@ class Workbench.Models.Sensor extends Backbone.Model
         sensor_id: @id
         done: (sensor) =>
             @set(sensor.metadata)
+            @object = sensor
             @trigger("sensorLoaded")
-            @get("datastreams").fetch(sensor: sensor)
+            @get("datastreams").fetch(sensor: @object)
     return this
 
 class Workbench.Collections.SensorsCollection extends Backbone.Collection
