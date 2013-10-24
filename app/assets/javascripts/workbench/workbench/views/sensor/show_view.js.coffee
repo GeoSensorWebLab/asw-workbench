@@ -16,10 +16,10 @@ class Workbench.Views.SensorShowView extends Backbone.View
     @listenTo @model.get("datastreams"), "add", (model, options) =>
       @updateDatastreamCount()
 
-  # Fade out element, switch content, then fade back in
-  fadeSwitch: ($element, content) ->
-    $element.fadeOut().promise().done(->
-      @text(content).fadeIn()
+  # Animate out, update content, animate back in
+  swapContent: ($element, content) ->
+    $element.transition(rotateX: '90deg').promise().done(->
+      @text(content).transition(rotateX: '0deg')
     )
 
   # Render without sensor information
@@ -27,11 +27,11 @@ class Workbench.Views.SensorShowView extends Backbone.View
     this
 
   render: ->
-    @fadeSwitch(@$(".sensor-name"), @model.get("title"))
-    @fadeSwitch(@$(".sensor-endpoint"), @model.get("endpoint"))
-    @fadeSwitch(@$(".sensor-description"), @model.get("description"))
-    @fadeSwitch(@$(".sensor-owner"), @model.get("contact_name"))
-    @fadeSwitch(@$(".sensor-contact"), @model.get("contact_email"))
+    @swapContent(@$(".sensor-name"), @model.get("title"))
+    @swapContent(@$(".sensor-endpoint"), @model.get("endpoint"))
+    @swapContent(@$(".sensor-description"), @model.get("description"))
+    @swapContent(@$(".sensor-owner"), @model.get("contact_name"))
+    @swapContent(@$(".sensor-contact"), @model.get("contact_email"))
 
     @updateDatastreamCount()
 
@@ -40,5 +40,5 @@ class Workbench.Views.SensorShowView extends Backbone.View
     this
 
   updateDatastreamCount: ->
-    @fadeSwitch(@$(".sensor-datastream-count"), @model.get("datastreams").length)
+    @swapContent(@$(".sensor-datastream-count"), @model.get("datastreams").length)
     this

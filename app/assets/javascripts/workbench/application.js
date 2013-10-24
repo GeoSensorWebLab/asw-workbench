@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery-deparam
+//= require jquery.transit
 //= require workbench/slow-ajax
 //= require twitter/bootstrap
 //= require highstock
