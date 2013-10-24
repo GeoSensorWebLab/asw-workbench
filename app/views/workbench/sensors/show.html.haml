@@ -41,11 +41,7 @@
 :javascript
 	$(function() {
 		L.Icon.Default.imagePath = '/assets';
-		var sensorUid = "f9b0b42d4b742638f96dfea960ef4735";
 
-		window.appRouter = new Workbench.Routers.WorkbenchRouter({
-			sensor_uid: sensorUid
-		});
-
+		window.appRouter = new Workbench.Routers.WorkbenchRouter();
 		var result = Backbone.history.start({ pushState: true, root: "/workbench/sensors/" });
 	});

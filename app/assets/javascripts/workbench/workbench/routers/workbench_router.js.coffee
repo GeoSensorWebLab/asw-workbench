@@ -9,10 +9,6 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
 
     Workbench.source = new Geocens.DataService({ api_key: apiKey })
 
-    if options.sensor_uid?
-      @sensor_uid = options.sensor_uid
-      @navigate(@sensor_uid)
-
   routes:
     '': 'index'
     ':id(/)': 'show'
@@ -23,10 +19,14 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
 
   show: (id) ->
     console.log "loading show route", id
+    if id is "demo"
+      # Demo user
+      id = "f9b0b42d4b742638f96dfea960ef4735"
+
     # render show view
     sensor = new Workbench.Models.Sensor
       source: Workbench.source
-      uid: @sensor_uid
+      uid: id
     sensor.fetch()
 
     showView = new Workbench.Views.SensorShowView
