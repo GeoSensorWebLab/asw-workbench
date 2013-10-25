@@ -5,6 +5,8 @@ class Workbench.Views.DatastreamShowView extends Backbone.View
   className: "datastream"
 
   initialize: ->
+    @renderDeferred = $.Deferred()
+
     @chartView = new Workbench.Views.DatastreamChartView
       model: @model
 
@@ -12,14 +14,17 @@ class Workbench.Views.DatastreamShowView extends Backbone.View
       model: @model
 
     @listenTo @model, "change:seriesData", =>
-      _.delay(=>
-        @chartView.setElement(@$(".chart")).render()
-      , 0)
+      @renderDeferred.done(=>
+        _.delay(=>
+          @chartView.setElement(@$(".chart")).render()
+        , 0)
+      )
 
       @latestView.setElement(@$("#latest_#{@model.id}")).render()
 
   render: ->
     @$el.animate("min-height": 200).promise().done(=>
       @$el.html(@template(@model.toJSON()))
+      @renderDeferred.resolve()
     )
     this
