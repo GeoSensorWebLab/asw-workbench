@@ -12,14 +12,22 @@ class Workbench.Views.DatastreamLatestView extends Backbone.View
   render: ->
     latest = _.last(@model.get("seriesData"))
 
-    @swapHtml(@$el, @template({
-      latest: latest.value
-      date:   new Date(latest.timestamp)
-      unit:   @model.get("unit")
-    }))
+    if latest?
+      @swapHtml(@$el, @template({
+        latest: latest.value
+        date:   new Date(latest.timestamp)
+        unit:   @model.get("unit")
+      }))
+    else
+      @swapHtml(@$el, @template({
+        latest: "No data"
+        date:   "No data"
+        unit:   ""
+      }))
     this
 
   update: (date, value) ->
     @swapHtml(@$("date"), date)
     @swapHtml(@$(".value"), value)
+    @swapHtml(@$(".unit"), @model.get("unit"))
     this
