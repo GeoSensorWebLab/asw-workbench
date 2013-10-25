@@ -14,13 +14,16 @@ class Workbench.Views.DatastreamShowView extends Backbone.View
       model: @model
 
     @listenTo @model, "change:seriesData", =>
+      # Defer until after main element is rendered
       @renderDeferred.done(=>
+        # Render the chart
         _.delay(=>
           @chartView.setElement(@$(".chart")).render()
         , 0)
-      )
 
-      @latestView.setElement(@$("#latest_#{@model.id}")).render()
+        # Render the latest view
+        @latestView.setElement(@$("#latest_#{@model.id}")).render()
+      )
 
   render: ->
     @$el.animate("min-height": 200).promise().done(=>
