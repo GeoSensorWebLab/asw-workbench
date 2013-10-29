@@ -17,10 +17,13 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
     console.log "loading index route"
 
     sensors = new Workbench.Collections.SensorsCollection
+      source: Workbench.source
+    sensors.fetch()
 
     listView = new Workbench.Views.SensorListView
       collection: sensors
-    listView.renderBasic()
+      el: $("#apiView ul")
+    $("#apiView").show()
 
   show: (id) ->
     console.log "loading show route", id

@@ -12,13 +12,29 @@ class Workbench.Models.Sensor extends Backbone.Model
   # Custom fetch function using GeoCENS JS API
   fetch: ->
     @get("source").getSensor
-        sensor_id: @id
-        done: (sensor) =>
-            @set(sensor.metadata)
-            @object = sensor
-            @trigger("sensorLoaded")
-            @get("datastreams").fetch(sensor: @object)
+      sensor_id: @id
+      done: (sensor) =>
+        @set(sensor.metadata)
+        @object = sensor
+        @trigger("sensorLoaded")
+        @get("datastreams").fetch(sensor: @object)
     return this
 
 class Workbench.Collections.SensorsCollection extends Backbone.Collection
   model: Workbench.Models.Sensor
+
+  initialize: (options) ->
+    @source = options.source
+
+  # Retrieve a list of sensors from the GeoCENS JS API
+  fetch: (options) ->
+    xhr = @source.getSensors
+      done: (sensors) =>
+        @reset()
+        _.each sensors, (sensor) =>
+          newSensor = new Workbench.Models.Sensor(sensor.metadata)
+          newSensor.object = sensor
+          @push(newSensor)
+
+    @trigger "request", this, xhr
+    this
