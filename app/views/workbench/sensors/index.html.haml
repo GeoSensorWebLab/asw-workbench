@@ -1,11 +1,52 @@
 #apiView
 	This page would list the sensors for the API.
 
+#sensorView
+	.page-header
+		%h1.sensor-name
+			Loading&hellip;
+			%i.fa.fa-refresh.fa-spin
+
+	#dataView
+		%ul.list-unstyled
+
+	#apiView
+		%h2 Workbench Logger
+
+		#logger.well
+
+		%dl
+			%dt API Endpoint
+			%dd.sensor-endpoint Loading&hellip;
+
+	#metadataView
+		%h2 Sensor Metadata
+
+		.row
+			.col-md-9
+				%dl
+					%dt Sensor Name
+					%dd.sensor-name Loading&hellip;
+
+					%dt Sensor Description
+					%dd.sensor-description Loading&hellip;
+
+					%dt Datastreams
+					%dd.sensor-datastream-count Loading&hellip;
+
+					%dt Owner
+					%dd.sensor-owner Loading&hellip;
+
+					%dt Owner Contact
+					%dd.sensor-contact Loading&hellip;
+
+			.col-md-3
+				#map Loading&hellip;
+
 :javascript
 	$(function() {
 		L.Icon.Default.imagePath = '/assets';
 
 		window.appRouter = new Workbench.Routers.WorkbenchRouter();
-
 		var result = Backbone.history.start({ pushState: true, root: "/workbench/sensors/" });
 	});

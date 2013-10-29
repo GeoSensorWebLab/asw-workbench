@@ -24,6 +24,7 @@ class Workbench.Views.SensorShowView extends Backbone.View
 
   # Render without sensor information
   renderBasic: ->
+    @$el.show()
     this
 
   render: ->
