@@ -4,6 +4,9 @@ class Workbench.Views.SensorListView extends Backbone.View
   initialize: ->
     @views = []
 
+    @listenTo @collection, "all", (eventName) =>
+      console.log eventName, this
+
     @listenTo @collection, "request", =>
       @$el.append(@loadingTemplate())
 
