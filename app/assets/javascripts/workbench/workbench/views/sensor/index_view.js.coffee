@@ -4,9 +4,8 @@ class Workbench.Views.SensorIndexView extends Backbone.View
       collection: @collection
       el: $("#apiView ul")
 
-  renderBasic: ->
-    @$el.show()
-    this
-
   render: ->
+    api_key = @collection.source.api_key
+    @$(".api-key").attr("href", "sensors?api_key=#{api_key}").text(api_key)
+    @$el.show()
     this

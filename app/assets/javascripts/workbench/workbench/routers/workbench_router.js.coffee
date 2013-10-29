@@ -10,8 +10,8 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
     Workbench.source = new Geocens.DataService({ api_key: apiKey })
 
   routes:
-    '': 'index'
-    ':id(/)': 'show'
+    'sensors(/)': 'index'
+    'sensors/:id(/)': 'show'
 
   index: ->
     console.log "loading index route"
@@ -22,7 +22,8 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
     indexView = new Workbench.Views.SensorIndexView
       collection: sensors
       el: $("#apiView")
-    indexView.renderBasic()
+
+    indexView.render()
     sensors.fetch()
 
   show: (id) ->

@@ -1,7 +1,7 @@
 #apiView
 	%p
 		API Key:
-		%span.api-key asdfasdfasdf
+		%a.api-key
 
 	%ul.list-unstyled
 
@@ -52,5 +52,5 @@
 		L.Icon.Default.imagePath = '/assets';
 
 		window.appRouter = new Workbench.Routers.WorkbenchRouter();
-		var result = Backbone.history.start({ pushState: true, root: "/workbench/sensors/" });
+		var result = Backbone.history.start({ pushState: true, root: "/workbench/" });
 	});
