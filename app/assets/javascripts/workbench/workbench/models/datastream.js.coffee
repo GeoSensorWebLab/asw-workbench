@@ -5,8 +5,8 @@ class Workbench.Models.Datastream extends Backbone.Model
 
   getTimeSeries: ->
     @object.getTimeSeries
-      start: new Date("2013-10-01 00:00:00Z")
-      end: new Date("2013-10-16 00:00:00Z")
+      recent: true
+      limit: 500
       done: (seriesData) =>
         # Data is returned in newest-first order, so reverse it
         @set("seriesData", seriesData.reverse())
