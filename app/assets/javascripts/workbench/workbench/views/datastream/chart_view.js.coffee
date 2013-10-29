@@ -8,7 +8,7 @@ class Workbench.Views.DatastreamChartView extends Backbone.View
 
         chart:
           rangeSelector:
-            selected: 4
+            selected: 1
             buttons: [{
               type: 'minute'
               count: 120
