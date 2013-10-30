@@ -23,6 +23,12 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
       @showView.remove()
       delete @showView
 
+    if @sensors
+      delete @sensors
+
+    if @sensor
+      delete @sensor
+
   # Check params for API Key. Use the demo user's key if none is specified.
   getApiKey: ->
     if (location.search.length < 1)
@@ -39,14 +45,14 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
     @cleanupViews()
     @addApiKeyParam("sensors")
 
-    sensors = new Workbench.Collections.SensorsCollection
+    @sensors = new Workbench.Collections.SensorsCollection
       source: Workbench.source
 
     @indexView = new Workbench.Views.SensorIndexView
-      collection: sensors
+      collection: @sensors
 
     @indexView.render(@element)
-    sensors.fetch()
+    @sensors.fetch()
 
   show: (id) ->
     console.log "loading show route", id
@@ -58,11 +64,11 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
       id = "f9b0b42d4b742638f96dfea960ef4735"
 
     # render show view
-    sensor = new Workbench.Models.Sensor
+    @sensor = new Workbench.Models.Sensor
       source: Workbench.source
       uid: id
-    sensor.fetch()
+    @sensor.fetch()
 
     @showView = new Workbench.Views.SensorShowView
-      model: sensor
+      model: @sensor
     @showView.renderBasic(@element)
