@@ -1,9 +1,9 @@
 GIT
   remote: git@git.geocens.ca:rpi/geocens-js-api-rails.git
-  revision: 147e5f16027af5f1c9da0bd2d18e393f2c704fd0
-  tag: v1.1.1
+  revision: a6046b13a29cbcfa0be3998709ca6252c1cc177c
+  tag: v1.1.2
   specs:
-    geocens-js-api-rails (1.1.1)
+    geocens-js-api-rails (1.1.2)
       railties (>= 3.1, < 5.0)
 
 PATH
