@@ -26,7 +26,7 @@ class Workbench.Views.SensorShowView extends Backbone.View
   # Render without sensor information
   renderBasic: (container) ->
     container.append(@$el)
-    @$el.html(@template()).show()
+    @$el.html(@template({ api_key: appRouter.apiKey })).show()
 
     @mapView.setElement(@$("#map"))
     @datastreamListView.setElement(@$("#dataView ul"))

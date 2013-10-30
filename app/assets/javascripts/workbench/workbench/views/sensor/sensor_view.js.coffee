@@ -7,5 +7,7 @@ class Workbench.Views.SensorView extends Backbone.View
   initialize: ->
 
   render: ->
-    @$el.html(@template(@model.toJSON()))
+    attributes = @model.toJSON()
+    attributes.api_key = appRouter.apiKey
+    @$el.html(@template(attributes))
     this

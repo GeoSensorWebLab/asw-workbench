@@ -31,7 +31,7 @@ $(document).on("click", "a:not([data-bypass])", function(evt) {
   var root = location.protocol + "//" + location.host + Backbone.history.options.root;
 
   if (href.prop && href.prop.slice(0, root.length) === root) {
-    var route = href.prop.slice(root.length - 1, href.prop.length);
+    var route = href.prop.slice(root.length, href.prop.length).split("?")[0];
     evt.preventDefault();
     appRouter.navigate(route, { trigger: true });
   }
