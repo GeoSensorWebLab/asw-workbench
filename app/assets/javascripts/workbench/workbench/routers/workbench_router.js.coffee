@@ -12,6 +12,11 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
     @listenTo Workbench.Events, "redirectToSensor", (sensor) =>
       @navigate "sensors/#{sensor.id}", { trigger: true }
 
+  # Ensure the API Key is displayed in the URL params.
+  addApiKeyParam: ->
+    if (location.search.length < 1)
+      @navigate "sensors?api_key=#{@apiKey}", { replace: true }
+
   cleanupViews: ->
     if @indexView
       @indexView.remove()
@@ -21,6 +26,7 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
       @showView.remove()
       delete @showView
 
+  # Check params for API Key. Use the demo user's key if none is specified.
   getApiKey: ->
     if (location.search.length < 1)
       # Demo user read-only key
@@ -32,9 +38,7 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
   index: ->
     console.log "loading index route"
     @cleanupViews()
-
-    if (location.search.length < 1)
-      @navigate "sensors?api_key=#{@apiKey}", { replace: true }
+    @addApiKeyParam()
 
     sensors = new Workbench.Collections.SensorsCollection
       source: Workbench.source
