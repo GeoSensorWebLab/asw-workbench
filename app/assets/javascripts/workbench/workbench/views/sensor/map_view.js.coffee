@@ -2,6 +2,12 @@ class Workbench.Views.SensorMapView extends Backbone.View
   initialize: ->
     @zoom = 13
 
+  remove: ->
+    @map.remove()
+    @$el.remove()
+    @stopListening()
+    this
+
   render: ->
     @renderMap()
     this
