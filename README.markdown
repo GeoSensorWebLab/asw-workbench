@@ -4,7 +4,16 @@ The RPI Workbench is a JavaScript Single-Page Application frontend to the GeoCEN
 
 ## Development Environment
 
-TODO
+The app is a Rails Engine, and is meant to be mounted inside another Rails application as a sub-app. To run a development engine to host the Workbench, you can use the embedded one for testing.
+
+	$ cd test/dummy
+	$ rails s
+
+This will start a Webrick server on port 3000, and mount the Workbench at the following URL:
+
+	http://localhost:3000/workbench/
+
+From there, local changes will automatically be reflected in the dummy app.
 
 ### generate.html
 
