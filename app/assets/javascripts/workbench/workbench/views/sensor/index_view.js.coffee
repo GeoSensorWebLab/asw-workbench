@@ -6,6 +6,10 @@ class Workbench.Views.SensorIndexView extends Backbone.View
     @listView = new Workbench.Views.SensorListView
       collection: @collection
 
+  remove: ->
+    @listView.remove()
+    super()
+
   render: (container) ->
     container.append(@$el)
 

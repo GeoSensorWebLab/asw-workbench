@@ -26,6 +26,11 @@ class Workbench.Views.DatastreamListView extends Backbone.View
     @views.push(datastreamView)
     @$el.append datastreamView.render().el
 
+  remove: ->
+    _.each @views, (view) ->
+      view.remove()
+    super()
+
   render: ->
     @addAll(@collection)
     this

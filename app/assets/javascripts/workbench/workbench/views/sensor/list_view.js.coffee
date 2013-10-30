@@ -26,6 +26,12 @@ class Workbench.Views.SensorListView extends Backbone.View
     @views.push(sensorView)
     @$el.append sensorView.render().el
 
+  remove: ->
+    _.each @views, (view) =>
+      view.remove()
+
+    super()
+
   renderBasic: ->
     @$el.show()
     this

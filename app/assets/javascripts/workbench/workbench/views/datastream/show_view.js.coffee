@@ -25,6 +25,11 @@ class Workbench.Views.DatastreamShowView extends Backbone.View
         @latestView.setElement(@$("#latest_#{@model.id}")).render()
       )
 
+  remove: ->
+    @chartView.remove()
+    @latestView.remove()
+    super()
+
   render: ->
     @$el.animate("min-height": 200).promise().done(=>
       @$el.html(@template(@model.toJSON()))

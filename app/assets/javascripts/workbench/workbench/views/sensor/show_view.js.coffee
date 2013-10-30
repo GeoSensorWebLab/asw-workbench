@@ -23,6 +23,11 @@ class Workbench.Views.SensorShowView extends Backbone.View
       @text(content).transition(rotateX: '0deg')
     )
 
+  remove: ->
+    @mapView.remove()
+    @datastreamListView.remove()
+    super()
+
   # Render without sensor information
   renderBasic: (container) ->
     container.append(@$el)

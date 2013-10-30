@@ -3,10 +3,8 @@ class Workbench.Views.SensorMapView extends Backbone.View
     @zoom = 13
 
   remove: ->
-    @map.remove()
-    @$el.remove()
-    @stopListening()
-    this
+    @map.remove() if @map
+    super()
 
   render: ->
     @renderMap()
