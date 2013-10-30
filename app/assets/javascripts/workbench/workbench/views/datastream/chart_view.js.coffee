@@ -1,6 +1,12 @@
 class Workbench.Views.DatastreamChartView extends Backbone.View
   initialize: ->
 
+  remove: ->
+    @chart.remove()
+    @$el.remove()
+    @stopListening()
+    this
+
   render: ->
     @$el.animate(height: 400).promise().done(=>
       @chart = @$el.GeocensChart
