@@ -1,17 +1,23 @@
 class Workbench.Routers.WorkbenchRouter extends Backbone.Router
-  initialize: (options) ->
-    if (location.search.length < 1)
-      # Demo user read-only key
-      @apiKey = "3359a8ffba94a54978aa6c645e3c617a"
-    else
-      params = $.deparam(location.search.split('?')[1])
-      @apiKey = params.api_key
-
-    Workbench.source = new Geocens.DataService({ api_key: @apiKey })
-
   routes:
     'sensors(/)': 'index'
     'sensors/:id(/)': 'show'
+
+  initialize: (options) ->
+    @getApiKey()
+
+    Workbench.source = new Geocens.DataService({ api_key: @apiKey })
+
+    @listenTo Workbench.Events, "redirectToSensor", (sensor) =>
+      @navigate "sensors/#{sensor.id}", { trigger: true }
+
+  getApiKey: ->
+    if (location.search.length < 1)
+      # Demo user read-only key
+      @apiKey ||= "3359a8ffba94a54978aa6c645e3c617a"
+    else
+      params = $.deparam(location.search.split('?')[1])
+      @apiKey ||= params.api_key
 
   index: ->
     console.log "loading index route"
