@@ -11,6 +11,15 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
     @listenTo Workbench.Events, "redirectToSensor", (sensor) =>
       @navigate "sensors/#{sensor.id}", { trigger: true }
 
+  cleanupViews: ->
+    if @indexView
+      @indexView.remove()
+      delete @indexView
+
+    if @showView
+      @showView.remove()
+      delete @showView
+
   getApiKey: ->
     if (location.search.length < 1)
       # Demo user read-only key
@@ -22,21 +31,26 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
   index: ->
     console.log "loading index route"
 
+    @cleanupViews()
+
     if (location.search.length < 1)
       @navigate "sensors?api_key=#{@apiKey}", { replace: true }
 
     sensors = new Workbench.Collections.SensorsCollection
       source: Workbench.source
 
-    indexView = new Workbench.Views.SensorIndexView
+    @indexView = new Workbench.Views.SensorIndexView
       collection: sensors
       el: $("#apiView")
 
-    indexView.render()
+    @indexView.render()
     sensors.fetch()
 
   show: (id) ->
     console.log "loading show route", id
+
+    @cleanupViews()
+
     if id is "demo"
       # Demo user
       id = "f9b0b42d4b742638f96dfea960ef4735"
@@ -47,7 +61,7 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
       uid: id
     sensor.fetch()
 
-    showView = new Workbench.Views.SensorShowView
+    @showView = new Workbench.Views.SensorShowView
       model: sensor
       el: $("#sensorView")
-    showView.renderBasic()
+    @showView.renderBasic()
