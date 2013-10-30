@@ -4,6 +4,7 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
     'sensors/:id(/)': 'show'
 
   initialize: (options) ->
+    @element = options.element
     @getApiKey()
 
     Workbench.source = new Geocens.DataService({ api_key: @apiKey })
@@ -30,7 +31,6 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
 
   index: ->
     console.log "loading index route"
-
     @cleanupViews()
 
     if (location.search.length < 1)
@@ -41,14 +41,12 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
 
     @indexView = new Workbench.Views.SensorIndexView
       collection: sensors
-      el: $("#apiView")
 
-    @indexView.render()
+    @indexView.render(@element)
     sensors.fetch()
 
   show: (id) ->
     console.log "loading show route", id
-
     @cleanupViews()
 
     if id is "demo"
