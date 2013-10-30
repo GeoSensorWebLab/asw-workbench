@@ -1,12 +1,13 @@
 class Workbench.Views.SensorShowView extends Backbone.View
+  template: JST["workbench/workbench/templates/sensor_show"]
+  id: "sensorView"
+
   initialize: ->
     @mapView = new Workbench.Views.SensorMapView(
-      el: @$("#map")
       model: @model
     )
 
     @datastreamListView = new Workbench.Views.DatastreamListView(
-      el: @$("#dataView ul")
       collection: @model.get("datastreams")
     )
 
@@ -23,8 +24,12 @@ class Workbench.Views.SensorShowView extends Backbone.View
     )
 
   # Render without sensor information
-  renderBasic: ->
-    @$el.show()
+  renderBasic: (container) ->
+    container.append(@$el)
+    @$el.html(@template()).show()
+
+    @mapView.setElement(@$("#map"))
+    @datastreamListView.setElement(@$("#dataView ul"))
     this
 
   render: ->
