@@ -13,9 +13,9 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
       @navigate "sensors/#{sensor.id}", { trigger: true }
 
   # Ensure the API Key is displayed in the URL params.
-  addApiKeyParam: ->
+  addApiKeyParam: (base) ->
     if (location.search.length < 1)
-      @navigate "sensors?api_key=#{@apiKey}", { replace: true }
+      @navigate "#{base}?api_key=#{@apiKey}", { replace: true }
 
   cleanupViews: ->
     if @indexView
@@ -35,10 +35,12 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
       params = $.deparam(location.search.split('?')[1])
       @apiKey ||= params.api_key
 
+  # ROUTES
+
   index: ->
     console.log "loading index route"
     @cleanupViews()
-    @addApiKeyParam()
+    @addApiKeyParam("sensors")
 
     sensors = new Workbench.Collections.SensorsCollection
       source: Workbench.source
@@ -52,6 +54,7 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
   show: (id) ->
     console.log "loading show route", id
     @cleanupViews()
+    @addApiKeyParam("sensors/#{id}")
 
     if id is "demo"
       # Demo user
