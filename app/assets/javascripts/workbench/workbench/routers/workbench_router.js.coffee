@@ -2,12 +2,12 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
   initialize: (options) ->
     if (location.search.length < 1)
       # Demo user read-only key
-      apiKey = "3359a8ffba94a54978aa6c645e3c617a"
+      @apiKey = "3359a8ffba94a54978aa6c645e3c617a"
     else
       params = $.deparam(location.search.split('?')[1])
-      apiKey = params.api_key
+      @apiKey = params.api_key
 
-    Workbench.source = new Geocens.DataService({ api_key: apiKey })
+    Workbench.source = new Geocens.DataService({ api_key: @apiKey })
 
   routes:
     'sensors(/)': 'index'
@@ -15,6 +15,9 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
 
   index: ->
     console.log "loading index route"
+
+    if (location.search.length < 1)
+      @navigate "sensors?api_key=#{@apiKey}", { replace: true }
 
     sensors = new Workbench.Collections.SensorsCollection
       source: Workbench.source
