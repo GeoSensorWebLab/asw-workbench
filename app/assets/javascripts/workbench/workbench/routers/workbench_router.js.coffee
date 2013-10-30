@@ -9,9 +9,6 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
 
     Workbench.source = new Geocens.DataService({ api_key: @apiKey })
 
-    @listenTo Workbench.Events, "redirectToSensor", (sensor) =>
-      @navigate "sensors/#{sensor.id}", { trigger: true }
-
   # Ensure the API Key is displayed in the URL params.
   addApiKeyParam: (base) ->
     if (location.search.length < 1)

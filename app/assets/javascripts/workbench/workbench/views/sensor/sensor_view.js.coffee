@@ -4,14 +4,7 @@ class Workbench.Views.SensorView extends Backbone.View
   tagName: "li"
   className: "sensor"
 
-  events:
-    "click .viewSensor": "redirectToSensor"
-
   initialize: ->
-
-
-  redirectToSensor: ->
-    Workbench.Events.trigger "redirectToSensor", @model
 
   render: ->
     @$el.html(@template(@model.toJSON()))

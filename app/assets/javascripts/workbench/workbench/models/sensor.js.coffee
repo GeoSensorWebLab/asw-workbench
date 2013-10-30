@@ -2,7 +2,7 @@ class Workbench.Models.Sensor extends Backbone.Model
   idAttribute: "uid"
 
   initialize: ->
-    @set("endpoint", "http://www.example.com/sensors/#{@id}")
+    @set("endpoint", "http://dataservice.geocens.ca/api/sensors/#{@id}")
     @set("datastreams", new Workbench.Collections.DatastreamsCollection())
 
     @on "change:loc", =>

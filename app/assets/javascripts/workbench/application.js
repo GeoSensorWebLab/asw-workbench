@@ -31,7 +31,8 @@ $(document).on("click", "a:not([data-bypass])", function(evt) {
   var root = location.protocol + "//" + location.host + Backbone.history.options.root;
 
   if (href.prop && href.prop.slice(0, root.length) === root) {
+    var route = href.prop.slice(root.length - 1, href.prop.length);
     evt.preventDefault();
-    Backbone.history.navigate(href.attr);
+    appRouter.navigate(route, { trigger: true });
   }
 });
