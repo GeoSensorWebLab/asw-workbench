@@ -5,5 +5,5 @@
 		window.appRouter = new Workbench.Routers.WorkbenchRouter({
 			element: $("#content")
 		});
-		var result = Backbone.history.start({ pushState: true, root: "/workbench/" });
+		var result = Backbone.history.start({ pushState: true, root: "#{Workbench::Config.mount_path}" });
 	});
