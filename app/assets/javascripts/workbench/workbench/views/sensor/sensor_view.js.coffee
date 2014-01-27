@@ -8,6 +8,6 @@ class Workbench.Views.SensorView extends Backbone.View
 
   render: ->
     attributes = @model.toJSON()
-    attributes.api_key = appRouter.apiKey
+    attributes.sensorURL = "#{Backbone.history.root}sensors/#{@model.get("uid")}?api_key=#{appRouter.apiKey}"
     @$el.html(@template(attributes))
     this
