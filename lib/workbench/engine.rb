@@ -5,6 +5,7 @@ require "font-awesome-rails"
 require "geocens-js-api-rails"
 require "haml"
 require "jquery-rails"
+require "leaflet-rails"
 
 module Workbench
   class Engine < ::Rails::Engine
