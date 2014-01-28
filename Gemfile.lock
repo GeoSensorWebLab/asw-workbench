@@ -17,6 +17,7 @@ PATH
       font-awesome-rails
       haml
       jquery-rails
+      leaflet-rails (= 0.6.4)
       rails (~> 4.0.0)
       sass-rails
 
@@ -51,7 +52,7 @@ GEM
     atomic (1.1.14)
     backbone-rails (1.0.0.1)
       rails (>= 3.0.0)
-    bootstrap-sass-rails (3.0.0.3)
+    bootstrap-sass-rails (3.0.3.0)
       railties (>= 3.1.0)
       sass-rails (>= 3.1.0)
     builder (3.1.4)
@@ -65,9 +66,9 @@ GEM
     ejs (1.1.1)
     erubis (2.7.0)
     execjs (2.0.2)
-    font-awesome-rails (4.0.0.0)
+    font-awesome-rails (4.0.3.1)
       railties (>= 3.2, < 5.0)
-    haml (4.0.3)
+    haml (4.0.5)
       tilt
     hike (1.2.3)
     httparty (0.11.0)
@@ -78,10 +79,11 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.0)
+    leaflet-rails (0.6.4)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    mime-types (1.25)
+    mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.8.2)
     multi_xml (0.5.5)
@@ -104,13 +106,13 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.1.0)
-    sass (3.2.12)
+    sass (3.2.14)
     sass-rails (4.0.1)
       railties (>= 4.0.0, < 5.0)
       sass (>= 3.1.10)
       sprockets-rails (~> 2.0.0)
     slop (3.4.6)
-    sprockets (2.10.0)
+    sprockets (2.10.1)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)

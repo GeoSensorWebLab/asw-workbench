@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
   s.add_dependency "font-awesome-rails"
   s.add_dependency "haml"
   s.add_dependency "jquery-rails"
+  s.add_dependency "leaflet-rails", "0.6.4"
   s.add_dependency "sass-rails"
 
   s.add_development_dependency "httparty"
