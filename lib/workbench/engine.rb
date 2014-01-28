@@ -12,7 +12,7 @@ module Workbench
 
     initializer :assets do |config|
       Rails.application.config.assets.initialize_on_precompile = true
-      Rails.application.config.assets.precompile += %w( *.js *.css *.png *.jpg *.jpeg *.gif)
+      Rails.application.config.assets.precompile += %w(workbench/application.js workbench/application.css *.png *.jpg *.jpeg *.gif)
     end
   end
 end
