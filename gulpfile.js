@@ -15,7 +15,13 @@ gulp.task('express', function() {
   app.set('view engine', 'jade');
   require('./routes')(app);
   app.use(assets({
-    paths: ['src/scripts', 'src/images', 'src/stylesheets', 'src/views']
+    paths: [
+      'src/scripts',
+      'src/images',
+      'src/stylesheets',
+      'src/views',
+      'bower_components'
+      ]
   }));
 
   app.listen(1337);
