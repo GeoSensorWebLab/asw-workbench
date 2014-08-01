@@ -19,6 +19,7 @@
     "coffee-script": "^1.7.1",
     "connect-assets": "^4.3.0",
     "ejs": "^1.0.0",
+    "express": "^4.7.2",
     "node-sass": "^0.9.3"
   }
 }
