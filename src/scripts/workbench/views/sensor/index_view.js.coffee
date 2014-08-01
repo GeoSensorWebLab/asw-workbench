@@ -1,5 +1,5 @@
 class Workbench.Views.SensorIndexView extends Backbone.View
-  template: JST["workbench/workbench/templates/sensor_index"]
+  template: JST["workbench/templates/sensor_index"]
   id: "listView"
 
   initialize: ->

@@ -1,5 +1,5 @@
 class Workbench.Views.SensorListView extends Backbone.View
-  loadingTemplate: JST["workbench/workbench/templates/loading"]
+  loadingTemplate: JST["workbench/templates/loading"]
 
   initialize: ->
     @views = []

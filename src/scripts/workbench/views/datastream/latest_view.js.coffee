@@ -1,5 +1,5 @@
 class Workbench.Views.DatastreamLatestView extends Backbone.View
-  template: JST["workbench/workbench/templates/latest"]
+  template: JST["workbench/templates/latest"]
 
   initialize: ->
 

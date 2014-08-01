@@ -1,5 +1,5 @@
 class Workbench.Views.DatastreamShowView extends Backbone.View
-  template: JST["workbench/workbench/templates/datastream"]
+  template: JST["workbench/templates/datastream"]
 
   tagName: "li"
   className: "datastream"

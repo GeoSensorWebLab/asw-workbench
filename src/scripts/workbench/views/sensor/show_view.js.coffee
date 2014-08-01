@@ -1,5 +1,5 @@
 class Workbench.Views.SensorShowView extends Backbone.View
-  template: JST["workbench/workbench/templates/sensor_show"]
+  template: JST["workbench/templates/sensor_show"]
   id: "sensorView"
 
   initialize: ->

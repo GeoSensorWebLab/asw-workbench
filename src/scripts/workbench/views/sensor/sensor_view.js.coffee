@@ -1,5 +1,5 @@
 class Workbench.Views.SensorView extends Backbone.View
-  template: JST["workbench/workbench/templates/sensor"]
+  template: JST["workbench/templates/sensor"]
 
   tagName: "li"
   className: "sensor"
