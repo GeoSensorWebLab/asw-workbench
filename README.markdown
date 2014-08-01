@@ -4,7 +4,21 @@ The RPI Workbench is a JavaScript Single-Page Application frontend to the GeoCEN
 
 ## Development Environment
 
-The app is JavaScript/CoffeeScript and runs under Node.js.
+The app is JavaScript/CoffeeScript and runs under Node.js. To start, install the base Node packages:
+
+    $ npm install
+
+Then the assets can be installed with Bower:
+
+    $ bower install
+
+Now you can start the local development server with Gulp:
+
+    $ gulp
+
+That's all. The server is now running at [http://localhost:1337/](http://localhost:1337/).
+
+What's the different between Node packages and Bower? Bower is for packages that are sent to the client; Node packages are used for the server only. Each system also has different dependency resolution systems, where Bower is optimized for the web browser.
 
 ### generate.html
 
