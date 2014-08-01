@@ -1,0 +1,20 @@
+//= require bootstrap/dist/css/bootstrap
+//= require fontawesome/css/font-awesome
+//= require leaflet/dist/leaflet
+//= require_self
+
+.latest {
+  font-size: 2em;
+}
+
+date {
+  font-size: 0.7em;
+}
+
+#logger {
+  min-height: 5em;
+}
+
+#map {
+  min-height: 200px;
+}
