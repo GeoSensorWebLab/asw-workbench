@@ -14,5 +14,8 @@
     "url": "git@git.geocens.ca:workbench/workbench.git"
   },
   "author": "James Badger <jamesbadger@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "connect-assets": "^4.3.0"
+  }
 }
