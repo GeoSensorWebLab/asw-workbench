@@ -35,7 +35,7 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
       # Demo user read-only key
       @apiKey ||= "3359a8ffba94a54978aa6c645e3c617a"
     else
-      params = $.deparam(location.search.split('?')[1])
+      params = deparam(location.search.split('?')[1])
       @apiKey ||= params.api_key
 
   # ROUTES
