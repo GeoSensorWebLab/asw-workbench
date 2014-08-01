@@ -24,6 +24,7 @@
     "jquery.transit": "~0.9.12",
     "jquery-deparam": "~0.2.0",
     "highstock-release": "~2.0.3",
-    "json2": "*"
+    "json2": "*",
+    "geocens-js-api": "Canarie-Sensor-RPI/geocens-js-api#~1.2.5"
   }
 }
