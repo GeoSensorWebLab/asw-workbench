@@ -16,6 +16,7 @@
   "author": "James Badger <jamesbadger@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "coffee-script": "^1.7.1",
     "connect-assets": "^4.3.0"
   }
 }
