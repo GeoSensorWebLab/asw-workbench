@@ -3,7 +3,7 @@ html.no-js
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    title Example
+    title Workbench
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     != css("main")
@@ -16,5 +16,13 @@ html.no-js
       | to improve your experience.
     <![endif]-->
 
-    div.container
-      h1 Example Jade Template!
+    div#content.container
+      h2 GeoCENS
+
+      script(type='text/javascript').
+        $(function() {
+          window.appRouter = new Workbench.Routers.WorkbenchRouter({
+            element: $("#content")
+          });
+          var result = Backbone.history.start({ pushState: true, root: "/" });
+        });
