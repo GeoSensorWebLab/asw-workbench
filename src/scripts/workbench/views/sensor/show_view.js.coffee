@@ -1,12 +1,9 @@
 class Workbench.Views.SensorShowView extends Backbone.View
   template: JST["workbench/templates/sensor_show"]
   id: "sensorView"
+  className: "page-header"
 
   initialize: ->
-    @mapView = new Workbench.Views.SensorMapView(
-      model: @model
-    )
-
     @datastreamListView = new Workbench.Views.DatastreamListView(
       collection: @model.get("datastreams")
     )
@@ -15,11 +12,12 @@ class Workbench.Views.SensorShowView extends Backbone.View
       model: @model
     )
 
+    @metadataView = new Workbench.Views.SensorMetadataView(
+      model: @model
+    )
+
     @listenTo @model, "sensorLoaded", =>
       @render()
-
-    @listenTo @model.get("datastreams"), "add", (model, options) =>
-      @updateDatastreamCount()
 
   # Animate out, update content, animate back in
   swapContent: ($element, content) ->
@@ -28,36 +26,22 @@ class Workbench.Views.SensorShowView extends Backbone.View
     )
 
   remove: ->
-    @mapView.remove()
     @datastreamListView.remove()
     @loggerView.remove()
+    @metadataView.remove()
     super()
 
   # Render without sensor information
   renderBasic: (container) ->
     container.append(@$el)
-    @$el.html(@template(
-      api_key: appRouter.apiKey
-      indexURL: "#{Backbone.history.root}sensors/?api_key=#{appRouter.apiKey}"
-    )).show()
+    @$el.html(@template()).show()
 
-    @mapView.setElement(@$("#map"))
     @datastreamListView.setElement(@$("#dataView ul"))
     @loggerView.renderBasic(@$el)
+    @metadataView.renderBasic(@$el)
     this
 
   render: ->
     @swapContent(@$(".sensor-name"), @model.get("title"))
-    @swapContent(@$(".sensor-description"), @model.get("description"))
-    @swapContent(@$(".sensor-owner"), @model.get("contact_name"))
-    @swapContent(@$(".sensor-contact"), @model.get("contact_email"))
-
-    @updateDatastreamCount()
-
     @datastreamListView.render()
-    @mapView.render()
-    this
-
-  updateDatastreamCount: ->
-    @swapContent(@$(".sensor-datastream-count"), @model.get("datastreams").length)
     this
