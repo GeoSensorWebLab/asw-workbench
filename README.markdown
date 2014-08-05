@@ -4,16 +4,21 @@ The RPI Workbench is a JavaScript Single-Page Application frontend to the GeoCEN
 
 ## Development Environment
 
-The app is a Rails Engine, and is meant to be mounted inside another Rails application as a sub-app. To run a development engine to host the Workbench, you can use the embedded one for testing.
+The app is JavaScript/CoffeeScript and runs under Node.js. To start, install the base Node packages:
 
-	$ cd test/dummy
-	$ rails s
+    $ npm install
 
-This will start a Webrick server on port 3000, and mount the Workbench at the following URL:
+Then the assets can be installed with Bower:
 
-	http://localhost:3000/workbench/
+    $ bower install
 
-From there, local changes will automatically be reflected in the dummy app.
+Now you can start the local development server with Gulp:
+
+    $ gulp
+
+That's all. The server is now running at [http://localhost:1337/](http://localhost:1337/).
+
+What's the different between Node packages and Bower? Bower is for packages that are sent to the client; Node packages are used for the server only. Each system also has different dependency resolution systems, where Bower is optimized for the web browser.
 
 ### generate.html
 
@@ -43,4 +48,4 @@ TODO
 
 ## License
 
-Copyright GeoSensor Web Lab, James Badger, 2013. All rights reserved.
+Copyright GeoSensor Web Lab, James Badger, 2013-2014. All rights reserved.

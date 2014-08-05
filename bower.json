@@ -1,0 +1,25 @@
+{
+  "name": "rpi-workbench",
+  "version": "0.0.0",
+  "authors": [
+    "James Badger <jamesbadger@gmail.com>"
+  ],
+  "description": "RPI Workbench Interface",
+  "main": "gulpfile.js",
+  "license": "All Rights Reserved",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "backbone": "~1.1.2",
+    "jquery-deparam": "~0.2.0",
+    "highstock-release": "~2.0.3",
+    "geocens-js-api": "Canarie-Sensor-RPI/geocens-js-api#~1.2.5"
+  }
+}

@@ -1,0 +1,35 @@
+doctype
+html.no-js
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title Workbench
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css")
+    != css("main")
+
+    script(type="text/javascript", src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+    script(type="text/javascript", src="//cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.9/jquery.transit.min.js")
+    script(type="text/javascript", src="//cdnjs.cloudflare.com/ajax/libs/json2/20130526/json2.min.js")
+    script(type="text/javascript", src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js")
+    != js("app")
+  body
+    <!--[if lt IE 8]>
+    p.browsehappy
+      | You are using an <strong>outdated</strong> browser.
+      | Please <a href="http://browsehappy.com/">upgrade your browser</a>
+      | to improve your experience.
+    <![endif]-->
+
+    div#content.container
+      h2 GeoCENS
+
+      script(type='text/javascript').
+        $(function() {
+          window.appRouter = new Workbench.Routers.WorkbenchRouter({
+            element: $("#content")
+          });
+          var result = Backbone.history.start({ pushState: true, root: "/" });
+        });
