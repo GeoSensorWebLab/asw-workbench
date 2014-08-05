@@ -1,4 +1,3 @@
-#= require jquery/dist/jquery
 #= require jquery-deparam/jquery-deparam
 #= require jquery.transit/jquery.transit
 #= require slow-ajax
