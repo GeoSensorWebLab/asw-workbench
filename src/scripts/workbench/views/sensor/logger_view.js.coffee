@@ -8,8 +8,16 @@ class Workbench.Views.SensorLoggerView extends Backbone.Marionette.ItemView
     log: "#logger"
     endpoint: ".sensor-endpoint"
 
+  initialize: ->
+    @renderDeferred = $.Deferred()
+
+  onRender: ->
+    @renderDeferred.resolve()
+
   loadAttributes: ->
-    @swapContent(@ui.endpoint, @model.get("endpoint"))
+    @renderDeferred.done(=>
+      @swapContent(@ui.endpoint, @model.get("endpoint"))
+    )
 
   # Animate out, update content, animate back in
   swapContent: ($element, content) ->

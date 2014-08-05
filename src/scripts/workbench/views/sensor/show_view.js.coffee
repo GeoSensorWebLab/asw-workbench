@@ -4,20 +4,10 @@ class Workbench.Views.SensorShowView extends Backbone.View
   className: "page-header"
 
   initialize: ->
-    @datastreamCollectionView = new Workbench.Views.DatastreamCollectionView(
-      collection: @model.get("datastreams")
-    )
-
-    @loggerView = new Workbench.Views.SensorLoggerView(
-      model: @model
-    )
-
-    @metadataView = new Workbench.Views.SensorMetadataView(
-      model: @model
-    )
+    @views = new Backbone.ChildViewContainer()
 
     @listenTo @model, "sensorLoaded", =>
-      @render()
+      @loadAttributes()
 
   # Animate out, update content, animate back in
   swapContent: ($element, content) ->
@@ -36,12 +26,20 @@ class Workbench.Views.SensorShowView extends Backbone.View
     container.append(@$el)
     @$el.html(@template()).show()
 
-    @datastreamCollectionView.setElement(@$("#dataView ul"))
-    @$el.append(@loggerView.render().$el)
-    @$el.append(@metadataView.render().$el)
+    @views.add(new Workbench.Views.DatastreamCollectionView(
+      collection: @model.get("datastreams")
+    ))
+    @views.add(new Workbench.Views.SensorLoggerView(
+      model: @model
+    ))
+    @views.add(new Workbench.Views.SensorMetadataView(
+      model: @model
+    ))
+
+    @views.map (view) =>
+      @$el.append(view.render().$el)
+
     this
 
-  render: ->
+  loadAttributes: ->
     @swapContent(@$(".sensor-name"), @model.get("title"))
-    @datastreamCollectionView.render()
-    this

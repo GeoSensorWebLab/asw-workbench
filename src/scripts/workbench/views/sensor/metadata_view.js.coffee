@@ -15,8 +15,11 @@ class Workbench.Views.SensorMetadataView extends Backbone.Marionette.LayoutView
     map: "#map"
 
   initialize: ->
+    @renderDeferred = $.Deferred()
+
     @listenTo @model.get("datastreams"), "add", =>
-      @updateDatastreamCount()
+      @renderDeferred.done =>
+        @updateDatastreamCount()
 
     # The element ID MUST be passed into Leaflet, so we use a custom attachment
     # function for the Marionette region.
@@ -31,18 +34,20 @@ class Workbench.Views.SensorMetadataView extends Backbone.Marionette.LayoutView
     )
 
   onRender: ->
+    @renderDeferred.resolve()
     @ui.otherSensors.prop('href', "#{Backbone.history.root}sensors/?api_key=#{appRouter.apiKey}")
 
   loadAttributes: ->
-    @swapContent(@ui.description, @model.get("description"))
-    @swapContent(@ui.owner, @model.get("contact_name"))
-    @swapContent(@ui.contact, @model.get("contact_email"))
+    @renderDeferred.done =>
+      @swapContent(@ui.description, @model.get("description"))
+      @swapContent(@ui.owner, @model.get("contact_name"))
+      @swapContent(@ui.contact, @model.get("contact_email"))
 
-    @updateDatastreamCount()
+      @updateDatastreamCount()
 
-    @map.show(new Workbench.Views.SensorMapView(
-      model: @model
-    ))
+      @map.show(new Workbench.Views.SensorMapView(
+        model: @model
+      ))
 
   updateDatastreamCount: ->
     @swapContent(@ui.datastreamCount, @model.get("datastreams").length)
