@@ -1,16 +1,28 @@
-class Workbench.Views.SensorMetadataView extends Backbone.View
-  template: JST["workbench/templates/metadata"]
+class Workbench.Views.SensorMetadataView extends Backbone.Marionette.LayoutView
+  template: "workbench/templates/metadata"
+
+  modelEvents:
+    "sensorLoaded": "loadAttributes"
+
+  ui:
+    description: '.sensor-description'
+    owner: '.sensor-owner'
+    contact: '.sensor-contact'
+    otherSensors: '.other-sensors'
+    datastreamCount: '.sensor-datastream-count'
+
+  regions:
+    map: "#map"
 
   initialize: ->
-    @mapView = new Workbench.Views.SensorMapView(
-      model: @model
-    )
-
-    @listenTo @model, "sensorLoaded", =>
-      @render()
-
-    @listenTo @model.get("datastreams"), "add", (model, options) =>
+    @listenTo @model.get("datastreams"), "add", =>
       @updateDatastreamCount()
+
+    # The element ID MUST be passed into Leaflet, so we use a custom attachment
+    # function for the Marionette region.
+    @map.attachHtml = (view) ->
+      @$el.empty()
+      view.setElement(@$el)
 
   # Animate out, update content, animate back in
   swapContent: ($element, content) ->
@@ -18,31 +30,20 @@ class Workbench.Views.SensorMetadataView extends Backbone.View
       @text(content).transition(rotateX: '0deg')
     )
 
-  remove: ->
-    @mapView.remove()
-    super()
+  onRender: ->
+    @ui.otherSensors.prop('href', "#{Backbone.history.root}sensors/?api_key=#{appRouter.apiKey}")
 
-  # Render without sensor information
-  renderBasic: (container) ->
-    container.append(@$el)
-    @$el.html(@template(
-      api_key: appRouter.apiKey
-      indexURL: "#{Backbone.history.root}sensors/?api_key=#{appRouter.apiKey}"
-    )).show()
-
-    @mapView.setElement(@$("#map"))
-    this
-
-  render: ->
-    @swapContent(@$(".sensor-description"), @model.get("description"))
-    @swapContent(@$(".sensor-owner"), @model.get("contact_name"))
-    @swapContent(@$(".sensor-contact"), @model.get("contact_email"))
+  loadAttributes: ->
+    @swapContent(@ui.description, @model.get("description"))
+    @swapContent(@ui.owner, @model.get("contact_name"))
+    @swapContent(@ui.contact, @model.get("contact_email"))
 
     @updateDatastreamCount()
 
-    @mapView.render()
-    this
+    @map.show(new Workbench.Views.SensorMapView(
+      model: @model
+    ))
 
   updateDatastreamCount: ->
-    @swapContent(@$(".sensor-datastream-count"), @model.get("datastreams").length)
+    @swapContent(@ui.datastreamCount, @model.get("datastreams").length)
     this

@@ -7,15 +7,14 @@ class Workbench.Views.SensorMapView extends Backbone.Marionette.ItemView
   onDestroy: ->
     @map.remove() if @map
 
-  onRender: ->
-    @renderMap()
+  onShow: ->
+    if @el.id is ""
+      console.warn "No Map Element"
+    else
+      @location = [@model.get("latitude"), @model.get("longitude")]
+      @map = L.map(@el.id).setView(@location, @zoom)
+      L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(@map)
 
-  renderMap: ->
-    @location = [@model.get("latitude"), @model.get("longitude")]
-    @map = L.map(@el.id).setView(@location, @zoom)
-    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(@map)
-
-    L.marker(@location).addTo(@map)
-    this
+      L.marker(@location).addTo(@map)
