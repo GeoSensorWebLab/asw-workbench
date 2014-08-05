@@ -3,8 +3,6 @@
 #= require bootstrap/dist/js/bootstrap
 #= require highstock-release/highstock
 #= require highstock-release/modules/exporting
-#= require leaflet/dist/leaflet
-#= require json2/json2
 #= require underscore/underscore
 #= require backbone/backbone
 #= require geocens-js-api/geocens
