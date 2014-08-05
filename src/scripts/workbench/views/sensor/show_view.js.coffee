@@ -11,6 +11,10 @@ class Workbench.Views.SensorShowView extends Backbone.View
       collection: @model.get("datastreams")
     )
 
+    @loggerView = new Workbench.Views.SensorLoggerView(
+      model: @model
+    )
+
     @listenTo @model, "sensorLoaded", =>
       @render()
 
@@ -26,6 +30,7 @@ class Workbench.Views.SensorShowView extends Backbone.View
   remove: ->
     @mapView.remove()
     @datastreamListView.remove()
+    @loggerView.remove()
     super()
 
   # Render without sensor information
@@ -38,11 +43,11 @@ class Workbench.Views.SensorShowView extends Backbone.View
 
     @mapView.setElement(@$("#map"))
     @datastreamListView.setElement(@$("#dataView ul"))
+    @loggerView.renderBasic(@$el)
     this
 
   render: ->
     @swapContent(@$(".sensor-name"), @model.get("title"))
-    @swapContent(@$(".sensor-endpoint"), @model.get("endpoint"))
     @swapContent(@$(".sensor-description"), @model.get("description"))
     @swapContent(@$(".sensor-owner"), @model.get("contact_name"))
     @swapContent(@$(".sensor-contact"), @model.get("contact_email"))
