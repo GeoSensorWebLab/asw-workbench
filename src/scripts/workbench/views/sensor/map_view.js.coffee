@@ -1,14 +1,14 @@
-class Workbench.Views.SensorMapView extends Backbone.View
+class Workbench.Views.SensorMapView extends Backbone.Marionette.ItemView
+  template: false
+
   initialize: ->
     @zoom = 13
 
-  remove: ->
+  onDestroy: ->
     @map.remove() if @map
-    super()
 
-  render: ->
+  onRender: ->
     @renderMap()
-    this
 
   renderMap: ->
     @location = [@model.get("latitude"), @model.get("longitude")]
