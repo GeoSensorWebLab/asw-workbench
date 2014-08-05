@@ -1,7 +1,5 @@
-class Workbench.Views.DatastreamLatestView extends Backbone.View
-  template: JST["workbench/templates/latest"]
-
-  initialize: ->
+class Workbench.Views.DatastreamLatestView extends Backbone.Marionette.ItemView
+  template: "workbench/templates/latest"
 
   # Animate out, update content, animate back in
   swapHtml: ($element, content) ->
@@ -9,25 +7,16 @@ class Workbench.Views.DatastreamLatestView extends Backbone.View
       @html(content).transition(rotateX: '0deg')
     )
 
-  render: ->
+  onRender: ->
     latest = _.last(@model.get("seriesData"))
 
     if latest?
-      @swapHtml(@$el, @template({
-        latest: latest.value
-        date:   new Date(latest.timestamp)
-        unit:   @model.get("unit")
-      }))
+      @update(new Date(latest.timestamp), latest.value)
     else
-      @swapHtml(@$el, @template({
-        latest: "No data"
-        date:   "No data"
-        unit:   ""
-      }))
-    this
+      @update("No data", "No data")
+
 
   update: (date, value) ->
     @swapHtml(@$("date"), date)
     @swapHtml(@$(".value"), value)
     @swapHtml(@$(".unit"), @model.get("unit"))
-    this
