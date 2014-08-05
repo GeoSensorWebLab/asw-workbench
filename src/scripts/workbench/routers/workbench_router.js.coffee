@@ -71,4 +71,4 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
 
     @showView = new Workbench.Views.SensorShowView
       model: @sensor
-    @showView.renderBasic(@element)
+    @element.append(@showView.render().$el)
