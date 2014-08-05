@@ -37,7 +37,7 @@ class Workbench.Views.SensorShowView extends Backbone.View
     @$el.html(@template()).show()
 
     @datastreamListView.setElement(@$("#dataView ul"))
-    @loggerView.renderBasic(@$el)
+    @$el.append(@loggerView.render().$el)
     @metadataView.renderBasic(@$el)
     this
 
