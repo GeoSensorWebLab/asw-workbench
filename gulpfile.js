@@ -14,15 +14,19 @@ gulp.task('express', function() {
   app.set('views', 'src/views');
   app.set('view engine', 'jade');
   require('./routes')(app);
-  app.use(assets({
+
+  assets = assets({
     paths: [
       'src/scripts',
       'src/images',
       'src/stylesheets',
       'src/views',
       'bower_components'
-      ]
-  }));
+      ],
+    buildDir: 'dist'
+  });
+  assets.mincer.MacroProcessor.configure(['.js']);
+  app.use(assets);
 
   app.listen(1337);
   $.util.log('Listening on port: 1337');
