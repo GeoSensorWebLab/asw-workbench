@@ -4,7 +4,7 @@ class Workbench.Views.SensorShowView extends Backbone.View
   className: "page-header"
 
   initialize: ->
-    @datastreamListView = new Workbench.Views.DatastreamListView(
+    @datastreamCollectionView = new Workbench.Views.DatastreamCollectionView(
       collection: @model.get("datastreams")
     )
 
@@ -26,7 +26,7 @@ class Workbench.Views.SensorShowView extends Backbone.View
     )
 
   remove: ->
-    @datastreamListView.remove()
+    @datastreamCollectionView.remove()
     @loggerView.remove()
     @metadataView.remove()
     super()
@@ -36,12 +36,12 @@ class Workbench.Views.SensorShowView extends Backbone.View
     container.append(@$el)
     @$el.html(@template()).show()
 
-    @datastreamListView.setElement(@$("#dataView ul"))
+    @datastreamCollectionView.setElement(@$("#dataView ul"))
     @$el.append(@loggerView.render().$el)
     @$el.append(@metadataView.render().$el)
     this
 
   render: ->
     @swapContent(@$(".sensor-name"), @model.get("title"))
-    @datastreamListView.render()
+    @datastreamCollectionView.render()
     this

@@ -1,5 +1,5 @@
-class Workbench.Views.DatastreamShowView extends Backbone.Marionette.ItemView
-  template: "workbench/templates/datastream"
+class Workbench.Views.DatastreamView extends Backbone.Marionette.LayoutView
+  template: 'workbench/templates/datastream'
 
   tagName: "li"
   className: "datastream"
@@ -31,3 +31,9 @@ class Workbench.Views.DatastreamShowView extends Backbone.Marionette.ItemView
 
   onRender: ->
     @renderDeferred.resolve()
+
+class Workbench.Views.DatastreamCollectionView extends Backbone.Marionette.CollectionView
+  childView: Workbench.Views.DatastreamView
+
+  tagName: "ul"
+  className: "list-unstyled"
