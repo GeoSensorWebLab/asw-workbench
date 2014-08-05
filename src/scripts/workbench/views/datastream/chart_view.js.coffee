@@ -1,11 +1,10 @@
-class Workbench.Views.DatastreamChartView extends Backbone.View
-  initialize: ->
+class Workbench.Views.DatastreamChartView extends Backbone.Marionette.ItemView
+  template: false
 
-  remove: ->
+  onBeforeDestroy: ->
     @geocensChart.chart.destroy() if @chart
-    super()
 
-  render: ->
+  onRender: ->
     @$el.animate(height: 400).promise().done(=>
       @geocensChart = @$el.GeocensChart
         datastream: @model.object
