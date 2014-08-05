@@ -6,7 +6,6 @@
 #= require highstock-release/highstock
 #= require highstock-release/modules/exporting
 #= require leaflet/dist/leaflet
-#= require ./leaflet-override
 #= require json2/json2
 #= require underscore/underscore
 #= require backbone/backbone
