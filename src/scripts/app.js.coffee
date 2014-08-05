@@ -1,5 +1,4 @@
 #= require jquery-deparam/jquery-deparam
-#= require jquery.transit/jquery.transit
 #= require slow-ajax
 #= require bootstrap/dist/js/bootstrap
 #= require highstock-release/highstock
