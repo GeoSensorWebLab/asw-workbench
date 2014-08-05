@@ -1,5 +1,5 @@
-class Workbench.Views.DatastreamShowView extends Backbone.View
-  template: JST["workbench/templates/datastream"]
+class Workbench.Views.DatastreamShowView extends Backbone.Marionette.ItemView
+  template: "workbench/templates/datastream"
 
   tagName: "li"
   className: "datastream"
@@ -25,14 +25,9 @@ class Workbench.Views.DatastreamShowView extends Backbone.View
         @latestView.setElement(@$("#latest_#{@model.id}")).render()
       )
 
-  remove: ->
+  onBeforeDestroy: ->
     @chartView.remove()
     @latestView.remove()
-    super()
 
-  render: ->
-    @$el.animate("min-height": 200).promise().done(=>
-      @$el.html(@template(@model.toJSON()))
-      @renderDeferred.resolve()
-    )
-    this
+  onRender: ->
+    @renderDeferred.resolve()
