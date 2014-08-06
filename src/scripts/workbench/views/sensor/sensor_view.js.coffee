@@ -12,3 +12,8 @@ class Workbench.Views.SensorView extends Backbone.Marionette.ItemView
     @$(".description").html(@model.get("description"))
     @$("a").prop('href', @showModelPath())
 
+class Workbench.Views.SensorCollectionView extends Backbone.Marionette.CollectionView
+  childView: Workbench.Views.SensorView
+
+  tagName: "ul"
+  className: "list-unstyled"

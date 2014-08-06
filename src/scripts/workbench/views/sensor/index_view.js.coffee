@@ -3,7 +3,7 @@ class Workbench.Views.SensorIndexView extends Backbone.View
   id: "listView"
 
   initialize: ->
-    @listView = new Workbench.Views.SensorListView
+    @listView = new Workbench.Views.SensorCollectionView
       collection: @collection
 
   remove: ->
