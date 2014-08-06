@@ -26,10 +26,9 @@ html.no-js
     div#content.container
       h2 GeoCENS
 
-      script(type='text/javascript').
-        $(function() {
-          window.appRouter = new Workbench.Routers.WorkbenchRouter({
-            element: $("#content")
-          });
-          var result = Backbone.history.start({ pushState: true, root: "/" });
+    script(type='text/javascript').
+      $(function() {
+        Workbench.start({
+          el: $("#content")
         });
+      });
