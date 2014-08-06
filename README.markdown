@@ -1,6 +1,6 @@
-# Workbench
+# Arctic Sensor Web Workbench
 
-The RPI Workbench is a JavaScript Single-Page Application frontend to the GeoCENS Data Service.
+The ASW Workbench is a JavaScript Single-Page Application frontend to the GeoCENS Data Service. It is a customized version of the RPI Workbench and will have a more focused feature set. This means it will be designed to display Arctic Sensor Web data instead of generic sensor data.
 
 ## Development Environment
 
@@ -18,13 +18,19 @@ Now you can start the local development server with Gulp:
 
 That's all. The server is now running at [http://localhost:1337/](http://localhost:1337/).
 
-What's the different between Node packages and Bower? Bower is for packages that are sent to the client; Node packages are used for the server only. Each system also has different dependency resolution systems, where Bower is optimized for the web browser.
+### What's the different between Node packages and Bower?
+
+Bower is for packages that are sent to the client; Node packages are used for the server only. Each system also has different dependency resolution systems, where Bower is optimized for the web browser.
 
 ### generate.html
+
+**NOTE**: This file will be rewritten in JS for Node
 
 This page will generate a JSON array of dummy record objects, with random data for values. The array can then be uploaded into the Data Service using `bin/push` or `bin/ppush`.
 
 ### "push" and "ppush"
+
+**NOTE**: These files will be rewritten in JS for Node
 
 These two scripts in the `bin` directory can take a JSON file containing an array from the `generate.html` page and upload each record individually into the Data Service. `ppush` is the parallelized version of `push`, and runs about three times faster on my development machine. If `ppush` uploads too fast for some reason, try `push` instead.
 
