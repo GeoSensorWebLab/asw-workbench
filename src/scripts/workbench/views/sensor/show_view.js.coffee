@@ -16,11 +16,11 @@ class Workbench.Views.SensorShowView extends Backbone.Marionette.ItemView
     )
 
   onRender: ->
-    @views.add(new Workbench.Views.DatastreamCollectionView(
-      collection: @model.get("datastreams")
-    ))
     @views.add(new Workbench.Views.SensorMetadataView(
       model: @model
+    ))
+    @views.add(new Workbench.Views.DatastreamCollectionView(
+      collection: @model.get("datastreams")
     ))
 
     @views.each (view) =>
