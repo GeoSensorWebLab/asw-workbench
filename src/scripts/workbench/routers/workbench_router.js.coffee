@@ -51,7 +51,7 @@ class Workbench.Routers.WorkbenchRouter extends Backbone.Router
     @indexView = new Workbench.Views.SensorIndexView
       collection: @sensors
 
-    @indexView.render(@element)
+    @element.append(@indexView.render().$el)
     @sensors.fetch()
 
   show: (id) ->

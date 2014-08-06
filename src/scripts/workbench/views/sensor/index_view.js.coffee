@@ -1,21 +1,18 @@
-class Workbench.Views.SensorIndexView extends Backbone.View
-  template: JST["workbench/templates/sensor_index"]
+class Workbench.Views.SensorIndexView extends Backbone.Marionette.LayoutView
+  template: "workbench/templates/sensor_index"
   id: "listView"
 
-  initialize: ->
-    @listView = new Workbench.Views.SensorCollectionView
+  regions:
+    sensors: "#sensorList"
+
+  ui:
+    api_link: "a.api-key"
+
+  onRender: ->
+    key = @collection.source.api_key
+    @ui.api_link.prop('href', "sensors?api_key=#{key}")
+    @ui.api_link.text(key)
+
+    @sensors.show(new Workbench.Views.SensorCollectionView(
       collection: @collection
-
-  remove: ->
-    @listView.remove()
-    super()
-
-  render: (container) ->
-    container.append(@$el)
-
-    @$el.html(@template({
-      api_key: @collection.source.api_key
-    })).show()
-
-    @listView.setElement(@$("ul"))
-    this
+    ))
