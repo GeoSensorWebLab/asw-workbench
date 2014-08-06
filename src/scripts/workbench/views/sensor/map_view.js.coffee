@@ -14,7 +14,7 @@ class Workbench.Views.SensorMapView extends Backbone.Marionette.ItemView
       @location = [@model.get("latitude"), @model.get("longitude")]
       @map = L.map(@el.id).setView(@location, @zoom)
       L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        attribution: t('map.attribution')
       }).addTo(@map)
 
       L.marker(@location).addTo(@map)

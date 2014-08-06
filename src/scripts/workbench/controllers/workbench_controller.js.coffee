@@ -23,7 +23,6 @@ class Workbench.Controllers.ApplicationController extends Backbone.Marionette.Co
   #
 
   index: =>
-    console.log "loading index route"
     @addApiKeyParam("sensors")
 
     @sensors = new Workbench.Collections.SensorsCollection
@@ -36,7 +35,6 @@ class Workbench.Controllers.ApplicationController extends Backbone.Marionette.Co
     @sensors.fetch()
 
   show: (id) =>
-    console.log "loading show route", id
     @addApiKeyParam("sensors/#{id}")
 
     @sensor = new Workbench.Models.Sensor

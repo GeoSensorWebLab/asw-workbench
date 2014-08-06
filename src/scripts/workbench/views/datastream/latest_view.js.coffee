@@ -13,7 +13,7 @@ class Workbench.Views.DatastreamLatestView extends Backbone.Marionette.ItemView
     if latest?
       @update(new Date(latest.timestamp), latest.value)
     else
-      @update("No data", "No data")
+      @update(t('noData'), t('noData'))
 
 
   update: (date, value) ->

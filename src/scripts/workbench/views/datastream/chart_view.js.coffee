@@ -15,25 +15,25 @@ class Workbench.Views.DatastreamChartView extends Backbone.Marionette.ItemView
             buttons: [{
               type: 'minute'
               count: 120
-              text: "2h"
+              text: t('chart.ranges.two_hour')
             },
             {
               type: 'day'
               count: 1
-              text: "1d"
+              text: t('chart.ranges.one_day')
             },
             {
               type: 'week'
               count: 1
-              text: "1w"
+              text: t('chart.ranges.one_week')
             },
             {
               type: 'ytd'
-              text: "YTD"
+              text: t('chart.ranges.ytd')
             },
             {
               type: 'all'
-              text: "All"
+              text: t('chart.ranges.all')
             }]
     )
 
