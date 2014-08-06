@@ -1,13 +1,14 @@
-class Workbench.Views.SensorView extends Backbone.View
-  template: JST["workbench/templates/sensor"]
+class Workbench.Views.SensorView extends Backbone.Marionette.ItemView
+  template: "workbench/templates/sensor"
 
   tagName: "li"
   className: "sensor"
 
-  initialize: ->
+  showModelPath: ->
+    "#{Backbone.history.root}sensors/#{@model.get("uid")}?api_key=#{appRouter.apiKey}"
 
-  render: ->
-    attributes = @model.toJSON()
-    attributes.sensorURL = "#{Backbone.history.root}sensors/#{@model.get("uid")}?api_key=#{appRouter.apiKey}"
-    @$el.html(@template(attributes))
-    this
+  onRender: ->
+    @$("h2.title").html(@model.get("title"))
+    @$(".description").html(@model.get("description"))
+    @$("a").prop('href', @showModelPath())
+
