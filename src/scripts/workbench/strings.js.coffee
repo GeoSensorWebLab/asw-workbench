@@ -15,7 +15,7 @@ strings =
     datastreams: "Datastreams"
     owner: "Owner"
     contact: "Owner Contact"
-    other: "Other Sensors for this API Key"
+    other: "Other Sensors for this Station"
 
   sensor:
     view: "View Sensor"
