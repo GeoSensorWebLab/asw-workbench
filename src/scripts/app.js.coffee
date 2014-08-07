@@ -19,4 +19,4 @@ $(document).on "click", "a:not([data-bypass])", (evt) ->
   if (href.prop && href.prop.slice(0, root.length) is root)
     route = href.prop.slice(root.length, href.prop.length).split("?")[0]
     evt.preventDefault()
-    appRouter.navigate(route, { trigger: true })
+    Backbone.history.navigate(route, { trigger: true })

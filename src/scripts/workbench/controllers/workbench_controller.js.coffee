@@ -7,7 +7,7 @@ class Workbench.Controllers.ApplicationController extends Backbone.Marionette.Co
   # Ensure the API Key is displayed in the URL params.
   addApiKeyParam: (base) ->
     if (location.search.length < 1)
-      appRouter.navigate "#{base}?api_key=#{@apiKey}", { replace: true }
+      Backbone.history.navigate "#{base}?api_key=#{@apiKey}", { replace: true }
 
   # Check params for API Key. Use the demo user's key if none is specified.
   getApiKey: ->
