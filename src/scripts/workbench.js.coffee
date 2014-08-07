@@ -11,7 +11,7 @@ Workbench.Routers = {}
 Workbench.Views = {}
 
 Workbench.addInitializer (options) ->
-  window.appController = new Workbench.Controllers.ApplicationController(
+  appController = new Workbench.Controllers.ApplicationController(
     el: options.el
   )
 

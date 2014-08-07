@@ -5,7 +5,7 @@ class Workbench.Views.SensorView extends Backbone.Marionette.ItemView
   className: "sensor"
 
   showModelPath: ->
-    "#{Backbone.history.root}sensors/#{@model.get("uid")}?api_key=#{appController.apiKey}"
+    "#{Backbone.history.root}sensors/#{@model.get("uid")}?api_key=#{Workbench.source.api_key}"
 
   onRender: ->
     @$("h2.title").html(@model.get("title"))
