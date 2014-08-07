@@ -15,7 +15,7 @@ Workbench.addInitializer (options) ->
     el: options.el
   )
 
-  appRouter = new Marionette.AppRouter(
+  sensorsRouter = new Marionette.AppRouter(
     controller: sensorsController
     appRoutes:
       'sensors': 'index'
