@@ -1,4 +1,4 @@
-class Workbench.Controllers.ApplicationController extends Backbone.Marionette.Controller
+class Workbench.Controllers.SensorsController extends Backbone.Marionette.Controller
   initialize: (options) ->
     @$el = options.el
     @getApiKey()

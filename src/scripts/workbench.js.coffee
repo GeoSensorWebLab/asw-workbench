@@ -11,12 +11,12 @@ Workbench.Routers = {}
 Workbench.Views = {}
 
 Workbench.addInitializer (options) ->
-  appController = new Workbench.Controllers.ApplicationController(
+  sensorsController = new Workbench.Controllers.SensorsController(
     el: options.el
   )
 
   appRouter = new Marionette.AppRouter(
-    controller: appController
+    controller: sensorsController
     appRoutes:
       'sensors': 'index'
       'sensors/': 'index'
