@@ -22,11 +22,13 @@ That's all. The server is now running at [http://localhost:1337/](http://localho
 
 Bower is for packages that are sent to the client; Node packages are used for the server only. Each system also has different dependency resolution systems, where Bower is optimized for the web browser.
 
-### generate.html
+### generate.js
 
-**NOTE**: This file will be rewritten in JS for Node
+This script will generate a JSON array of dummy record objects, with random data for values. The array can then be uploaded into the Data Service using `bin/push` or `bin/ppush`. Usage:
 
-This page will generate a JSON array of dummy record objects, with random data for values. The array can then be uploaded into the Data Service using `bin/push` or `bin/ppush`.
+  $ node generate.js 2014-07-01T00:00:00Z 2014-07-31T23:59:59Z uniform > output.json
+
+Start and end dates must be ISO format. Last parameter can be `uniform` or `normal`, and determines which random function is used for the values.
 
 ### "push" and "ppush"
 
