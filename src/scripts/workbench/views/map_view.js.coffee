@@ -3,7 +3,7 @@ class Workbench.Views.MapView extends Backbone.Marionette.ItemView
   id: "stationsMapLeaflet"
 
   initialize: ->
-    @zoom = 3
+    @map = new Workbench.Views.MapManager()
 
   onDestroy: ->
     @map.remove() if @map
@@ -12,11 +12,7 @@ class Workbench.Views.MapView extends Backbone.Marionette.ItemView
     if @el.id is ""
       console.warn "No Map Element"
     else
-      @location = [70, -100]
-      @map = L.map(@el.id).setView(@location, @zoom)
-      L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-        attribution: t('map.attribution')
-      }).addTo(@map)
+      @map.setElement(@$el).render()
 
   onRender: ->
     @updateMapSize()
