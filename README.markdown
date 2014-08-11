@@ -42,7 +42,19 @@ Script to download historical weather data from Environment Canada. Data disclai
     -m: Month. e.g. 8 (no leading zero)
     -d: Day. e.g. 11 (no leading zero)
 
-Output is a CSV file.
+Output is CSV stream.
+
+### weather-json.js
+
+Converts CSV output from weather.js to a JSON file. This can then be parsed and uploaded to the GeoCENS Data Service.
+
+    Usage: $0 <CSV file> -z <station time zone>
+    
+    -z: Time zone identifier of the station.
+
+Yes, the time zone must be specified manually. This is because Environment Canada returns times in Local Standard Time, which is unknown. So the user (you) must tell the parser where the date is located to properly adjust it to UTC.
+
+Output is a JSON stream.
 
 ### "push" and "ppush"
 
