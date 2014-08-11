@@ -13,7 +13,7 @@ class Workbench.Controllers.SensorsController extends Backbone.Marionette.Contro
   getApiKey: ->
     if (location.search.length < 1)
       # Demo user read-only key
-      @apiKey ||= "3359a8ffba94a54978aa6c645e3c617a"
+      @apiKey ||= "798192d6c2c55da138e1a1619caeeff4"
     else
       params = deparam(location.search.split('?')[1])
       @apiKey ||= params.api_key
