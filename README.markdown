@@ -30,6 +30,20 @@ This script will generate a JSON array of dummy record objects, with random data
 
 Start and end dates must be ISO format. Last parameter can be `uniform` or `normal`, and determines which random function is used for the values.
 
+### weather.js
+
+Script to download historical weather data from Environment Canada. Data disclaimers apply.
+
+    Usage: $0 -t <timeframe> -s <station ID> -Y <year> -m <month> -d <day>
+    
+    -t: timeframe to retrieve. '1' corresponds to hourly.
+    -s: station ID.
+    -Y: Year. e.g. 2014
+    -m: Month. e.g. 8 (no leading zero)
+    -d: Day. e.g. 11 (no leading zero)
+
+Output is a CSV file.
+
 ### "push" and "ppush"
 
 **NOTE**: These files will be rewritten in JS for Node
