@@ -9,6 +9,10 @@ class Workbench.Views.StationPopupView extends Backbone.View
       offset: L.point(L.Icon.Default.prototype.options.popupAnchor)
     }, this)
 
+    @stationSensorsView = new Workbench.Views.StationSensorsView(
+      collection: @model.sensors
+    )
+
   # Hook into Leaflet's _source.fire functions to catch popupclose and remove
   # the view.
   fire: (eventName) ->
@@ -17,6 +21,7 @@ class Workbench.Views.StationPopupView extends Backbone.View
 
   render: ->
     @$el.html(JST[@popupTemplate](@model.toJSON()))
+    @$(".stationSensors").html(@stationSensorsView.render().$el)
     this
 
   show: ->

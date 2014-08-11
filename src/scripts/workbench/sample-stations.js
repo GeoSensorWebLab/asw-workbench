@@ -3,7 +3,7 @@ window.sampleStations = [{
   name: "Kluane Lake Research Station",
   shortName: "KLRS",
   _embedded: {
-    sensors: {
+    sensors: [{
       id: "f0c7c1f25692b615614fb584c532fd16",
       name: "Burwash Airport Meteo",
       _links: {
@@ -11,7 +11,7 @@ window.sampleStations = [{
           href: "/sensors/f0c7c1f25692b615614fb584c532fd16?api_key=798192d6c2c55da138e1a1619caeeff4"
         }
       }
-    }
+    }]
   },
   _links: {
     aina_info: {

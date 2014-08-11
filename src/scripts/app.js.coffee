@@ -5,6 +5,7 @@
 #= require highstock-release/modules/exporting
 #= require underscore/underscore
 #= require backbone/backbone
+#= require backbone.hal/backbone.hal.js
 #= require marionette/lib/backbone.marionette
 #= require ./marionette-override
 #= require geocens-js-api/geocens
