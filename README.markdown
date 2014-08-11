@@ -56,6 +56,14 @@ Yes, the time zone must be specified manually. This is because Environment Canad
 
 Output is a JSON stream.
 
+### convert.js
+
+Converts output from weather-json.js to a format ready for push.js.
+
+    Usage: $0 <JSON file> <datastream name>
+
+Datastream name is usually the field you want to create datastream for, e.g. "tempC" or "relHum".
+
 ### "push" and "ppush"
 
 **NOTE**: These files will be rewritten in JS for Node
