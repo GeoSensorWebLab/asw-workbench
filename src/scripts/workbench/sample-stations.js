@@ -4,9 +4,11 @@ window.sampleStations = [{
   shortName: "KLRS",
   _links: {
     aina_info: {
+      description: "AINA: KLRS",
       href: "http://arctic.ucalgary.ca/kluane-lake-research-station"
     },
     interact_info: {
+      description: "INTER-ACT: KLRS",
       href: "http://www.eu-interact.org/field-sites/canada-9/kluane-lake/"
     }
   },
