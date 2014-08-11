@@ -39,7 +39,7 @@ var dataServiceFormat = function (rows) {
 
     return {
       "uid": hex(32),
-      "id": utcdate.format(),
+      "id": utcdate.format("YYYY-MM-DDTHH:mm:ss"),
       "reading": value,
       "dateTime": utcdate.format("ddd MMM D HH:mm:ss Z YYYY")
     };
