@@ -1,6 +1,8 @@
 class Workbench.Views.StationPopupView extends Backbone.View
   popupTemplate: "workbench/templates/popup"
 
+  className: "stationPopup"
+
   initialize: (options) ->
     @markerView = options.markerView
 
