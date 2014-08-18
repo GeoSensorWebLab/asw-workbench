@@ -2,21 +2,14 @@
 var fs = require('fs');
 var request = require('request');
 
-var usage = function() {
-  console.log("\nUsage: node push.js <input records> <destination URL>");
-  console.log("Example: node push.js output.json \"http://data-service.geocens.ca/...\"");
-  console.log("URL should point to record resource on Data Service.")
-};
+var argv = require('yargs')
+  .usage('Usage: $0 <input records> <destination URL>')
+  .demand(2)
+  .argv;
 
-if (process.argv.length !== 4) {
-  console.log("Error! not enough arguments");
-  usage();
-  process.exit(1);
-};
+var uploadEndpoint = argv._[1];
 
-var uploadEndpoint = process.argv[3];
-
-var file = process.argv[2];
+var file = argv._[0];
 fs.readFile(file, 'utf8', function (err, data) {
   if (err) {
     console.log("Error: " + err);
