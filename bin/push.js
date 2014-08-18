@@ -37,7 +37,7 @@ var uploadRecords = function (records) {
 var uploadRecord = function (record) {
   request.post({
     uri: uploadEndpoint,
-    json: JSON.stringify(record)
+    body: JSON.stringify(record)
   }, function (e, r, body) {
     WARN("Upload complete", r.statusCode);
     INFO("Error info: ", e);
