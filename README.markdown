@@ -66,7 +66,7 @@ Datastream name is usually the field you want to create datastream for, e.g. "te
 
 ### "push" and "ppush"
 
-**NOTE**: These files will be rewritten in JS for Node
+**NOTE**: These files require Ruby and some Ruby gems to be installed.
 
 These two scripts in the `bin` directory can take a JSON file containing an array from the `generate.html` page and upload each record individually into the Data Service. `ppush` is the parallelized version of `push`, and runs about three times faster on my development machine. If `ppush` uploads too fast for some reason, try `push` instead.
 
