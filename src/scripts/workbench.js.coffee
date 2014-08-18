@@ -21,10 +21,15 @@ Workbench.addInitializer (options) ->
     mapquest_open: {
       url: 'http://otile1.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png'
       attribution: 'Data, imagery and map information provided by MapQuest, <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> and contributors, <a href="http://wiki.openstreetmap.org/wiki/Legal_FAQ#3a._I_would_like_to_use_OpenStreetMap_maps._How_should_I_credit_you.3F">ODbL</a>'
+    },
+
+    stamen_toner: {
+      url: 'http://tile.stamen.com/toner/{z}/{x}/{y}.png'
+      attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
     }
   }
 
-  provider = options.provider || "mapquest_open"
+  provider = options.provider || "stamen_toner"
 
   Workbench.tile_url = providers[provider].url
   Workbench.tile_attribution = providers[provider].attribution
