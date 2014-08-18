@@ -14,6 +14,6 @@ class Workbench.Views.MapManager extends Backbone.View
       console.warn "No Map Element"
     else
       @map = L.map(@el.id).setView(@location, @zoom)
-      L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-        attribution: t('map.attribution')
+      L.tileLayer(Workbench.tile_url, {
+        attribution: Workbench.tile_attribution
       }).addTo(@map)
