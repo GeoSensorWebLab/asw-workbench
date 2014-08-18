@@ -22,6 +22,7 @@
     "highstock-release": "~2.0.3",
     "geocens-js-api": "Canarie-Sensor-RPI/geocens-js-api#~1.2.5",
     "marionette": "~2.1.0",
-    "backbone.hal": "*"
+    "backbone.hal": "*",
+    "proj4leaflet": "~0.7.0"
   }
 }
