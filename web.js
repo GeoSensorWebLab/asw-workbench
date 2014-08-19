@@ -5,7 +5,7 @@ var coffee    = require('coffee-script/register'),
     app       = express();
 
 var port = Number(process.env.PORT || 1337);
-
+app.use(logfmt.requestLogger());
 app.set('views', 'src/views');
 app.set('view engine', 'jade');
 require('./routes')(app);
@@ -24,7 +24,6 @@ assets = assets({
 assets.mincer.MacroProcessor.configure(['.js']);
 
 app.use(assets);
-app.use(logfmt.requestLogger());
 
 app.listen(port);
 console.log('Listening on port: ' + port);
