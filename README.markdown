@@ -86,7 +86,23 @@ TODO
 
 ## Deploying
 
-TODO
+This app is configured to run on Heroku-like platforms. This makes deployment as simple as a `git push`. In this instance, we are using [Dokku](https://github.com/progrium/dokku).
+
+Start by setting up a Dokku instance on a server. Once it is online, you should be able to add it as a remote repository, and tell Dokku the app's name is `asw-workbench`:
+
+    $ git remote add dokku dokku@sarcee:asw-workbench
+
+Next, push master to that remote host. Note that Dokku only supports receiving from master at this time.
+
+    $ git push dokku master
+
+Dokku will then build and deploy a server, automatically restarting the existing instance if necessary. Any time you need to push a new version, just push to the dokku remote on git.
+
+There are also some configuration options that may be useful with Dokku. For example, defining the default host:
+
+    $ ssh dokku@sarcee domains:set asw-workbench sensorweb.arcticconnect.org
+
+This tells the nginx instance running in Dokku to redirect requests to http://sensorweb.arcticconnect.org to this Node.js server.
 
 ## License
 
