@@ -3,14 +3,10 @@ var gulp      = require('gulp'),
     coffee    = require('coffee-script/register'),
     $         = require("gulp-load-plugins")(),
     express   = require('express'),
-    path      = require('path'),
-    tinylr    = require('tiny-lr'),
     assets    = require('connect-assets'),
-    app       = express(),
-    server    = tinylr();
+    app       = express();
 
 gulp.task('express', function() {
-  // app.use(express.static(path.resolve('./dist')));
   app.set('views', 'src/views');
   app.set('view engine', 'jade');
   require('./routes')(app);
