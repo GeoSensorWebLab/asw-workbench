@@ -23,7 +23,8 @@ gulp.task('express', function() {
       'src/views',
       'bower_components'
       ],
-    buildDir: 'dist'
+    buildDir: 'dist',
+    gzip: true
   });
   assets.mincer.MacroProcessor.configure(['.js']);
   app.use(assets);
