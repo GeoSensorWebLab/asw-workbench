@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "RPI Workbench Interface",
   "main": "index.js",
+  "engines": {
+    "node": "0.10.x"
+  },
   "directories": {
     "test": "test"
   },
