@@ -75,7 +75,7 @@ window.sampleStations = [{
   shortName: "LITLA-SKARD",
   _links: {
     interact_info: {
-      description: "INTER-ACT: Litla-Skard",
+      description: "INTER-ACT: LITLA-SKARD",
       href: "http://www.eu-interact.org/field-sites/iceland-1/litla-skard/"
     }
   },
@@ -84,6 +84,166 @@ window.sampleStations = [{
     geometry: {
       type: "Point",
       coordinates: [-21.63, 64.726667, 115]
+    },
+    crs: {
+      type: "link",
+      properties: {
+        href: "http://spatialreference.org/ref/epsg/4979/proj4/",
+        type: "proj4"
+      }
+    },
+    properties: {}
+  }
+},
+{
+  id: "4",
+  name: "Khibiny Educational and Scientific Station",
+  shortName: "KHIBINY",
+  _links: {
+    interact_info: {
+      description: "INTER-ACT: KHIBINY",
+      href: "http://www.eu-interact.org/field-sites/russia-6/khibiny/"
+    }
+  },
+  geo: {
+    type: "Feature",
+    geometry: {
+      type: "Point",
+      coordinates: [33.725278, 67.637222, 362]
+    },
+    crs: {
+      type: "link",
+      properties: {
+        href: "http://spatialreference.org/ref/epsg/4979/proj4/",
+        type: "proj4"
+      }
+    },
+    properties: {}
+  }
+},
+{
+  id: "5",
+  name: "Spasskaya Pad",
+  shortName: "SPASSKAYA PAD",
+  _links: {
+    interact_info: {
+      description: "INTER-ACT: SPASSKAYA PAD",
+      href: "http://www.eu-interact.org/field-sites/russia-6/spasskaya-pad/"
+    }
+  },
+  geo: {
+    type: "Feature",
+    geometry: {
+      type: "Point",
+      coordinates: [129.61667, 62.233333, 220]
+    },
+    crs: {
+      type: "link",
+      properties: {
+        href: "http://spatialreference.org/ref/epsg/4979/proj4/",
+        type: "proj4"
+      }
+    },
+    properties: {}
+  }
+},
+{
+  id: "6",
+  name: "Chokurdakh Scientific Tundra Station",
+  shortName: "CHOKURDAKH",
+  _links: {
+    interact_info: {
+      description: "INTER-ACT: CHOKURDAKH",
+      href: "http://www.eu-interact.org/field-sites/russia-6/chokurdakh/"
+    }
+  },
+  geo: {
+    type: "Feature",
+    geometry: {
+      type: "Point",
+      coordinates: [147.48333, 70.816667, 8]
+    },
+    crs: {
+      type: "link",
+      properties: {
+        href: "http://spatialreference.org/ref/epsg/4979/proj4/",
+        type: "proj4"
+      }
+    },
+    properties: {}
+  }
+},
+{
+  id: "7",
+  name: "Barrow Environmental Observatory",
+  shortName: "BARROW",
+  _links: {
+    site_info: {
+      description: "Barrow Bulletin",
+      href: "http://www.barrowbulletin.com/"
+    },
+    interact_info: {
+      description: "INTER-ACT: BARROW",
+      href: "http://www.eu-interact.org/field-sites/alaska-2/barrow/"
+    }
+  },
+  geo: {
+    type: "Feature",
+    geometry: {
+      type: "Point",
+      coordinates: [-156.58333, 71.3, 5]
+    },
+    crs: {
+      type: "link",
+      properties: {
+        href: "http://spatialreference.org/ref/epsg/4979/proj4/",
+        type: "proj4"
+      }
+    },
+    properties: {}
+  }
+},
+{
+  id: "8",
+  name: "Ward Hunt Island",
+  shortName: "WARD HUNT ISLAND",
+  _links: {
+    interact_info: {
+      description: "INTER-ACT: WARD HUNT ISLAND",
+      href: "http://www.eu-interact.org/field-sites/canada-9/ward-hunt-island/"
+    }
+  },
+  geo: {
+    type: "Feature",
+    geometry: {
+      type: "Point",
+      coordinates: [-74.166667, 83.1, 5]
+    },
+    crs: {
+      type: "link",
+      properties: {
+        href: "http://spatialreference.org/ref/epsg/4979/proj4/",
+        type: "proj4"
+      }
+    },
+    properties: {}
+  }
+},
+{
+  id: "9",
+  name: "Arctic Station",
+  shortName: "ARCTIC STATION",
+  _links: {
+    interact_info: {
+      description: "INTER-ACT: ARCTIC STATION",
+      href: "http://www.eu-interact.org/field-sites/greenland-4/arctic-station/"
+    }
+  },
+  geo: {
+    type: "Feature",
+    geometry: {
+      type: "Point",
+      coordinates: [-53.566667, 69.25, 20]
     },
     crs: {
       type: "link",
