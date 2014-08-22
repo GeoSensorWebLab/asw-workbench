@@ -43,9 +43,6 @@ window.sampleStations = [{
   id: "2",
   name: "Finse Alpine Research Centre",
   shortName: "FINSE",
-  _embedded: {
-    sensors: []
-  },
   _links: {
     site_info: {
       description: "Finse Alpine Research Center",
@@ -76,9 +73,6 @@ window.sampleStations = [{
   id: "3",
   name: "Litla-Skard",
   shortName: "LITLA-SKARD",
-  _embedded: {
-    sensors: []
-  },
   _links: {
     interact_info: {
       description: "INTER-ACT: Litla-Skard",

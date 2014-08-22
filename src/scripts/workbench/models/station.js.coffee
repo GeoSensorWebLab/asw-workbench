@@ -8,7 +8,7 @@ class Workbench.Models.Station extends HAL.Model
   initialize: (attributes, options) ->
     @geometry = new Workbench.Models.Feature(attributes.geo)
     @unset("geo")
-    @sensors = new Workbench.Collections.SensorsCollection(@embedded.sensors)
+    @sensors = new Workbench.Collections.SensorsCollection(@embedded.sensors || [])
 
     links = _.collect(@links, (value, key) ->
       {
