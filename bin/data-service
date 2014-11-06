@@ -60,6 +60,21 @@ function createUser(args) {
   });
 }
 
+/* UPDATE
+************/
+function updateUser(args) {
+  var input = args.etc[0];
+  var body = '';
+  input.on('data', function (chunk) {
+    body += chunk;
+  });
+
+  input.on('end', function () {
+    var run = require('./update-user.js');
+    run(args.UID, body);
+  });
+}
+
 /* Parse Args
 ************/
 program
@@ -109,6 +124,19 @@ program
         cmd.outputIndented('Examples', [
           '$ bin/data-service create user < new-user.json',
           '$ cat new-user.json | bin/data-service create user'
+        ]);
+      })
+      .parent
+    .parent
+
+  .command('update')
+    .command('user <UID>')
+      .description("Update a user. Pipe a JSON representation of the user to this command.")
+      .action(updateUser)
+      .on('help', function(cmd) {
+        cmd.outputIndented('Examples', [
+          '$ bin/data-service update user 05b57a33ded81eec75ed0af82a5487d3 < modified-user.json',
+          '$ cat modified-user.json | bin/data-service update user 05b57a33ded81eec75ed0af82a5487d3'
         ]);
       })
       .parent
