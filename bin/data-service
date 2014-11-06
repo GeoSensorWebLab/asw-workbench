@@ -5,6 +5,11 @@ function listUsers() {
   require('./list-users.js');
 }
 
+function showUser(args) {
+  var run = require('./show-user.js');
+  run(args.uid);
+}
+
 program
   .command('list')
     .command('users')
@@ -13,6 +18,13 @@ program
       .parent
     .command('sensors').parent
     .command('datastreams').parent
+    .parent
+
+  .command('show')
+    .command('user <uid>')
+      .description("Show a user")
+      .action(showUser)
+      .parent
     .parent
   .parse(process.argv);
 
