@@ -36,6 +36,11 @@ function showDatastream(args) {
   run(args.userUID, args.sensorUID, args.datastreamUID);
 }
 
+function showRecord(args) {
+  var run = require('./show-record.js');
+  run(args.datastreamUID, args.recordUID);
+}
+
 program
   .command('list')
     .command('users')
@@ -68,6 +73,10 @@ program
     .command('datastream <userUID> <sensorUID> <datastreamUID>')
       .description("Show a datastream")
       .action(showDatastream)
+      .parent
+    .command('record <datastreamUID> <recordUID>')
+      .description("Show a datastream record")
+      .action(showRecord)
       .parent
     .parent
   .parse(process.argv);
