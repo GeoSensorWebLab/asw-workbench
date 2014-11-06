@@ -82,6 +82,13 @@ function updateUser(args) {
   });
 }
 
+function updateSensor(args) {
+  readPipe(args.etc[0], function (body) {
+    var run = require('./update-sensor.js');
+    run(args.userUID, args.sensorUID, body);
+  });
+}
+
 /* DELETE
 ************/
 function destroyUser(args) {
@@ -170,6 +177,16 @@ program
         cmd.outputIndented('Examples', [
           '$ bin/data-service update user 05b57a33ded81eec75ed0af82a5487d3 < modified-user.json',
           '$ cat modified-user.json | bin/data-service update user 05b57a33ded81eec75ed0af82a5487d3'
+        ]);
+      })
+      .parent
+    .command('sensor <userUID> <sensorUID>')
+      .description("Update a sensor. Pipe a JSON representation of the sensor to this command.")
+      .action(updateSensor)
+      .on('help', function(cmd) {
+        cmd.outputIndented('Examples', [
+          '$ bin/data-service update sensor 05b57a33ded81eec75ed0af82a5487d3 9b8c94bd21dc54db93b1ef73243a3fcc < modified-sensor.json',
+          '$ cat modified-sensor.json | bin/data-service update sensor 05b57a33ded81eec75ed0af82a5487d3 9b8c94bd21dc54db93b1ef73243a3fcc'
         ]);
       })
       .parent
