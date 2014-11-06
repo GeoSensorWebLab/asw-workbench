@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 var program = require('gitlike-cli');
+var readline = require('readline');
 
 /* LIST
 ************/
@@ -75,6 +76,22 @@ function updateUser(args) {
   });
 }
 
+/* DELETE
+************/
+function destroyUser(args) {
+  var rl = readline.createInterface(process.stdin, process.stdout);
+  rl.question("Destroy user? YES/[no]: ", function (answer) {
+    if (answer !== "YES") {
+      console.log("No confirmation, so not deleting user.");
+      process.exit(1);
+    } else {
+      var run = require('./destroy-user.js');
+      run(args.UID);
+      rl.close();
+    }
+  });
+}
+
 /* Parse Args
 ************/
 program
@@ -139,6 +156,13 @@ program
           '$ cat modified-user.json | bin/data-service update user 05b57a33ded81eec75ed0af82a5487d3'
         ]);
       })
+      .parent
+    .parent
+
+  .command('destroy')
+    .command('user <UID>')
+      .description("Deletes a user. You will be asked for confirmation.")
+      .action(destroyUser)
       .parent
     .parent
   .parse(process.argv);
