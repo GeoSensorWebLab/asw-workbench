@@ -66,6 +66,13 @@ function createUser(args) {
   });
 }
 
+function createSensor(args) {
+  readPipe(args.etc[0], function (body) {
+    var run = require('./create-sensor.js');
+    run(args.userUID, body);
+  });
+}
+
 /* UPDATE
 ************/
 function updateUser(args) {
@@ -140,6 +147,16 @@ program
         cmd.outputIndented('Examples', [
           '$ bin/data-service create user < new-user.json',
           '$ cat new-user.json | bin/data-service create user'
+        ]);
+      })
+      .parent
+    .command('sensor <userUID>')
+      .description("Create a sensor. Pipe a JSON representation of the sensor to this command.")
+      .action(createSensor)
+      .on('help', function(cmd) {
+        cmd.outputIndented('Examples', [
+          '$ bin/data-service create sensor 05b57a33ded81eec75ed0af82a5487d3 < new-sensor.json',
+          '$ cat new-sensor.json | bin/data-service create sensor 05b57a33ded81eec75ed0af82a5487d3'
         ]);
       })
       .parent
