@@ -2,6 +2,17 @@
 var program = require('gitlike-cli');
 var readline = require('readline');
 
+var readPipe = function (stream, callback) {
+  var body = '';
+  stream.on('data', function (chunk) {
+    body += chunk;
+  });
+
+  stream.on('end', function () {
+    callback(body);
+  });
+};
+
 /* LIST
 ************/
 function listUsers() {
@@ -49,13 +60,7 @@ function showRecord(args) {
 /* CREATE
 ************/
 function createUser(args) {
-  var input = args.etc[0];
-  var body = '';
-  input.on('data', function (chunk) {
-    body += chunk;
-  });
-
-  input.on('end', function () {
+  readPipe(args.etc[0], function (body) {
     var run = require('./create-user.js');
     run(body);
   });
@@ -64,13 +69,7 @@ function createUser(args) {
 /* UPDATE
 ************/
 function updateUser(args) {
-  var input = args.etc[0];
-  var body = '';
-  input.on('data', function (chunk) {
-    body += chunk;
-  });
-
-  input.on('end', function () {
+  readPipe(args.etc[0], function (body) {
     var run = require('./update-user.js');
     run(args.UID, body);
   });
