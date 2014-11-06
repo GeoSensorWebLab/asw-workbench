@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+var program = require('gitlike-cli');
+
+function listUsers() {
+  require('./list-users.js');
+}
+
+program
+  .command('list')
+    .command('users')
+      .description("List all users")
+      .action(listUsers)
+      .parent
+    .command('sensors').parent
+    .command('datastreams').parent
+    .parent
+  .parse(process.argv);
+
