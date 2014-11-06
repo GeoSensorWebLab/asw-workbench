@@ -11,6 +11,11 @@ function listSensors(args) {
   run(args.userUID);
 }
 
+function listDatastreams(args) {
+  var run = require('./list-datastreams.js');
+  run(args.userUID, args.sensorUID);
+}
+
 function showUser(args) {
   var run = require('./show-user.js');
   run(args.uid);
@@ -31,7 +36,10 @@ program
       .description("List sensors for a user")
       .action(listSensors)
       .parent
-    .command('datastreams').parent
+    .command('datastreams <userUID> <sensorUID>')
+      .description("List datastreams for a sensor")
+      .action(listDatastreams)
+      .parent
     .parent
 
   .command('show')
