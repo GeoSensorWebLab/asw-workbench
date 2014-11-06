@@ -14,11 +14,11 @@ var get = function(URL) {
   });
 };
 
-module.exports = function(user_uid) {
+module.exports = function(userUID) {
   fs.readFile('.data-service', 'utf8', function (err, data) {
     if (err) throw err;
 
     var options = JSON.parse(data);
-    get(options.url + "/users/" + user_uid + "/sensors");
+    get(options.url + "/users/" + userUID + "/sensors");
   });
 }

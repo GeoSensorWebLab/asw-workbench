@@ -2,7 +2,8 @@
 var program = require('gitlike-cli');
 
 function listUsers() {
-  require('./list-users.js');
+  var run = require('./list-users.js');
+  run();
 }
 
 function listSensors(args) {
@@ -13,6 +14,11 @@ function listSensors(args) {
 function showUser(args) {
   var run = require('./show-user.js');
   run(args.uid);
+}
+
+function showSensor(args) {
+  var run = require('./show-sensor.js');
+  run(args.userUID, args.sensorUID);
 }
 
 program
@@ -32,6 +38,10 @@ program
     .command('user <UID>')
       .description("Show a user")
       .action(showUser)
+      .parent
+    .command('sensor <userUID> <sensorUID>')
+      .description("Show a sensor")
+      .action(showSensor)
       .parent
     .parent
   .parse(process.argv);
