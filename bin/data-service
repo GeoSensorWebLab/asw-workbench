@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 var program = require('gitlike-cli');
 
+/* LIST
+************/
 function listUsers() {
   var run = require('./list-users.js');
   run();
@@ -21,6 +23,8 @@ function listRecords(args) {
   run(args.datastreamUID);
 }
 
+/* SHOW
+************/
 function showUser(args) {
   var run = require('./show-user.js');
   run(args.uid);
@@ -41,6 +45,23 @@ function showRecord(args) {
   run(args.datastreamUID, args.recordUID);
 }
 
+/* CREATE
+************/
+function createUser(args) {
+  var input = args.etc[0];
+  var body = '';
+  input.on('data', function (chunk) {
+    body += chunk;
+  });
+
+  input.on('end', function () {
+    var run = require('./create-user.js');
+    run(body);
+  });
+}
+
+/* Parse Args
+************/
 program
   .command('list')
     .command('users')
@@ -77,6 +98,19 @@ program
     .command('record <datastreamUID> <recordUID>')
       .description("Show a datastream record")
       .action(showRecord)
+      .parent
+    .parent
+
+  .command('create')
+    .command('user')
+      .description("Create a user. Pipe a JSON representation of the user to this command.")
+      .action(createUser)
+      .on('help', function(cmd) {
+        cmd.outputIndented('Examples', [
+          '$ bin/data-service create user < new-user.json',
+          '$ cat new-user.json | bin/data-service create user'
+        ]);
+      })
       .parent
     .parent
   .parse(process.argv);
