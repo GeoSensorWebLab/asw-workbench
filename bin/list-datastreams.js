@@ -19,6 +19,7 @@ module.exports = function(userUID, sensorUID) {
     if (err) throw err;
 
     var options = JSON.parse(data);
-    get(options.url + "/users/" + userUID + "/sensors/" + sensorUID + "/datastreams");
+    get([ options.url, "users", userUID, "sensors", sensorUID,
+      "datastreams"].join('/'));
   });
 }
