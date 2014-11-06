@@ -73,6 +73,13 @@ function createSensor(args) {
   });
 }
 
+function createDatastream(args) {
+  readPipe(args.etc[0], function (body) {
+    var run = require('./create-datastream.js');
+    run(args.userUID, args.sensorUID, body);
+  });
+}
+
 /* UPDATE
 ************/
 function updateUser(args) {
@@ -178,6 +185,16 @@ program
         cmd.outputIndented('Examples', [
           '$ bin/data-service create sensor 05b57a33ded81eec75ed0af82a5487d3 < new-sensor.json',
           '$ cat new-sensor.json | bin/data-service create sensor 05b57a33ded81eec75ed0af82a5487d3'
+        ]);
+      })
+      .parent
+    .command('datastream <userUID> <sensorUID>')
+      .description("Create a datastream. Pipe a JSON representation of the datastream to this command.")
+      .action(createDatastream)
+      .on('help', function(cmd) {
+        cmd.outputIndented('Examples', [
+          '$ bin/data-service create datastream 05b57a33ded81eec75ed0af82a5487d3 9b8c94bd21dc54db93b1ef73243a3fcc < new-datastream.json',
+          '$ cat new-datastream.json | bin/data-service create sensor 05b57a33ded81eec75ed0af82a5487d3 9b8c94bd21dc54db93b1ef73243a3fcc'
         ]);
       })
       .parent
