@@ -80,6 +80,13 @@ function createDatastream(args) {
   });
 }
 
+function createRecord(args) {
+  readPipe(args.etc[0], function (body) {
+    var run = require('./create-record.js');
+    run(args.datastreamUID, body);
+  });
+}
+
 /* UPDATE
 ************/
 function updateUser(args) {
@@ -216,7 +223,17 @@ program
       .on('help', function(cmd) {
         cmd.outputIndented('Examples', [
           '$ bin/data-service create datastream 05b57a33ded81eec75ed0af82a5487d3 9b8c94bd21dc54db93b1ef73243a3fcc < new-datastream.json',
-          '$ cat new-datastream.json | bin/data-service create sensor 05b57a33ded81eec75ed0af82a5487d3 9b8c94bd21dc54db93b1ef73243a3fcc'
+          '$ cat new-datastream.json | bin/data-service create datastream 05b57a33ded81eec75ed0af82a5487d3 9b8c94bd21dc54db93b1ef73243a3fcc'
+        ]);
+      })
+      .parent
+    .command('record <datastreamUID>')
+      .description("Create a datastream record. Pipe a JSON representation of the datastream record to this command.")
+      .action(createRecord)
+      .on('help', function(cmd) {
+        cmd.outputIndented('Examples', [
+          '$ bin/data-service create record 2517f1bd2e68216b8598c30333377c95 < new-record.json',
+          '$ cat new-record.json | bin/data-service create record 2517f1bd2e68216b8598c30333377c95'
         ]);
       })
       .parent
