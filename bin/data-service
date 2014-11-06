@@ -96,6 +96,14 @@ function updateSensor(args) {
   });
 }
 
+function updateDatastream(args) {
+  readPipe(args.etc[0], function (body) {
+    var run = require('./update-datastream.js');
+    run(args.userUID, args.sensorUID, args.datastreamUID, body);
+  });
+}
+
+
 /* DELETE
 ************/
 function destroyUser(args) {
@@ -218,6 +226,16 @@ program
         cmd.outputIndented('Examples', [
           '$ bin/data-service update sensor 05b57a33ded81eec75ed0af82a5487d3 9b8c94bd21dc54db93b1ef73243a3fcc < modified-sensor.json',
           '$ cat modified-sensor.json | bin/data-service update sensor 05b57a33ded81eec75ed0af82a5487d3 9b8c94bd21dc54db93b1ef73243a3fcc'
+        ]);
+      })
+      .parent
+    .command('datastream <userUID> <sensorUID> <datastreamUID>')
+      .description("Update a datastream. Pipe a JSON representation of the datastream to this command.")
+      .action(updateDatastream)
+      .on('help', function(cmd) {
+        cmd.outputIndented('Examples', [
+          '$ bin/data-service update datastream 05b57a33ded81eec75ed0af82a5487d3 9b8c94bd21dc54db93b1ef73243a3fcc 2517f1bd2e68216b8598c30333377c95 < modified-datastream.json',
+          '$ cat modified-datastream.json | bin/data-service update datastream 05b57a33ded81eec75ed0af82a5487d3 9b8c94bd21dc54db93b1ef73243a3fcc 2517f1bd2e68216b8598c30333377c95'
         ]);
       })
       .parent
