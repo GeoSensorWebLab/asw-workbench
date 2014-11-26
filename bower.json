@@ -24,6 +24,7 @@
     "marionette": "~2.1.0",
     "backbone.hal": "*",
     "proj4leaflet": "kartena/Proj4Leaflet#4e445dd765d4e5cfcb156e423c6a0b7b65adf535",
-    "jquery.transit": "~0.9.12"
+    "jquery.transit": "~0.9.12",
+    "json2": "*"
   }
 }
