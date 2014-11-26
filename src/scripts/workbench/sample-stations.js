@@ -11,6 +11,15 @@ window.sampleStations = [{
           href: "/sensors/f0c7c1f25692b615614fb584c532fd16?api_key=798192d6c2c55da138e1a1619caeeff4"
         }
       }
+    },
+    {
+      id: "80db7c4d1d7b4622bee67865124fa7e9",
+      name: "KLRS Weather Station",
+      _links: {
+        self: {
+          href: "/sensors/80db7c4d1d7b4622bee67865124fa7e9?api_key=798192d6c2c55da138e1a1619caeeff4"
+        }
+      }
     }]
   },
   _links: {
