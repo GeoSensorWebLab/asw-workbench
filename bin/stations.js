@@ -60,7 +60,13 @@ var convertDMS = function(dms) {
   var minutes = parseFloat(dms.split(DEGREE)[1].split(MINUTE)[0]);
   var seconds = parseFloat(dms.split(DEGREE)[1].split(MINUTE)[1]) || 0;
   var decimal = degrees + (minutes / 60) + (seconds / 3600);
-  return decimal;
+
+  var sign = 1;
+  if ((dms.indexOf("W") !== -1) || (dms.indexOf("S") !== -1)) {
+    sign = -1;
+  }
+
+  return sign * decimal;
 };
 
 var parser = parse({ delimiter: ',' }, function (err, rows) {
