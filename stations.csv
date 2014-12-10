@@ -1,0 +1,32 @@
+id,name,shortName,site_info_description,site_info_href,interact_desc,interact_href,interact_coords,elevation
+2,Finse Alpine Research Centre,FINSE,Finse Alpine Research Centre,http://www.finse.uio.no/,INTER-ACT: FINSE,http://www.eu-interact.org/field-sites/norway-2/finse/,"60°36’ N, 07°30’ E",1215
+3,Sverdrup International Arctic Environmental Research and Monitoring Facility,SVERDRUP,Sverdrup Station,http://sverdrup.npolar.no/,INTER-ACT: SVERDRUP,http://www.eu-interact.org/field-sites/norway-2/svanhovd/,"69°27’10” N, 30°03’17” E",5
+4,Tarfala Research Station,TARFALA,Tarfala Research Station,http://www.ink.su.se/english/tarfala-research-station,INTER-ACT: TARFALA,http://www.eu-interact.org/field-sites/sweden-2/tarfala/,"67°55’ N, 18°35’ E",1130
+5,Abisko Scientific Research Station,ABISKO,Abisko Scientific Research Station,http://www.polar.se/en/abisko,INTER-ACT: ABISKO,http://www.eu-interact.org/field-sites/sweden-2/abisko/,"68°21’ N, 18°49’ E",385
+6,Kilpisjärvi Biological Station,KILPISJÄRVI,Kilpisjärvi Biological Station,http://www.helsinki.fi/kilpis,INTER-ACT: KILPISJÄRVI,http://www.eu-interact.org/field-sites/finland-4/kilpisjarvi/,"69°03’ N, 20°50’ E",480
+7,Kolari Research Unit,KOLARI,,,INTER-ACT: KOLARI,http://www.eu-interact.org/field-sites/finland-4/kolari/,"67°21’16” N, 23°49’46” E",221
+8,Kevo Subarctic Research Institute,KEVO,Kevo Subarctic Research Institute,http://www.kevo.utu.fi/en,INTER-ACT: KEVO,http://www.eu-interact.org/field-sites/finland-4/kevo/,"69°45’ N, 27°01’ E",80
+9,Oulanka Research Station,OULANKA,Oulanka Research Station,http://www.oulu.fi/oulanka,INTER-ACT: OULANKA,http://www.eu-interact.org/field-sites/finland-4/oulanka/,"66°22’ N, 29°19’ E",165
+10,Khibiny Educational and Scientific Station,KHIBINY,Khibiny Educational and Scientific Station,http://www.eng.geogr.msu.ru/practics/stations/khibiny/,INTER-ACT: KHIBINY,http://www.eu-interact.org/field-sites/russia-6/khibiny/,"67°38’14” N, 33°43’31” E",362
+11,Mukhrino Field Station,MUKHRINO,,,INTER-ACT: MUKHRINO,http://www.eu-interact.org/field-sites/russia-6/mukhrino-field-station/,"60°54’ N, 68°42’ E",60
+12,Nymto Park Station,NUMTO,,,INTER-ACT: NUMTO,http://www.eu-interact.org/field-sites/russia-6/numto-park-station/,"63°42’ N, 70°54’E",
+13,Samoylov,SAMOYLOV,Samoylov,http://www.awi.de/en/infrastructure/stations/samoylov_station/,INTER-ACT: SAMOYLOV,http://www.eu-interact.org/field-sites/russia-6/samoylov/,"72°22’ N, 126°28’ E",12
+14,Spasskaya Pad,SPASSKAYA PAD,,,INTER-ACT: SPASSKAYA PAD,http://www.eu-interact.org/field-sites/russia-6/spasskaya-pad/,"62°14’ N, 129°37’ E",220
+15,Chokurdakh Scientific Tundra Station,COKURDAKH,Chokurdakh Scientific Tundra Station,http://ibpc.ysn.ru/,INTER-ACT: COKURDAKH,http://www.eu-interact.org/field-sites/russia-6/chokurdakh/,"70°49’ N, 147°29’ E",8
+16,Barrow Environmental Observatory,BARROW,Barrow Environmental Observatory,http://www.polarfield.com/barrow,INTER-ACT: BARROW,http://www.eu-interact.org/field-sites/alaska-2/barrow/,"71°18’ N, 156°35’ W",5
+17,Toolik Field Station,TOOLIK,Toolik Field Station,http://www.uaf.edu/toolik,INTER-ACT: TOOLIK,http://www.eu-interact.org/field-sites/alaska-2/toolik/,"68°37’40” N, 149°35’41” W",720
+18,CEN Radisson Ecological Research Station,RADISSON,,,INTER-ACT: RADISSON,http://www.eu-interact.org/field-sites/canada-9/radisson/,"53°47’29” N, 77°37’37” W",135
+19,CEN Whapmagoostui-Kuujjuarapik Station,WHAPMAGOOSTUI-KUUJJUARAPIK,CEN Whapmagoostui-Kuujjuarapik Station,http://www.cen.ulaval.ca/en/page.aspx?lien=stationkuujjuarapik,INTER-ACT: WHAPMAGOOSTUI-KUUJJUARAPIK,http://www.eu-interact.org/field-sites/canada-9/whapmagoostui-kuujjuarapik/,"55°16’50” N, 77°45’10” W",50
+20,CEN Clearwater Lake Research Station,CLEARWATER LAKE,,,INTER-ACT: CLEARWATER LAKE,http://www.eu-interact.org/field-sites/canada-9/clearwater-lake/,"56°20’ N, 74°27’ W ",224
+21,Umiujaq,UMIUJAQ,Umiujaq,http://www.cen.ulaval.ca/en/page.aspx?lien=stationumiujaq,INTER-ACT: UMIUJAQ,http://www.eu-interact.org/field-sites/canada-9/umiujaq/,"56°33’07’ N, 76°32’57’ W",5
+22,Boniface River Station,BONIFACE RIVER,Boniface River Station,http://www.cen.ulaval.ca/en/page.aspx?lien=stationboniface,INTER-ACT: BONIFACE RIVER,http://www.eu-interact.org/field-sites/canada-9/boniface-river/,"57°45’ N, 76°10’ W",100
+23,Salluit Research Station,SALLUIT,,,INTER-ACT: SALLUIT,http://www.eu-interact.org/field-sites/canada-9/salluit/,"62°12’ N, 75°38’ W ",35
+24,Bylot Island Field Station,BYLOT ISLAND,Bylot Island Field Station,http://www.cen.ulaval.ca/bylot/,INTER-ACT: BYLOT ISLAND,http://www.eu-interact.org/field-sites/canada-9/bylot-island/,"73°8’ N, 80°00’ W ",20
+25,Ward Hunt Island,WARD HUNT ISLAND,Ward Hunt Island,http://www.cen.ulaval.ca/warwickvincent/,INTER-ACT: WARD HUNT ISLAND,http://www.eu-interact.org/field-sites/canada-9/ward-hunt-island/,"83°06’ N, 74°10’ W ",5
+26,Arctic Station,ARCTIC STATION,Arctic Station,http://arktiskstation.ku.dk/english,INTER-ACT: ARCTIC STATION,http://www.eu-interact.org/field-sites/greenland-4/arctic-station/,"69°15’ N, 53°34’ W",20
+27,Greenland Institute of Natural Resources,GREENLAND INSTITUTE OF NATURAL RESOURCES,Greenland Institute of Natural Resources,http://www.natur.gl/,INTER-ACT: GREENLAND INSTITUTE OF NATURAL RESOURCES,http://www.eu-interact.org/field-sites/greenland-4/greenland-institute-of-natural-resources/,"64°11’00” N, 51°41’00” W",50
+28,Sermilik Station,SERMILIK,,,INTER-ACT: SERMILIK,http://www.eu-interact.org/field-sites/greenland-4/sermilik/,"65°40’ N, 38°10’ W ",15
+29,Zackenberg Research Station,ZACKENBERG RESEARCH STATION,Zackenberg Research Station,http://www.zackenberg.dk/,INTER-ACT: ZACKENBERG RESEARCH STATION,http://www.eu-interact.org/field-sites/greenland-4/zackenberg-research-station/,"74°28’07” N, 20°34’00” W",38
+30,Litla-Skard,LITLA-SKARD,,,INTER-ACT: LITLA-SKARD,http://www.eu-interact.org/field-sites/iceland-1/litla-skard/,"64°43’36” N, 21°37’48” W",115
+31,The Faroe Islands Nature Investigations FINI,FINI,,,INTER-ACT: FINI,http://www.eu-interact.org/field-sites/faroe-islands-1/fini/,"62°04’ N, 06°58’ W",725
+32,Cairngorm,CAIRNGORM,,,INTER-ACT: CAIRNGORM,http://www.eu-interact.org/field-sites/scotland-1/cairngorm/,"57°07’ N, 03°49’ W",700
