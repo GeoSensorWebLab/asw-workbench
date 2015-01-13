@@ -20,6 +20,15 @@ window.sampleStations = [{
           href: "/sensors/80db7c4d1d7b4622bee67865124fa7e9?api_key=798192d6c2c55da138e1a1619caeeff4"
         }
       }
+    },
+    {
+      id: "09f0a7798387c90b547e57d3037d1724056fafe26e02f7d079dcb2557c8beb32",
+      name: "KLRS Energy Data",
+      _links: {
+        self: {
+          href: "/sensors/09f0a7798387c90b547e57d3037d1724056fafe26e02f7d079dcb2557c8beb32?api_key=798192d6c2c55da138e1a1619caeeff4"
+        }
+      }
     }]
   },
   _links: {
