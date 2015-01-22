@@ -16,16 +16,20 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.2.0",
     "backbone": "~1.1.2",
-    "jquery-deparam": "~0.2.0",
-    "highstock-release": "~2.0.3",
-    "geocens-js-api": "Canarie-Sensor-RPI/geocens-js-api#~1.2.5",
-    "marionette": "~2.1.0",
     "backbone.hal": "*",
-    "proj4leaflet": "kartena/Proj4Leaflet#4e445dd765d4e5cfcb156e423c6a0b7b65adf535",
+    "bootstrap": "~3.2.0",
+    "font-awesome": "~4.2.0",
+    "geocens-js-api": "Canarie-Sensor-RPI/geocens-js-api#~1.2.5",
+    "highstock-release": "~2.0.3",
+    "jquery-deparam": "~0.2.0",
     "jquery.transit": "~0.9.12",
     "json2": "*",
-    "font-awesome": "~4.2.0"
+    "marionette": "~2.1.0",
+    "polarmap.js": "git@bitbucket.org:geosensorweblab/polarmap.js.git#v0.7.0",
+    "proj4leaflet": "kartena/Proj4Leaflet#4e445dd765d4e5cfcb156e423c6a0b7b65adf535"
+  },
+  "resolutions": {
+    "proj4": "2.3.3"
   }
 }
