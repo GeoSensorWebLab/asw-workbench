@@ -1,0 +1,34 @@
+{
+  "id": "klrs-weather-station",
+  "uid": "80db7c4d1d7b4622bee67865124fa7e9",
+  "title": "KLRS Weather Station",
+  "contact_email": "jpbadger@ucalgary.ca",
+  "description": "Weather Station at KLRS Glaciology Building. Exact location not known.",
+  "contact_name": "James Badger",
+  "loc": [
+    61.02741,
+    -138.41071
+  ],
+  "phens": [
+    "BP",
+    "DT",
+    "AirTC_Avg",
+    "NR_Wm2_Avg",
+    "RH_Avg",
+    "WS_ms_Max",
+    "WS_ms_S_WVT",
+    "WindDir_D1_WVT",
+    "WindDir_SD1_WVT",
+    "Batt_Volt_Avg",
+    "Batt_Volt_Max",
+    "Batt_Volt_Min",
+    "Batt_Volt_TMn",
+    "Panel_Temp_Avg",
+    "Panel_Temp_Max",
+    "Panel_Temp_Min",
+    "Panel_Temp_TMx",
+    "Rain_mm_Tot",
+    "SWin_Wm2_Avg",
+    "SWout_Wm2_Avg"
+  ]
+}

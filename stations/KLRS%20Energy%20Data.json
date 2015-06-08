@@ -1,0 +1,29 @@
+{
+  "id": "klrs-energy-data",
+  "uid": "09f0a7798387c90b547e57d3037d1724056fafe26e02f7d079dcb2557c8beb32",
+  "title": "KLRS Energy Data",
+  "contact_email": "jpbadger@ucalgary.ca",
+  "description": "Energy Consumption data for KLRS.",
+  "contact_name": "James Badger",
+  "loc": [
+    61.02741,
+    -138.41071
+  ],
+  "phens": [
+    "S (VA)",
+    "Q (var)",
+    "P Source (W)",
+    "Q Load (var)",
+    "P Load (W)",
+    "I2",
+    "Q Source (var)",
+    "I1",
+    "V12",
+    "V1",
+    "IN",
+    "P (W)",
+    "Hz",
+    "PF Total Load",
+    "V2"
+  ]
+}
