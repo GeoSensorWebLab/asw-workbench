@@ -1,0 +1,16 @@
+{
+  "id": "ROSCHINO",
+  "uid": "48nat6tqmek4krtod0td20q8pk",
+  "title": "ROSCHINO",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    57.1667,
+    65.3167
+  ],
+  "phens": [
+    "ROSCHINO_Temperature",
+    "ROSCHINO_Dewpoint"
+  ]
+}

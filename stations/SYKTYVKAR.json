@@ -1,0 +1,16 @@
+{
+  "id": "SYKTYVKAR",
+  "uid": "8mw74msswzouh910phxsodnghk",
+  "title": "SYKTYVKAR",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    61.6471,
+    50.8451
+  ],
+  "phens": [
+    "SYKTYVKAR_Temperature",
+    "SYKTYVKAR_Dewpoint"
+  ]
+}

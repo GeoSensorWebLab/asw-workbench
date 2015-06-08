@@ -1,0 +1,16 @@
+{
+  "id": "KUUSAMO",
+  "uid": "qxg23djpdai6nr62gwvjqixsns",
+  "title": "KUUSAMO",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    65.9667,
+    29.1833
+  ],
+  "phens": [
+    "KUUSAMO_Temperature",
+    "KUUSAMO_Dewpoint"
+  ]
+}

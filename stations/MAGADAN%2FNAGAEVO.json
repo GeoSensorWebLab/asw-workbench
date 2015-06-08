@@ -1,0 +1,16 @@
+{
+  "id": "MAGADAN/NAGAEVO",
+  "uid": "5sz4arlkrjf3ldwf775u5dzccj",
+  "title": "MAGADAN/NAGAEVO",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    59.911,
+    150.7204
+  ],
+  "phens": [
+    "MAGADAN/NAGAEVO_Temperature",
+    "MAGADAN/NAGAEVO_Dewpoint"
+  ]
+}

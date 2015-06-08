@@ -1,0 +1,16 @@
+{
+  "id": "HELSINKI/MALMI",
+  "uid": "t1tz6e8efshe6r62iuuyibic0u",
+  "title": "HELSINKI/MALMI",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    60.2546,
+    25.0428
+  ],
+  "phens": [
+    "HELSINKI/MALMI_Temperature",
+    "HELSINKI/MALMI_Dewpoint"
+  ]
+}

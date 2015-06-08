@@ -1,0 +1,16 @@
+{
+  "id": "FORT-MCMURRAY-AR",
+  "uid": "3fd94b2e-26ff-4060-a281-a8f5e0a6a1c7",
+  "title": "FORT-MCMURRAY-AR",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    56.6511,
+    -111.2133
+  ],
+  "phens": [
+    "FORT-MCMURRAY-AR_Temperature",
+    "FORT-MCMURRAY-AR_Dewpoint"
+  ]
+}

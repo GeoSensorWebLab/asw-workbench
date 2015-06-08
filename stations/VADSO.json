@@ -1,0 +1,16 @@
+{
+  "id": "VADSO",
+  "uid": "88fd0fb2-0692-45b8-bad3-7a3969afccd0",
+  "title": "VADSO",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    70.0653,
+    29.8447
+  ],
+  "phens": [
+    "VADSO_Temperature",
+    "VADSO_Dewpoint"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "GODTHAB",
+  "uid": "23heo7wmznx0q6j0fk3sqwac68",
+  "title": "GODTHAB",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    64.1932,
+    -51.6766
+  ],
+  "phens": [
+    "GODTHAB_AirTemperature",
+    "GODTHAB_Dewpoint"
+  ]
+}

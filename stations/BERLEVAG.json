@@ -1,0 +1,16 @@
+{
+  "id": "BERLEVAG",
+  "uid": "40cc4265-3202-4cc8-ba79-c73c878e2e70",
+  "title": "BERLEVAG",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    70.8714,
+    29.0342
+  ],
+  "phens": [
+    "BERLEVAG_Temperature",
+    "BERLEVAG_Dewpoint"
+  ]
+}

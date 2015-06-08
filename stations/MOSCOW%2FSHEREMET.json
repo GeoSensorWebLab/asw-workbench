@@ -1,0 +1,16 @@
+{
+  "id": "MOSCOW/SHEREMET",
+  "uid": "2nqbut9qg9v5zrvk8pwfm2bzhy",
+  "title": "MOSCOW/SHEREMET",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    55.9726,
+    37.4146
+  ],
+  "phens": [
+    "MOSCOW/SHEREMET_Temperature",
+    "MOSCOW/SHEREMET_Dewpoint"
+  ]
+}

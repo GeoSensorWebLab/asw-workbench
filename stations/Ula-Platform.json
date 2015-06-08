@@ -1,0 +1,16 @@
+{
+  "id": "Ula-Platform",
+  "uid": "8cd7b2e6-1968-49fd-983b-fb775146ba59",
+  "title": "Ula-Platform",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    59.1108,
+    2.8458
+  ],
+  "phens": [
+    "Ula-Platform_Temperature",
+    "Ula-Platform_Dewpoint"
+  ]
+}

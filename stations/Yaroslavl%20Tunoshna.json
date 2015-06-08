@@ -1,0 +1,16 @@
+{
+  "id": "Yaroslavl Tunoshna",
+  "uid": "i2p04h07nadlhkzyuq3ujwiykf",
+  "title": "Yaroslavl Tunoshna",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    57.5607,
+    40.1574
+  ],
+  "phens": [
+    "Yaroslavl Tunoshna_Temperature",
+    "Yaroslavl Tunoshna_Dewpoint"
+  ]
+}

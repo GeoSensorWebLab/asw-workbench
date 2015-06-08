@@ -1,0 +1,16 @@
+{
+  "id": "SARNIA-ARPT",
+  "uid": "e6f11b15-3bd2-42ac-a7f2-94ab16ed4c3f",
+  "title": "SARNIA-ARPT",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    42.9951,
+    -82.3073
+  ],
+  "phens": [
+    "SARNIA-ARPT_Temperature",
+    "SARNIA-ARPT_Dewpoint"
+  ]
+}

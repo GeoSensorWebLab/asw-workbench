@@ -1,0 +1,16 @@
+{
+  "id": "HAUGESUND-KARMOY",
+  "uid": "2b138731-f684-4972-b6f3-e8d4a6a0e423",
+  "title": "HAUGESUND-KARMOY",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    70.4867,
+    22.1397
+  ],
+  "phens": [
+    "HAUGESUND-KARMOY_Temperature",
+    "HAUGESUND-KARMOY_Dewpoint"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ARCTICVILLAGE",
+  "uid": "4df14e25-6990-4504-afd3-bc2dbd5f7a79",
+  "title": "ARCTICVILLAGE",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    68.1147,
+    -145.5794
+  ],
+  "phens": [
+    "ARCTICVILLAGE_Temperature",
+    "ARCTICVILLAGE_Dewpoint"
+  ]
+}

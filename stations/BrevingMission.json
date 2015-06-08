@@ -1,0 +1,16 @@
+{
+  "id": "BrevingMission",
+  "uid": "b32019cd-e924-46d1-8346-e5500d7c2c64",
+  "title": "BrevingMission",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    65.3313,
+    -166.4657
+  ],
+  "phens": [
+    "BrevingMission_Temperature",
+    "BrevingMission_Dewpoint"
+  ]
+}

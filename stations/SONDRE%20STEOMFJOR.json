@@ -1,0 +1,16 @@
+{
+  "id": "SONDRE STEOMFJOR",
+  "uid": "m8vbaq3pz7u8fozg89xirp636u",
+  "title": "SONDRE STEOMFJOR",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    67.0167,
+    -50.7167
+  ],
+  "phens": [
+    "SONDRE STEOMFJOR_Temperature",
+    "SONDRE STEOMFJOR_Dewpoint"
+  ]
+}

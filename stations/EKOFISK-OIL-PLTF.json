@@ -1,0 +1,16 @@
+{
+  "id": "EKOFISK-OIL-PLTF",
+  "uid": "ee718ddb-bec4-4692-b2d2-ddff7dc58e66",
+  "title": "EKOFISK-OIL-PLTF",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    56.55,
+    3.25
+  ],
+  "phens": [
+    "EKOFISK-OIL-PLTF_Temperature",
+    "EKOFISK-OIL-PLTF_Dewpoint"
+  ]
+}

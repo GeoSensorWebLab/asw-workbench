@@ -1,0 +1,16 @@
+{
+  "id": "KRASNOYARSK",
+  "uid": "t2n4h3ugwekitt8mlhtc0971fw",
+  "title": "KRASNOYARSK",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    56.0333,
+    92.75
+  ],
+  "phens": [
+    "KRASNOYARSK_Temperature",
+    "KRASNOYARSK_Dewpoint"
+  ]
+}

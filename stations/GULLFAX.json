@@ -1,0 +1,16 @@
+{
+  "id": "GULLFAX",
+  "uid": "2e81a511-834b-44a6-9af1-0fa5c2e225e2",
+  "title": "GULLFAX",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    61.03,
+    2.03
+  ],
+  "phens": [
+    "GULLFAX_Temperature",
+    "GULLFAX_Dewpoint"
+  ]
+}

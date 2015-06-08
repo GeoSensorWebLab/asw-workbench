@@ -1,0 +1,16 @@
+{
+  "id": "SORKJOSEN",
+  "uid": "afc98d3c-3e2e-4b4f-b349-1d8701d00b53",
+  "title": "SORKJOSEN",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    69.7868,
+    20.9594
+  ],
+  "phens": [
+    "SORKJOSEN_Temperature",
+    "SORKJOSEN_Dewpoint"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "KAUHAVA",
+  "uid": "adtjepvd0zxjqpjtcmg93y2kgw",
+  "title": "KAUHAVA",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    63.1,
+    23.0333
+  ],
+  "phens": [
+    "KAUHAVA_Dewpoint"
+  ]
+}

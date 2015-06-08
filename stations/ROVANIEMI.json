@@ -1,0 +1,16 @@
+{
+  "id": "ROVANIEMI",
+  "uid": "s66emnjiwg9193ip1yj1le5hr5",
+  "title": "ROVANIEMI",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    66.5584,
+    25.8321
+  ],
+  "phens": [
+    "ROVANIEMI_Temperature",
+    "ROVANIEMI_Dewpoint"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "BETTLESFIELD",
+  "uid": "b0cc07bc-1f6f-4b49-ae77-88d98d002839",
+  "title": "BETTLESFIELD",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    66.9161,
+    -151.5089
+  ],
+  "phens": [
+    "BETTLESFIELD_Temperature",
+    "BETTLESFIELD_Dewpoint"
+  ]
+}

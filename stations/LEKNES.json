@@ -1,0 +1,16 @@
+{
+  "id": "LEKNES",
+  "uid": "cfb76902-2843-492c-9873-051abada6f4b",
+  "title": "LEKNES",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    68.1525,
+    13.6094
+  ],
+  "phens": [
+    "LEKNES_Temperature",
+    "LEKNES_Dewpoint"
+  ]
+}

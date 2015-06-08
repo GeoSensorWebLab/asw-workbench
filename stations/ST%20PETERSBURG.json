@@ -1,0 +1,16 @@
+{
+  "id": "ST PETERSBURG",
+  "uid": "a1s0murggegbv721vjf9vqz7iu",
+  "title": "ST PETERSBURG",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    59.9667,
+    30.3
+  ],
+  "phens": [
+    "ST PETERSBURG_Temperature",
+    "ST PETERSBURG_Dewpoint"
+  ]
+}

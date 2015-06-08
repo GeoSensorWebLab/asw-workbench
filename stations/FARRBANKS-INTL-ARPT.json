@@ -1,0 +1,16 @@
+{
+  "id": "FARRBANKS-INTL-ARPT",
+  "uid": "dda98487-4b6d-4806-9563-0109c4e51db2",
+  "title": "FARRBANKS-INTL-ARPT",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    64.8039,
+    -147.8761
+  ],
+  "phens": [
+    "FARRBANKS-INTL-ARPT_Temperature",
+    "FARRBANKS-INTL-ARPT_Dewpoint"
+  ]
+}

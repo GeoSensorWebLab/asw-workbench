@@ -1,0 +1,16 @@
+{
+  "id": "ILIAMNA-ARPT",
+  "uid": "569851bd-a3f5-4139-89c5-9a4f01ba5eef",
+  "title": "ILIAMNA-ARPT",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    59.7492,
+    -154.9092
+  ],
+  "phens": [
+    "ILIAMNA-ARPT_Temperature",
+    "ILIAMNA-ARPT_Dewpoint"
+  ]
+}

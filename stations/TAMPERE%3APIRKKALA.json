@@ -1,0 +1,16 @@
+{
+  "id": "TAMPERE:PIRKKALA",
+  "uid": "919acbc6-a351-4bac-8c83-f838f9ad0b8e",
+  "title": "TAMPERE:PIRKKALA",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    61.42,
+    23.58
+  ],
+  "phens": [
+    "TAMPERE:PIRKKALA_Temperature",
+    "TAMPERE:PIRKKALA_Dewpoint"
+  ]
+}

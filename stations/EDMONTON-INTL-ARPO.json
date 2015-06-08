@@ -1,0 +1,16 @@
+{
+  "id": "EDMONTON-INTL-ARPO",
+  "uid": "28fc1e9a-b224-46dd-80bb-8ee2f3e18477",
+  "title": "EDMONTON-INTL-ARPO",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    53.3097,
+    -113.5797
+  ],
+  "phens": [
+    "EDMONTON-INTL-ARPO_Temperature",
+    "EDMONTON-INTL-ARPO_Dewpoint"
+  ]
+}

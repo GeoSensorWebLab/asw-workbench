@@ -1,0 +1,16 @@
+{
+  "id": "CHEVAK",
+  "uid": "97b35a3e-0efe-47d4-8c79-39bb3cf5c4fa",
+  "title": "CHEVAK",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    61.5408,
+    -165.6009
+  ],
+  "phens": [
+    "CHEVAK_Temperature",
+    "CHEVAK_Dewpoint"
+  ]
+}

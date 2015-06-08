@@ -1,0 +1,16 @@
+{
+  "id": "CHIGNIK",
+  "uid": "b82b4ee7-1afd-498d-9388-7756d12892eb",
+  "title": "CHIGNIK",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    56.3115,
+    -158.3732
+  ],
+  "phens": [
+    "CHIGNIK_Temperature",
+    "CHIGNIK_Dewpoint"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "MOSCOW/VNUKOVO",
+  "uid": "48p6cr14dn0tqfpdt3zeyu2138",
+  "title": "MOSCOW/VNUKOVO",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    55.5915,
+    37.2615
+  ],
+  "phens": [
+    "MOSCOW/VNUKOVO_Temperature",
+    "MOSCOW/VNUKOVO_Dewpoint"
+  ]
+}

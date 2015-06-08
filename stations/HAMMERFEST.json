@@ -1,0 +1,16 @@
+{
+  "id": "HAMMERFEST",
+  "uid": "c4998df2-77c8-4942-8c7f-dac681813de1",
+  "title": "HAMMERFEST",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    70.6806,
+    23.6769
+  ],
+  "phens": [
+    "HAMMERFEST_Temperature",
+    "HAMMERFEST_Dewpoint"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "NIZHNY NOVGOROD",
+  "uid": "6filinpsgt5zsxs2od1f9o52hj",
+  "title": "NIZHNY NOVGOROD",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    56.2252,
+    43.7856
+  ],
+  "phens": [
+    "NIZHNY NOVGOROD_Temperature",
+    "NIZHNY NOVGOROD_Dewpoint"
+  ]
+}

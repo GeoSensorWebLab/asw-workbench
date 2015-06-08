@@ -1,0 +1,16 @@
+{
+  "id": "CHEBOKSARY",
+  "uid": "qi9hm8cg6rxgkulcmry2d3es9v",
+  "title": "CHEBOKSARY",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    56.0903,
+    47.3473
+  ],
+  "phens": [
+    "CHEBOKSARY_Temperature",
+    "CHEBOKSARY_Dewpoint"
+  ]
+}

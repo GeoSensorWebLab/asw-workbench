@@ -1,0 +1,16 @@
+{
+  "id": "KAJAANI",
+  "uid": "3o9ojq36uuaex89k58gfmee2q3",
+  "title": "KAJAANI",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    64.2815,
+    27.6753
+  ],
+  "phens": [
+    "KAJAANI_Temperature",
+    "KAJAANI_Dewpoint"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ALESUND-VIGRA",
+  "uid": "bac66394-7730-4cf1-a940-cb47e8ca5fc4",
+  "title": "ALESUND-VIGRA",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    62.5617,
+    6.115
+  ],
+  "phens": [
+    "ALESUND-VIGRA_Temperature",
+    "ALESUND-VIGRA_Dewpoint"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "PERM/BOLSHOE SAV",
+  "uid": "82lyvv1055mqjz76us6y5h95xk",
+  "title": "PERM/BOLSHOE SAV",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    57.9145,
+    56.0212
+  ],
+  "phens": [
+    "PERM/BOLSHOE SAV_Temperature",
+    "PERM/BOLSHOE SAV_Dewpoint"
+  ]
+}

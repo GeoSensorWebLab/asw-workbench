@@ -1,0 +1,16 @@
+{
+  "id": "ATKAAIRPORT",
+  "uid": "6802b1da-23e2-4924-b671-e31336833388",
+  "title": "ATKAAIRPORT",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    52.2206,
+    -174.2062
+  ],
+  "phens": [
+    "ATKAAIRPORT_Temperature",
+    "ATKAAIRPORT_Dewpoint"
+  ]
+}

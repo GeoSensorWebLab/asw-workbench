@@ -1,0 +1,16 @@
+{
+  "id": "Alpine",
+  "uid": "d71ad38c-6b4f-4b0c-87d2-dffeab41f96e",
+  "title": "Alpine",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    70.3443,
+    -150.9447
+  ],
+  "phens": [
+    "Alpine_Temperature",
+    "Alpine_Dewpoint"
+  ]
+}

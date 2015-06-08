@@ -1,0 +1,16 @@
+{
+  "id": "CHELYABINSK-BALA",
+  "uid": "j6y5haoo3hctmj2dn4cxghkmuc",
+  "title": "CHELYABINSK-BALA",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    55.3058,
+    61.5033
+  ],
+  "phens": [
+    "CHELYABINSK-BALA_Temperature",
+    "CHELYABINSK-BALA_Dewpoint"
+  ]
+}

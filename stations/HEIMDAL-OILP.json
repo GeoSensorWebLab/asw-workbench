@@ -1,0 +1,15 @@
+{
+  "id": "HEIMDAL-OILP",
+  "uid": "043a5fca-3841-472d-b260-8473ccedb16d",
+  "title": "HEIMDAL-OILP",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    59.57,
+    2.23
+  ],
+  "phens": [
+    "HEIMDAL-OILP_Temperature"
+  ]
+}

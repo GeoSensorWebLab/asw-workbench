@@ -1,0 +1,16 @@
+{
+  "id": "ANIAK",
+  "uid": "c0f11c8b-4549-4bbc-ac65-5438e19c5dd8",
+  "title": "ANIAK",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    61.5816,
+    -159.543
+  ],
+  "phens": [
+    "ANIAK_Temperature",
+    "ANIAK_Dewpoint"
+  ]
+}

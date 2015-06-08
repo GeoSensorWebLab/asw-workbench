@@ -1,0 +1,16 @@
+{
+  "id": "CALGARY-INTL-ARPO",
+  "uid": "1645fb8c-62f3-4c46-aa1a-3bca85e4fd10",
+  "title": "CALGARY-INTL-ARPO",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    51.1139,
+    -114.0203
+  ],
+  "phens": [
+    "CALGARY-INTL-ARPO_Temperature",
+    "CALGARY-INTL-ARPO_Dewpoint"
+  ]
+}

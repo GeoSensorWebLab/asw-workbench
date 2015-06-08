@@ -1,0 +1,16 @@
+{
+  "id": "GALENA-AIRPORT",
+  "uid": "ac22562e-1c7a-45aa-8be9-508c640adb89",
+  "title": "GALENA-AIRPORT",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    64.7362,
+    -156.9374
+  ],
+  "phens": [
+    "GALENA-AIRPORT_Temperature",
+    "GALENA-AIRPORT_Dewpoint"
+  ]
+}

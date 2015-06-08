@@ -1,0 +1,16 @@
+{
+  "id": "ANCHORAGE-ITL-ARPT",
+  "uid": "461b7285-83e5-4757-9de2-ec855c8fb44a",
+  "title": "ANCHORAGE-ITL-ARPT",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    61.1697,
+    -150.0261
+  ],
+  "phens": [
+    "ANCHORAGE-ITL-ARPT_Temperature",
+    "ANCHORAGE-ITL-ARPT_Dewpoint"
+  ]
+}

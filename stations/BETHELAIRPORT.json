@@ -1,0 +1,16 @@
+{
+  "id": "BETHELAIRPORT",
+  "uid": "d1f909ed-f70f-4184-bb09-b865350298b7",
+  "title": "BETHELAIRPORT",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    60.7858,
+    -161.8264
+  ],
+  "phens": [
+    "BETHELAIRPORT_Temperature",
+    "BETHELAIRPORT_Dewpoint"
+  ]
+}

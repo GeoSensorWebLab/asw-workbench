@@ -1,0 +1,16 @@
+{
+  "id": "BERGEN-FLESLAND",
+  "uid": "5b077928-2d59-44eb-9be7-7c46e060b45a",
+  "title": "BERGEN-FLESLAND",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    60.2892,
+    5.2264
+  ],
+  "phens": [
+    "BERGEN-FLESLAND_Temperature",
+    "BERGEN-FLESLAND_Dewpoint"
+  ]
+}

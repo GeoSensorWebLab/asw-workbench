@@ -1,0 +1,12 @@
+{
+  "id": "SAVONLINNA",
+  "uid": "fbkffabdm1xxbfodp7b8ozjwi2",
+  "title": "SAVONLINNA",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    61.9431,
+    28.9541
+  ]
+}

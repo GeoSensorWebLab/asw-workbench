@@ -1,0 +1,16 @@
+{
+  "id": "SEINAJOKI-ILMAJO",
+  "uid": "5b30c4fe-0840-4d28-8fde-16fbc5dc8948",
+  "title": "SEINAJOKI-ILMAJO",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    62.6921,
+    22.8323
+  ],
+  "phens": [
+    "SEINAJOKI-ILMAJO_Temperature",
+    "SEINAJOKI-ILMAJO_Dewpoint"
+  ]
+}

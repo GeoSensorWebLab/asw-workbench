@@ -1,0 +1,12 @@
+{
+  "id": "KAZAN",
+  "uid": "zxes07lr7r8xs84zvp2joof3fe",
+  "title": "KAZAN",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    55.7833,
+    49.2
+  ]
+}

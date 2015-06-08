@@ -1,0 +1,16 @@
+{
+  "id": "SVARTNES",
+  "uid": "767e42d0-fb46-4a38-8994-7bd8fb096733",
+  "title": "SVARTNES",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    70.3554,
+    31.0449
+  ],
+  "phens": [
+    "SVARTNES_Temperature",
+    "SVARTNES_Dewpoint"
+  ]
+}

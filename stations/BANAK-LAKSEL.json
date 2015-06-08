@@ -1,0 +1,16 @@
+{
+  "id": "BANAK-LAKSEL",
+  "uid": "5219f3cc-7ae5-4213-92cd-67ab14d87788",
+  "title": "BANAK-LAKSEL",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    70.0688,
+    24.9735
+  ],
+  "phens": [
+    "BANAK-LAKSEL_Temperature",
+    "BANAK-LAKSEL_Dewpoint"
+  ]
+}

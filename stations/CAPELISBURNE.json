@@ -1,0 +1,16 @@
+{
+  "id": "CAPELISBURNE",
+  "uid": "bca252fe-44df-4f56-b02e-d8e322a4e854",
+  "title": "CAPELISBURNE",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    68.8833,
+    -166.1333
+  ],
+  "phens": [
+    "CAPELISBURNE_Temperature",
+    "CAPELISBURNE_Dewpoint"
+  ]
+}

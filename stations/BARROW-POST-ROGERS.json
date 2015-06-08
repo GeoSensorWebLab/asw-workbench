@@ -1,0 +1,16 @@
+{
+  "id": "BARROW-POST-ROGERS",
+  "uid": "03bcd864-fbee-4b2c-819f-a99d384e6ba8",
+  "title": "BARROW-POST-ROGERS",
+  "contact_email": "akrherz@iastate.ca",
+  "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+  "contact_name": "daryl herzman",
+  "loc": [
+    71.2826,
+    -156.7922
+  ],
+  "phens": [
+    "BARROW-POST-ROGERS_Temperature",
+    "BARROW-POST-ROGERS_Dewpoint"
+  ]
+}
