@@ -22,6 +22,23 @@ That's all. The server is now running at [http://localhost:1337/](http://localho
 
 Bower is for packages that are sent to the client; Node packages are used for the server only. Each system also has different dependency resolution systems, where Bower is optimized for the web browser.
 
+### convert.js
+
+Converts output from weather-json.js to a format ready for push.js.
+
+    Usage: $0 <JSON file> <datastream name>
+
+Datastream name is usually the field you want to create datastream for, e.g. "tempC" or "relHum".
+
+### download-sensors.js
+
+Downloads sensors from Data Service into a directory with individual JSON files for each sensor.
+
+    Usage: $0 <RPI Base URL> <User UID> -o <directory>
+    Example: node bin/download-sensors.js http://example.com 2abe488f883b6e9bbd087017d503bc2d -o stations
+
+Used to build the map overview page for ASW.
+
 ### generate.js
 
 This script will generate a JSON array of dummy record objects, with random data for values. The array can then be uploaded into the Data Service using `bin/push` or `bin/ppush`. Usage:
@@ -35,7 +52,7 @@ Start and end dates must be ISO format. Last parameter can be `uniform` or `norm
 Script to download historical weather data from Environment Canada. Data disclaimers apply.
 
     Usage: $0 -t <timeframe> -s <station ID> -Y <year> -m <month> -d <day>
-    
+
     -t: timeframe to retrieve. '1' corresponds to hourly.
     -s: station ID.
     -Y: Year. e.g. 2014
@@ -49,20 +66,12 @@ Output is CSV stream.
 Converts CSV output from weather.js to a JSON file. This can then be parsed and uploaded to the GeoCENS Data Service.
 
     Usage: $0 <CSV file> -z <station time zone>
-    
+
     -z: Time zone identifier of the station.
 
 Yes, the time zone must be specified manually. This is because Environment Canada returns times in Local Standard Time, which is unknown. So the user (you) must tell the parser where the date is located to properly adjust it to UTC.
 
 Output is a JSON stream.
-
-### convert.js
-
-Converts output from weather-json.js to a format ready for push.js.
-
-    Usage: $0 <JSON file> <datastream name>
-
-Datastream name is usually the field you want to create datastream for, e.g. "tempC" or "relHum".
 
 ### "push" and "ppush"
 
@@ -79,10 +88,6 @@ These two scripts in the `bin` directory can take a JSON file containing an arra
 4. Watch as the POST requests are completed, "200 OK" means the Data Service received the request
 5. Verify the records uploaded by doing a GET request to "http://dataservice.geocens.ca/users/<user_id>/sensors/<sensor_id>/datastreams/<datastream_id>/records"
 6. Delete `f.json`
-
-## Testing
-
-TODO
 
 ## Deploying
 
@@ -106,4 +111,4 @@ This tells the nginx instance running in Dokku to redirect requests to http://se
 
 ## License
 
-Copyright GeoSensor Web Lab, James Badger, 2013-2014. All rights reserved.
+Copyright GeoSensor Web Lab, James Badger, 2013-2015. All rights reserved.
