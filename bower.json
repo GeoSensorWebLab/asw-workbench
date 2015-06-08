@@ -25,7 +25,7 @@
     "jquery-deparam": "~0.2.0",
     "jquery.transit": "~0.9.12",
     "json2": "*",
-    "marionette": "~2.1.0",
+    "marionette": "~2.4.1",
     "polarmap": "1.0.1",
     "proj4leaflet": "kartena/Proj4Leaflet#4e445dd765d4e5cfcb156e423c6a0b7b65adf535"
   },
