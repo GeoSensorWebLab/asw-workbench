@@ -34,17 +34,15 @@ var convert = function (json) {
   var sensor = JSON.parse(json);
   return {
     name: sensor.title,
-    shortName: sensor.title,
-    id: sensor.uid,
-    href: "/sensors/" + sensor.uid + "?api_key=APIKEYHERE",
-    location: {
+    geo: {
       type: "Feature",
       geometry: {
         type: "Point",
         coordinates: [sensor.loc[1], sensor.loc[0]]
       },
       properties: {}
-    }
+    },
+    sensors: [sensor]
   };
 };
 
