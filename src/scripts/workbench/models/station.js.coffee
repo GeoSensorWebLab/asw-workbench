@@ -8,16 +8,7 @@ class Workbench.Models.Station extends HAL.Model
   initialize: (attributes, options) ->
     @geometry = new Workbench.Models.Feature(attributes.geo)
     @unset("geo")
-    @sensors = new Workbench.Collections.SensorsCollection(@embedded.sensors || [])
-
-    links = _.collect(@links, (value, key) ->
-      {
-        name: key,
-        title: value["description"],
-        href: value["href"]
-      }
-    )
-    @linksCollection = new Backbone.Collection(links)
+    @sensors = new Workbench.Collections.SensorsCollection(@get("sensors") || [])
 
   latlng: ->
     [@geometry.get("latitude"), @geometry.get("longitude")]

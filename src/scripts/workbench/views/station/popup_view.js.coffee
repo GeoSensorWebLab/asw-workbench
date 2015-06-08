@@ -15,10 +15,6 @@ class Workbench.Views.StationPopupView extends Backbone.View
       collection: @model.sensors
     )
 
-    @stationLinksView = new Workbench.Views.StationLinksView(
-      collection: @model.linksCollection
-    )
-
   # Hook into Leaflet's _source.fire functions to catch popupclose and remove
   # the view.
   fire: (eventName) ->
@@ -27,7 +23,6 @@ class Workbench.Views.StationPopupView extends Backbone.View
 
   render: ->
     @$el.html(JST[@popupTemplate](@model.toJSON()))
-    @$(".stationLinks").html(@stationLinksView.render().$el)
     @$(".stationSensors").html(@stationSensorsView.render().$el)
     this
 
