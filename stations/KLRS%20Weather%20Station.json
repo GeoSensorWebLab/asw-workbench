@@ -30,5 +30,6 @@
     "Rain_mm_Tot",
     "SWin_Wm2_Avg",
     "SWout_Wm2_Avg"
-  ]
+  ],
+  "api_key": "798192d6c2c55da138e1a1619caeeff4"
 }

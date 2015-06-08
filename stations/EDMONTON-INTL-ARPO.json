@@ -12,5 +12,6 @@
   "phens": [
     "EDMONTON-INTL-ARPO_Temperature",
     "EDMONTON-INTL-ARPO_Dewpoint"
-  ]
+  ],
+  "api_key": "0c3e749bfdf5518e8510465eca436d34"
 }
