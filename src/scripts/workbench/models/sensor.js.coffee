@@ -4,7 +4,13 @@ class Workbench.Models.Sensor extends Backbone.Model
   initialize: ->
     @set("endpoint", "http://dataservice.geocens.ca/api/sensors/#{@id}")
     @set("datastreams", new Workbench.Collections.DatastreamsCollection())
-    @set("selfLink", "/sensors/#{@id}?api_key=#{@apikey}")
+    @set("selfLink", "/sensors/#{@id}?api_key=#{@get("api_key")}")
+
+    if (location.search.length > 0)
+        params = deparam(location.search.split('?')[1])
+        @set("api_key", params.api_key)
+
+    @set("source", new Geocens.DataService({ api_key: @get("api_key") }))
 
     @on "change:loc", =>
       @set("latitude", @get("loc")[0])

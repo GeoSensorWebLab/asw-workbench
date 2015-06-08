@@ -27,7 +27,8 @@ window.sampleStations = [
         "phens": [
           "AASIAAT dewpoint",
           "AASIAAT_temperature"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -59,7 +60,8 @@ window.sampleStations = [
         "phens": [
           "ADAK_Temperature",
           "ADAK_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -91,7 +93,8 @@ window.sampleStations = [
         "phens": [
           "AKHIOK_Temperature",
           "AKHIOK_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -123,7 +126,8 @@ window.sampleStations = [
         "phens": [
           "temp_AKUREYRI",
           "dewpoint_AKUREYRI"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -155,39 +159,8 @@ window.sampleStations = [
         "phens": [
           "ALESUND-VIGRA_Temperature",
           "ALESUND-VIGRA_Dewpoint"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "ALTA-AIRPORT",
-    "geo": {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          23.3581,
-          69.9775
-        ]
-      },
-      "properties": {}
-    },
-    "sensors": [
-      {
-        "id": "ALTA-AIRPORT",
-        "uid": "179a626e-9c98-4b27-a8ae-32cf3e93e66a",
-        "title": "ALTA-AIRPORT",
-        "contact_email": "akrherz@iastate.ca",
-        "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
-        "contact_name": "daryl herzman",
-        "loc": [
-          69.9775,
-          23.3581
         ],
-        "phens": [
-          "ALTA-AIRPORT_Temperature",
-          "ALTA-AIRPORT_Dewpoint"
-        ]
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -219,7 +192,8 @@ window.sampleStations = [
         "phens": [
           "AMBLER_Temperature",
           "AMBLER_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -251,7 +225,41 @@ window.sampleStations = [
         "phens": [
           "ANADYR_Temperature",
           "ANADYR_Dewpoint"
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
+      }
+    ]
+  },
+  {
+    "name": "ALTA-AIRPORT",
+    "geo": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.3581,
+          69.9775
         ]
+      },
+      "properties": {}
+    },
+    "sensors": [
+      {
+        "id": "ALTA-AIRPORT",
+        "uid": "179a626e-9c98-4b27-a8ae-32cf3e93e66a",
+        "title": "ALTA-AIRPORT",
+        "contact_email": "akrherz@iastate.ca",
+        "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+        "contact_name": "daryl herzman",
+        "loc": [
+          69.9775,
+          23.3581
+        ],
+        "phens": [
+          "ALTA-AIRPORT_Temperature",
+          "ALTA-AIRPORT_Dewpoint"
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -283,7 +291,8 @@ window.sampleStations = [
         "phens": [
           "ANAKTUVU_Temperature",
           "ANAKTUVU_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -315,7 +324,8 @@ window.sampleStations = [
         "phens": [
           "ANCHORAGE-ITL-ARPT_Temperature",
           "ANCHORAGE-ITL-ARPT_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -347,7 +357,8 @@ window.sampleStations = [
         "phens": [
           "ANDOYA-ANDENES_Temperature",
           "ANDOYA-ANDENES_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -379,7 +390,8 @@ window.sampleStations = [
         "phens": [
           "ANGOON_Temperature",
           "ANGOON_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -411,7 +423,8 @@ window.sampleStations = [
         "phens": [
           "ANIAK_Temperature",
           "ANIAK_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -443,7 +456,8 @@ window.sampleStations = [
         "phens": [
           "ANNETTE-ISLAND_Temperature",
           "ANNETTE-ISLAND_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -475,7 +489,8 @@ window.sampleStations = [
         "phens": [
           "ANVIKAIRPORT_Temperature",
           "ANVIKAIRPORT_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -507,7 +522,8 @@ window.sampleStations = [
         "phens": [
           "ARCTICVILLAGE_Temperature",
           "ARCTICVILLAGE_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -539,7 +555,8 @@ window.sampleStations = [
         "phens": [
           "ARHANGELSK_Temperature",
           "ARHANGELSK_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -571,7 +588,8 @@ window.sampleStations = [
         "phens": [
           "ATKAAIRPORT_Temperature",
           "ATKAAIRPORT_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -603,7 +621,8 @@ window.sampleStations = [
         "phens": [
           "ATQASUK_Temperature",
           "ATQASUK_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -635,7 +654,8 @@ window.sampleStations = [
         "phens": [
           "Akun_Temperature",
           "Akun_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -667,7 +687,8 @@ window.sampleStations = [
         "phens": [
           "Alpine_Temperature",
           "Alpine_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -699,7 +720,8 @@ window.sampleStations = [
         "phens": [
           "BAEDOUFOSS_Temperature",
           "BAEDOUFOSS_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -731,7 +753,8 @@ window.sampleStations = [
         "phens": [
           "BANAK-LAKSEL_Temperature",
           "BANAK-LAKSEL_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -763,7 +786,8 @@ window.sampleStations = [
         "phens": [
           "BARROW-POST-ROGERS_Temperature",
           "BARROW-POST-ROGERS_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -795,7 +819,8 @@ window.sampleStations = [
         "phens": [
           "BARTERISLAND_Temperature",
           "BARTERISLAND_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -827,7 +852,8 @@ window.sampleStations = [
         "phens": [
           "BERGEN-FLESLAND_Temperature",
           "BERGEN-FLESLAND_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -859,7 +885,8 @@ window.sampleStations = [
         "phens": [
           "BERLEVAG_Temperature",
           "BERLEVAG_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -891,7 +918,8 @@ window.sampleStations = [
         "phens": [
           "BETHELAIRPORT_Temperature",
           "BETHELAIRPORT_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -923,7 +951,8 @@ window.sampleStations = [
         "phens": [
           "BETTLESFIELD_Temperature",
           "BETTLESFIELD_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -955,7 +984,8 @@ window.sampleStations = [
         "phens": [
           "BIRCHWOOD_Temperature",
           "BIRCHWOOD_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -987,7 +1017,8 @@ window.sampleStations = [
         "phens": [
           "BODO-VI_Temperature",
           "BODO-VI_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1019,7 +1050,8 @@ window.sampleStations = [
         "phens": [
           "BRATSK/IRKUTSK_Temperature",
           "BRATSK/IRKUTSK_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1051,7 +1083,8 @@ window.sampleStations = [
         "phens": [
           "BRONNOYSUND_Temperature",
           "BRONNOYSUND_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1083,7 +1116,40 @@ window.sampleStations = [
         "phens": [
           "BUCKLAND_Temperature",
           "BUCKLAND_Dewpoint"
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
+      }
+    ]
+  },
+  {
+    "name": "Bildudalur",
+    "geo": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -23.5462,
+          65.6413
         ]
+      },
+      "properties": {}
+    },
+    "sensors": [
+      {
+        "id": "Bildudalur",
+        "uid": "a8j8wnwcjlg3z5mfn837fnxnip",
+        "title": "Bildudalur",
+        "contact_email": "akrherz@iastate.ca",
+        "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+        "contact_name": "daryl herzman",
+        "loc": [
+          65.6413,
+          -23.5462
+        ],
+        "phens": [
+          "temp_Bildudalur"
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1115,7 +1181,8 @@ window.sampleStations = [
         "phens": [
           "Botovo_Temperature",
           "Botovo_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1147,38 +1214,8 @@ window.sampleStations = [
         "phens": [
           "BrevingMission_Temperature",
           "BrevingMission_Dewpoint"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Bildudalur",
-    "geo": {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -23.5462,
-          65.6413
-        ]
-      },
-      "properties": {}
-    },
-    "sensors": [
-      {
-        "id": "Bildudalur",
-        "uid": "a8j8wnwcjlg3z5mfn837fnxnip",
-        "title": "Bildudalur",
-        "contact_email": "akrherz@iastate.ca",
-        "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
-        "contact_name": "daryl herzman",
-        "loc": [
-          65.6413,
-          -23.5462
         ],
-        "phens": [
-          "temp_Bildudalur"
-        ]
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1210,7 +1247,8 @@ window.sampleStations = [
         "phens": [
           "CALGARY-INTL-ARPO_Temperature",
           "CALGARY-INTL-ARPO_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1242,7 +1280,8 @@ window.sampleStations = [
         "phens": [
           "CAPELISBURNE_Temperature",
           "CAPELISBURNE_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1274,7 +1313,8 @@ window.sampleStations = [
         "phens": [
           "CHAPLEAU-ARPT_Temperature",
           "CHAPLEAU-ARPT_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1306,7 +1346,8 @@ window.sampleStations = [
         "phens": [
           "CHEBOKSARY_Temperature",
           "CHEBOKSARY_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1338,7 +1379,8 @@ window.sampleStations = [
         "phens": [
           "CHELYABINSK-BALA_Temperature",
           "CHELYABINSK-BALA_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1370,7 +1412,8 @@ window.sampleStations = [
         "phens": [
           "CHEVAK_Temperature",
           "CHEVAK_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1402,7 +1445,8 @@ window.sampleStations = [
         "phens": [
           "CHIGNIK_Temperature",
           "CHIGNIK_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1434,7 +1478,8 @@ window.sampleStations = [
         "phens": [
           "CONSTABLE Celsius",
           "CONSTABLE dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1466,7 +1511,8 @@ window.sampleStations = [
         "phens": [
           "ClarksPoint_Temperature",
           "ClarksPoint_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1498,7 +1544,8 @@ window.sampleStations = [
         "phens": [
           "DEERINGAIRPORT_Temperature",
           "DEERINGAIRPORT_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1530,7 +1577,8 @@ window.sampleStations = [
         "phens": [
           "DRAUGEN_Temperature",
           "DRAUGEN_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1562,7 +1610,8 @@ window.sampleStations = [
         "phens": [
           "DRYDEN-ARPT_Temperature",
           "DRYDEN-ARPT_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1594,7 +1643,8 @@ window.sampleStations = [
         "phens": [
           "EAGLEAIRPORT_Temperature",
           "EAGLEAIRPORT_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1626,7 +1676,8 @@ window.sampleStations = [
         "phens": [
           "EDMONTON-INTL-ARPO_Temperature",
           "EDMONTON-INTL-ARPO_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1658,7 +1709,8 @@ window.sampleStations = [
         "phens": [
           "temp_EGILSSTADIR",
           "dewpoint_EGILSSTADIR"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1690,7 +1742,8 @@ window.sampleStations = [
         "phens": [
           "EKOFISK-OIL-PLTF_Temperature",
           "EKOFISK-OIL-PLTF_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1722,7 +1775,8 @@ window.sampleStations = [
         "phens": [
           "EVENES_Temperature",
           "EVENES_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1754,7 +1808,8 @@ window.sampleStations = [
         "phens": [
           "FAGERNE-LEIRIN_Temperature",
           "FAGERNE-LEIRIN_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1786,7 +1841,8 @@ window.sampleStations = [
         "phens": [
           "FAREWELL-LAKE-SEAPLANE_Temperature",
           "FAREWELL-LAKE-SEAPLANE_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1818,7 +1874,8 @@ window.sampleStations = [
         "phens": [
           "FARRBANKS-INTL-ARPT_Temperature",
           "FARRBANKS-INTL-ARPT_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1850,7 +1907,8 @@ window.sampleStations = [
         "phens": [
           "FLORO_Temperature",
           "FLORO_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1882,7 +1940,8 @@ window.sampleStations = [
         "phens": [
           "FORDE-BRINELAND_Temperature",
           "FORDE-BRINELAND_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1914,7 +1973,8 @@ window.sampleStations = [
         "phens": [
           "FORT-MCMURRAY-AR_Temperature",
           "FORT-MCMURRAY-AR_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1946,7 +2006,8 @@ window.sampleStations = [
         "phens": [
           "FalsePassAirport_Temperature",
           "FalsePassAirport_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -1978,7 +2039,8 @@ window.sampleStations = [
         "phens": [
           "GALENA-AIRPORT_Temperature",
           "GALENA-AIRPORT_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -2010,7 +2072,8 @@ window.sampleStations = [
         "phens": [
           "GERALDTON-ARPT_Temperature",
           "GERALDTON-ARPT_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -2042,7 +2105,8 @@ window.sampleStations = [
         "phens": [
           "GODTHAB_AirTemperature",
           "GODTHAB_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -2074,7 +2138,8 @@ window.sampleStations = [
         "phens": [
           "GOLD-BAY-AIRPORT_Temperature",
           "GOLD-BAY-AIRPORT_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -2106,7 +2171,8 @@ window.sampleStations = [
         "phens": [
           "GULKANA-ARPT_Temperature",
           "GULKANA-ARPT_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -2138,7 +2204,8 @@ window.sampleStations = [
         "phens": [
           "GULLFAX_Temperature",
           "GULLFAX_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -2170,7 +2237,8 @@ window.sampleStations = [
         "phens": [
           "HALLI_Temperature",
           "HALLI_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -2202,7 +2270,8 @@ window.sampleStations = [
         "phens": [
           "HAMILTON-ARPT_Temperature",
           "HAMILTON-ARPT_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -2234,7 +2303,8 @@ window.sampleStations = [
         "phens": [
           "HAMMERFEST_Temperature",
           "HAMMERFEST_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -2266,7 +2336,8 @@ window.sampleStations = [
         "phens": [
           "HAUGESUND-KARMOY_Temperature",
           "HAUGESUND-KARMOY_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -2298,7 +2369,8 @@ window.sampleStations = [
         "phens": [
           "HEIDRUN_Temperature",
           "HEIDRUN_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -2329,39 +2401,8 @@ window.sampleStations = [
         ],
         "phens": [
           "HEIMDAL-OILP_Temperature"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "HELSINKI/MALMI",
-    "geo": {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          25.0428,
-          60.2546
-        ]
-      },
-      "properties": {}
-    },
-    "sensors": [
-      {
-        "id": "HELSINKI/MALMI",
-        "uid": "t1tz6e8efshe6r62iuuyibic0u",
-        "title": "HELSINKI/MALMI",
-        "contact_email": "akrherz@iastate.ca",
-        "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
-        "contact_name": "daryl herzman",
-        "loc": [
-          60.2546,
-          25.0428
         ],
-        "phens": [
-          "HELSINKI/MALMI_Temperature",
-          "HELSINKI/MALMI_Dewpoint"
-        ]
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -2393,7 +2434,41 @@ window.sampleStations = [
         "phens": [
           "HELSINKI/VANTAA_Temperature",
           "HELSINKI/VANTAA_Dewpoint"
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
+      }
+    ]
+  },
+  {
+    "name": "HELSINKI/MALMI",
+    "geo": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.0428,
+          60.2546
         ]
+      },
+      "properties": {}
+    },
+    "sensors": [
+      {
+        "id": "HELSINKI/MALMI",
+        "uid": "t1tz6e8efshe6r62iuuyibic0u",
+        "title": "HELSINKI/MALMI",
+        "contact_email": "akrherz@iastate.ca",
+        "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+        "contact_name": "daryl herzman",
+        "loc": [
+          60.2546,
+          25.0428
+        ],
+        "phens": [
+          "HELSINKI/MALMI_Temperature",
+          "HELSINKI/MALMI_Dewpoint"
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -2425,7 +2500,8 @@ window.sampleStations = [
         "phens": [
           "HIGHLEVEL-AIRPO_Temperature",
           "HIGHLEVEL-AIRPO_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -2457,7 +2533,8 @@ window.sampleStations = [
         "phens": [
           "ILIAMNA-ARPT_Temperature",
           "ILIAMNA-ARPT_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -2489,7 +2566,8 @@ window.sampleStations = [
         "phens": [
           "IVALO_Temperature",
           "IVALO_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -2521,7 +2599,8 @@ window.sampleStations = [
         "phens": [
           "JAKOBSHAVN_Airtemperature",
           "JAKOBSHAVN_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -2553,7 +2632,8 @@ window.sampleStations = [
         "phens": [
           "JUNEAU-INTL-AIRPORT_Temperature",
           "JUNEAU-INTL-AIRPORT_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -2585,7 +2665,8 @@ window.sampleStations = [
         "phens": [
           "JYVASKYLA_Temperature",
           "JYVASKYLA_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -2617,7 +2698,8 @@ window.sampleStations = [
         "phens": [
           "KAJAANI_Temperature",
           "KAJAANI_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -2649,7 +2731,8 @@ window.sampleStations = [
         "phens": [
           "KALTAG-AIRPORT_Temperature",
           "KALTAG-AIRPORT_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -2680,7 +2763,8 @@ window.sampleStations = [
         ],
         "phens": [
           "KAUHAVA_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -2708,7 +2792,8 @@ window.sampleStations = [
         "loc": [
           55.7833,
           49.2
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -2740,7 +2825,8 @@ window.sampleStations = [
         "phens": [
           "temp_KEFLAVIK",
           "dewpoint_KEFLAVIK"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -2772,7 +2858,8 @@ window.sampleStations = [
         "phens": [
           "KEMEROVO_Temperature",
           "KEMEROVO_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -2804,7 +2891,8 @@ window.sampleStations = [
         "phens": [
           "KEMI_Temperature",
           "KEMI_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -2836,7 +2924,8 @@ window.sampleStations = [
         "phens": [
           "KHANTY-MANSIYSK_Temperature",
           "KHANTY-MANSIYSK_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -2868,7 +2957,8 @@ window.sampleStations = [
         "phens": [
           "KITTILA_Temperature",
           "KITTILA_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -2900,7 +2990,8 @@ window.sampleStations = [
         "phens": [
           "KIVALINA-AIRPORT_Temperature",
           "KIVALINA-AIRPORT_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -2945,7 +3036,8 @@ window.sampleStations = [
           "Hz",
           "PF Total Load",
           "V2"
-        ]
+        ],
+        "api_key": "798192d6c2c55da138e1a1619caeeff4"
       }
     ]
   },
@@ -2995,7 +3087,8 @@ window.sampleStations = [
           "Rain_mm_Tot",
           "SWin_Wm2_Avg",
           "SWout_Wm2_Avg"
-        ]
+        ],
+        "api_key": "798192d6c2c55da138e1a1619caeeff4"
       }
     ]
   },
@@ -3027,7 +3120,8 @@ window.sampleStations = [
         "phens": [
           "KRASNOYARSK_Temperature",
           "KRASNOYARSK_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3059,7 +3153,8 @@ window.sampleStations = [
         "phens": [
           "KRUUNUPYY_Temperature",
           "KRUUNUPYY_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3091,7 +3186,8 @@ window.sampleStations = [
         "phens": [
           "KULUSUK Celsius",
           "KULUSUk_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3123,7 +3219,8 @@ window.sampleStations = [
         "phens": [
           "KUOPIO_Temperature",
           "KUOPIO_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3155,7 +3252,8 @@ window.sampleStations = [
         "phens": [
           "KUPARUK-AIRPORT_Temperature",
           "KUPARUK-AIRPORT_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3187,7 +3285,8 @@ window.sampleStations = [
         "phens": [
           "KUUSAMO_Temperature",
           "KUUSAMO_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3219,7 +3318,8 @@ window.sampleStations = [
         "phens": [
           "LAPPEENRANTA_Temperature",
           "LAPPEENRANTA_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3251,7 +3351,8 @@ window.sampleStations = [
         "phens": [
           "LEKNES_Temperature",
           "LEKNES_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3283,7 +3384,8 @@ window.sampleStations = [
         "phens": [
           "MAGADAN/NAGAEVO_Temperature",
           "MAGADAN/NAGAEVO_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3315,7 +3417,8 @@ window.sampleStations = [
         "phens": [
           "MANITSOQ Celsius",
           "MANITSOQ_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3347,7 +3450,8 @@ window.sampleStations = [
         "phens": [
           "MARIEHAMN/ALAND_Temperature",
           "MIKKELI_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3379,7 +3483,8 @@ window.sampleStations = [
         "phens": [
           "MEHAMN_Temperature",
           "MEHAMN_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3411,7 +3516,8 @@ window.sampleStations = [
         "phens": [
           "MIKKELI_Temperature",
           "MIKKELI_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3443,7 +3549,8 @@ window.sampleStations = [
         "phens": [
           "MOIRANA_Temperature",
           "MOIRANA_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3475,7 +3582,8 @@ window.sampleStations = [
         "phens": [
           "MOSCOW/SHEREMET_Temperature",
           "MOSCOW/SHEREMET_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3507,7 +3615,8 @@ window.sampleStations = [
         "phens": [
           "MOSCOW/VNUKOVO_Temperature",
           "MOSCOW/VNUKOVO_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3539,7 +3648,8 @@ window.sampleStations = [
         "phens": [
           "MOSCOW-Novoye_Temperature",
           "MOSCOW-Novoye_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3571,7 +3681,8 @@ window.sampleStations = [
         "phens": [
           "MOSCOW_Temperature",
           "MOSCOW_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3603,7 +3714,8 @@ window.sampleStations = [
         "phens": [
           "MURMANSK_Temperature",
           "MURMANSK_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3635,7 +3747,8 @@ window.sampleStations = [
         "phens": [
           "MUSKOKA-ARPT_Temperature",
           "MUSKOKA-ARPT_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3666,7 +3779,8 @@ window.sampleStations = [
         ],
         "phens": [
           "NAMSOS-AIRPORT_Temperature"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3698,7 +3812,8 @@ window.sampleStations = [
         "phens": [
           "NARSSQRSSUAQ_Temperature",
           "NARSSQRSSUAQ_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3730,7 +3845,8 @@ window.sampleStations = [
         "phens": [
           "NIZHNEVARTOVSK_Temperature",
           "NIZHNEVARTOVSK_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3762,7 +3878,8 @@ window.sampleStations = [
         "phens": [
           "NIZHNY NOVGOROD_Temperature",
           "NIZHNY NOVGOROD_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3794,7 +3911,8 @@ window.sampleStations = [
         "phens": [
           "NORNE-FPSO-OILP_Temperature",
           "NORNE-FPSO-OILP_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3826,7 +3944,8 @@ window.sampleStations = [
         "phens": [
           "OSTAFYEVO INTL_Temperature",
           "OSTAFYEVO INTL_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3858,7 +3977,8 @@ window.sampleStations = [
         "phens": [
           "OTTAWA-INTL_Temperature",
           "OTTAWA-INTL_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3890,7 +4010,8 @@ window.sampleStations = [
         "phens": [
           "OULU/ULEABORG_Temperature",
           "OULU/ULEABORG_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3922,7 +4043,8 @@ window.sampleStations = [
         "phens": [
           "PAAMIUT_Temperature",
           "PAAMIUT_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3954,7 +4076,8 @@ window.sampleStations = [
         "phens": [
           "PERM/BOLSHOE SAV_Temperature",
           "PERM/BOLSHOE SAV_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -3986,7 +4109,8 @@ window.sampleStations = [
         "phens": [
           "PORI_Temperature",
           "PORI_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4018,7 +4142,8 @@ window.sampleStations = [
         "phens": [
           "PROVIDENJA BAY_Temperature",
           "PROVIDENJA BAY_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4050,7 +4175,8 @@ window.sampleStations = [
         "phens": [
           "Plotnikovo_Temperature",
           "Plotnikovo_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4082,7 +4208,8 @@ window.sampleStations = [
         "phens": [
           "QAANAAQ_Temperature",
           "QAANAAQ_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4114,7 +4241,8 @@ window.sampleStations = [
         "phens": [
           "temp_REYKJAVIK",
           "dewpoint_REYKJAVIK"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4146,7 +4274,8 @@ window.sampleStations = [
         "phens": [
           "ROROS-AIRPORT_Temperature",
           "ROROS-AIRPORT_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4178,7 +4307,8 @@ window.sampleStations = [
         "phens": [
           "ROSCHINO_Temperature",
           "ROSCHINO_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4210,7 +4340,8 @@ window.sampleStations = [
         "phens": [
           "ROST_Temperature",
           "ROST_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4242,7 +4373,37 @@ window.sampleStations = [
         "phens": [
           "ROVANIEMI_Temperature",
           "ROVANIEMI_Dewpoint"
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
+      }
+    ]
+  },
+  {
+    "name": "SAVONLINNA",
+    "geo": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.9541,
+          61.9431
         ]
+      },
+      "properties": {}
+    },
+    "sensors": [
+      {
+        "id": "SAVONLINNA",
+        "uid": "fbkffabdm1xxbfodp7b8ozjwi2",
+        "title": "SAVONLINNA",
+        "contact_email": "akrherz@iastate.ca",
+        "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
+        "contact_name": "daryl herzman",
+        "loc": [
+          61.9431,
+          28.9541
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4274,35 +4435,8 @@ window.sampleStations = [
         "phens": [
           "SARNIA-ARPT_Temperature",
           "SARNIA-ARPT_Dewpoint"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "SAVONLINNA",
-    "geo": {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          28.9541,
-          61.9431
-        ]
-      },
-      "properties": {}
-    },
-    "sensors": [
-      {
-        "id": "SAVONLINNA",
-        "uid": "fbkffabdm1xxbfodp7b8ozjwi2",
-        "title": "SAVONLINNA",
-        "contact_email": "akrherz@iastate.ca",
-        "description": "Meteorological data from The Iowa Environmental Mesonet (IEM) ",
-        "contact_name": "daryl herzman",
-        "loc": [
-          61.9431,
-          28.9541
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4334,7 +4468,8 @@ window.sampleStations = [
         "phens": [
           "SAVONLINNA2_Temperature",
           "SAVONLINNA2_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4366,7 +4501,8 @@ window.sampleStations = [
         "phens": [
           "SEINAJOKI-ILMAJO_Temperature",
           "SEINAJOKI-ILMAJO_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4398,7 +4534,8 @@ window.sampleStations = [
         "phens": [
           "SISIMIUT_Temperature",
           "SISIMIUT_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4430,7 +4567,8 @@ window.sampleStations = [
         "phens": [
           "SONDRE STEOMFJOR_Temperature",
           "SONDRE STEOMFJOR_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4462,7 +4600,8 @@ window.sampleStations = [
         "phens": [
           "SORKJOSEN_Temperature",
           "SORKJOSEN_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4494,7 +4633,8 @@ window.sampleStations = [
         "phens": [
           "ST PETERSBURG_Temperature",
           "ST PETERSBURG_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4526,7 +4666,8 @@ window.sampleStations = [
         "phens": [
           "SURGUT_Temperature",
           "SURGUT_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4558,7 +4699,8 @@ window.sampleStations = [
         "phens": [
           "SVARTNES_Temperature",
           "SVARTNES_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4590,7 +4732,8 @@ window.sampleStations = [
         "phens": [
           "SYKTYVKAR_Temperature",
           "SYKTYVKAR_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4622,7 +4765,8 @@ window.sampleStations = [
         "phens": [
           "TAMPERE:PIRKKALA_Temperature",
           "TAMPERE:PIRKKALA_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4654,7 +4798,8 @@ window.sampleStations = [
         "phens": [
           "THULE AB_Temperature",
           "THULE AB_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4686,7 +4831,8 @@ window.sampleStations = [
         "phens": [
           "TURKU/ABO_Temperature",
           "TURKU/ABO_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4718,7 +4864,8 @@ window.sampleStations = [
         "phens": [
           "UPERNAVIK_Temperature",
           "UPERNAVIK_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4750,7 +4897,8 @@ window.sampleStations = [
         "phens": [
           "UTTI_Temperature",
           "UTTI_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4782,7 +4930,8 @@ window.sampleStations = [
         "phens": [
           "UUMMANNAQ_Temperature",
           "UUMMANNAQ_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4814,7 +4963,8 @@ window.sampleStations = [
         "phens": [
           "Ula-Platform_Temperature",
           "Ula-Platform_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4846,7 +4996,8 @@ window.sampleStations = [
         "phens": [
           "VAASA_Temperature",
           "VAASA_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4878,7 +5029,8 @@ window.sampleStations = [
         "phens": [
           "VADSO_Temperature",
           "VADSO_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4910,7 +5062,8 @@ window.sampleStations = [
         "phens": [
           "VARKAUS_Temperature",
           "VARKAUS_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4942,7 +5095,8 @@ window.sampleStations = [
         "phens": [
           "temp_VESTMANNAEYJAR",
           "dewpoint_VESTMANNAEYJAR"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -4974,7 +5128,8 @@ window.sampleStations = [
         "phens": [
           "Valhall-A-Platform_Temperature",
           "Valhall-A-Platform_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -5006,7 +5161,8 @@ window.sampleStations = [
         "phens": [
           "WAINWRIGHT-AIRPORT_Temperature",
           "WAINWRIGHT-AIRPORT_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -5038,7 +5194,8 @@ window.sampleStations = [
         "phens": [
           "YAKUTSK_Temperature",
           "YAKUTSK_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   },
@@ -5070,7 +5227,8 @@ window.sampleStations = [
         "phens": [
           "Yaroslavl Tunoshna_Temperature",
           "Yaroslavl Tunoshna_Dewpoint"
-        ]
+        ],
+        "api_key": "0c3e749bfdf5518e8510465eca436d34"
       }
     ]
   }
