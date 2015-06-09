@@ -1,4 +1,4 @@
-class Workbench.Views.SensorShowView extends Backbone.Marionette.ItemView
+class Workbench.Views.SensorShowView extends Backbone.Marionette.LayoutView
   template: "workbench/templates/sensor_show"
   id: "sensorView"
   className: "page-header"
@@ -6,8 +6,9 @@ class Workbench.Views.SensorShowView extends Backbone.Marionette.ItemView
   modelEvents:
     "sensorLoaded": "loadAttributes"
 
-  initialize: ->
-    @views = new Backbone.ChildViewContainer()
+  regions:
+    datastreams: ".datastreamCollectionView"
+    metadata: ".metadataView"
 
   # Animate out, update content, animate back in
   swapContent: ($element, content) ->
@@ -15,18 +16,13 @@ class Workbench.Views.SensorShowView extends Backbone.Marionette.ItemView
       @text(content).transition(rotateX: '0deg')
     )
 
-  onRender: ->
-    @views.add(new Workbench.Views.SensorMetadataView(
+  onShow: ->
+    @metadata.show(new Workbench.Views.SensorMetadataView(
       model: @model
     ))
-    @views.add(new Workbench.Views.DatastreamCollectionView(
+    @datastreams.show(new Workbench.Views.DatastreamCollectionView(
       collection: @model.get("datastreams")
     ))
-
-    @views.each (view) =>
-      @$el.append(view.render().$el)
-
-    this
 
   loadAttributes: ->
     @swapContent(@$(".sensor-name"), @model.get("title"))
