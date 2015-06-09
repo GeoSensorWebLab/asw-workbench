@@ -1,7 +1,4 @@
 class Workbench.Controllers.StationsController extends Backbone.Marionette.Controller
-  initialize: (options) ->
-    @$el = options.el
-
   #
   # Actions
   #
@@ -11,5 +8,4 @@ class Workbench.Controllers.StationsController extends Backbone.Marionette.Contr
 
     mainView = new Workbench.Views.StationIndexView
       collection: @stations
-      el: @$el
-    mainView.render()
+    window.rm.get('main').show(mainView)

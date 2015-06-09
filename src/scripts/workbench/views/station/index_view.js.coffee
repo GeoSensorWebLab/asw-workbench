@@ -4,7 +4,7 @@ class Workbench.Views.StationIndexView extends Backbone.Marionette.LayoutView
   regions:
     map: "#stationsMap"
 
-  onRender: ->
+  onShow: ->
     @map.show(new Workbench.Views.StationsMapView(
       collection: @collection
     ))

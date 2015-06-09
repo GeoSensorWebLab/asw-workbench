@@ -11,8 +11,14 @@ Workbench.Routers = {}
 Workbench.Views = {}
 
 Workbench.addInitializer (options) ->
-  # Controllers and Routing
+  # Regions
+  window.rm = new Backbone.Marionette.RegionManager({
+    regions: {
+      main: "#app"
+    }
+  })
 
+  # Controllers and Routing
   stationsController = new Workbench.Controllers.StationsController(
     el: options.el
   )
