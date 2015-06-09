@@ -30,6 +30,7 @@
     "proj4leaflet": "kartena/Proj4Leaflet#4e445dd765d4e5cfcb156e423c6a0b7b65adf535"
   },
   "resolutions": {
-    "proj4": "2.3.3"
+    "proj4": "2.3.3",
+    "bootstrap": "~3.3.4"
   }
 }
