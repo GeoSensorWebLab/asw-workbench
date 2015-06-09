@@ -7,13 +7,13 @@ class Workbench.Views.StationMarkerView extends Backbone.Marionette.ItemView
 
   onShow: ->
     @marker.setLatLng(@model.latlng())
-      .addTo(@mapManager.map)
       .on("click", (event) =>
         new Workbench.Views.StationPopupView(
           model: @model
           markerView: this
         ).show()
       )
+    @mapManager.markers.addLayer(@marker)
 
 
 class Workbench.Views.StationsMapView extends Backbone.Marionette.CollectionView

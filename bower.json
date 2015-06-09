@@ -27,10 +27,10 @@
     "json2": "*",
     "marionette": "~2.4.1",
     "polarmap": "1.0.1",
-    "proj4leaflet": "kartena/Proj4Leaflet#4e445dd765d4e5cfcb156e423c6a0b7b65adf535"
+    "proj4leaflet": "kartena/Proj4Leaflet#4e445dd765d4e5cfcb156e423c6a0b7b65adf535",
+    "leaflet.markercluster": "~0.4.0"
   },
   "resolutions": {
-    "proj4": "2.3.3",
-    "bootstrap": "~3.3.4"
+    "proj4": "2.3.3"
   }
 }

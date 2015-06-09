@@ -17,4 +17,12 @@ class Workbench.Views.MapManager extends Backbone.View
         permalink: false
       )
       @map = pMap.map
+      @markers = new L.MarkerClusterGroup({
+        removeOutsideVisibleBounds: false
+      })
+
       @map.setView(@location, @zoom)
+      setTimeout(=>
+        @map.addLayer(@markers)
+      , 200)
+      this
