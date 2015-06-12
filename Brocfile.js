@@ -34,7 +34,7 @@ var locals = {
     }
     var source = asset.digestPath, ext = ".js";
     var uri = path.join(baseURL, (path.extname(source) === ext) ? source : path.join(source, ext));
-    return '<script type="application/javascript" src="' +
+    return '<script type="application/javascript" src="/' +
       uri +
       '"></script>';
   },
@@ -51,7 +51,7 @@ var locals = {
     }
     var source = asset.digestPath, ext = ".css";
     var uri = path.join(baseURL, (path.extname(source) === ext) ? source : path.join(source, ext));
-    return '<link rel="stylesheet" type="text/css" href="' +
+    return '<link rel="stylesheet" type="text/css" href="/' +
       uri +
       '" />';
   }
