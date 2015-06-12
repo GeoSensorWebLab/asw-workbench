@@ -21,7 +21,6 @@ assets = assets({
   buildDir: 'dist',
   gzip: true
 });
-assets.mincer.MacroProcessor.configure(['.js']);
 
 app.use(assets);
 
