@@ -7,15 +7,17 @@ class Workbench.Controllers.SensorsController extends Backbone.Marionette.Contro
   getApiKey: ->
     if (location.search.length > 0)
       params = deparam(location.search.split('?')[1])
-      @apiKey ||= params.api_key
+      @apiKey = params.api_key
 
   #
   # Actions
   #
 
   index: =>
+    @getApiKey()
+    source = new Geocens.DataService({ api_key: @apiKey })
     @sensors = new Workbench.Collections.SensorsCollection
-      source: Workbench.source
+      source: source
 
     mainView = new Workbench.Views.SensorIndexView
       collection: @sensors
@@ -23,8 +25,10 @@ class Workbench.Controllers.SensorsController extends Backbone.Marionette.Contro
     @sensors.fetch()
 
   show: (id) =>
+    @getApiKey()
+    source = new Geocens.DataService({ api_key: @apiKey })
     @sensor = new Workbench.Models.Sensor
-      source: Workbench.source
+      source: source
       uid: id
     @sensor.fetch()
 
