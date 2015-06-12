@@ -20,7 +20,7 @@ var assetsTree = minceTree('src', {
   ]
 });
 
-
+// Expose functions for mincer includes for the Jade templates
 var locals = {
   javascript: function javascript(logicalPath) {
     var environment = assetsTree.environment();
@@ -58,5 +58,8 @@ var locals = {
 };
 
 var views = jade('src/views', {data: locals});
+var fonts = funnel('bower_components/font-awesome/fonts', {
+  destDir: 'fonts'
+});
 
-module.exports = mergeTrees([assetsTree, views]);
+module.exports = mergeTrees([assetsTree, views, fonts]);
