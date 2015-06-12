@@ -41,7 +41,7 @@ Used to build the map overview page for ASW.
 
 ### generate.js
 
-This script will generate a JSON array of dummy record objects, with random data for values. The array can then be uploaded into the Data Service using `bin/push` or `bin/ppush`. Usage:
+This script will generate a JSON array of dummy record objects, with random data for values. The array can then be uploaded into the Data Service using `bin/push.js`. Usage:
 
   $ node generate.js 2014-07-01T00:00:00Z 2014-07-31T23:59:59Z uniform > output.json
 
@@ -77,7 +77,7 @@ Output is a JSON stream.
 
 **NOTE**: These files require Ruby and some Ruby gems to be installed.
 
-These two scripts in the `bin` directory can take a JSON file containing an array from the `generate.html` page and upload each record individually into the Data Service. `ppush` is the parallelized version of `push`, and runs about three times faster on my development machine. If `ppush` uploads too fast for some reason, try `push` instead.
+These two scripts in the `contrib/ruby` directory can take a JSON file containing an array from the `generate.html` page and upload each record individually into the Data Service. `ppush` is the parallelized version of `push`, and runs about three times faster on my development machine. If `ppush` uploads too fast for some reason, try `push` instead.
 
 1. Create JSON array of records using `generate.html`
 2. Save JSON string to file in root directory, say `f.json`
