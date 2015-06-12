@@ -1,10 +1,10 @@
 {
-  "name": "rpi-workbench",
+  "name": "asw-workbench",
   "version": "0.0.0",
   "authors": [
     "James Badger <jamesbadger@gmail.com>"
   ],
-  "description": "RPI Workbench Interface",
+  "description": "Arctic Sensor Web Workbench Interface",
   "main": "gulpfile.js",
   "license": "All Rights Reserved",
   "private": true,

@@ -1,7 +1,7 @@
 {
-  "name": "rpi-workbench",
+  "name": "asw-workbench",
   "version": "0.0.0",
-  "description": "RPI Workbench Interface",
+  "description": "Arctic Sensor Web Workbench Interface",
   "main": "index.js",
   "engines": {
     "node": "0.10.x"
