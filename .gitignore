@@ -2,4 +2,5 @@
 /bower_components
 /dist
 /tmp
-.data-service
+/.data-service
+/.env
