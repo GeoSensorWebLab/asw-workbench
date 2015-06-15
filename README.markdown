@@ -12,11 +12,11 @@ Then the assets can be installed with Bower:
 
     $ bower install
 
-Now you can start the local development server with Gulp:
+Now you can start the local development server:
 
-    $ gulp
+    $ bin/serve
 
-That's all. The server is now running at [http://localhost:1337/](http://localhost:1337/).
+That's all. The server is now running at [http://localhost:4200/](http://localhost:4200/).
 
 ### What's the different between Node packages and Bower?
 
@@ -115,4 +115,4 @@ This tells the nginx instance running in Dokku to redirect requests to http://se
 
 ## License
 
-Copyright GeoSensor Web Lab, James Badger, 2013-2015. All rights reserved.
+Copyright GeoSensorWeb Lab, James Badger, 2013-2015. All rights reserved.

@@ -4,7 +4,7 @@ var jade = require('broccoli-jade');
 var mergeTrees = require('broccoli-merge-trees');
 var minceTree = require('broccoli-mincer');
 
-var assetsTree = minceTree('src', {
+var assetsTree = minceTree('app', {
   inputFiles: [
     'scripts/app.*',
     'styles/main.*'
@@ -19,7 +19,7 @@ var assetsTree = minceTree('src', {
 // Expose functions for mincer includes for the Jade templates
 var locals = assetsHelper(assetsTree);
 
-var views = jade('src/views', {data: locals});
+var views = jade('app/views', {data: locals});
 var fonts = funnel('bower_components/font-awesome/fonts', {
   destDir: 'fonts'
 });
