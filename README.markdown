@@ -22,6 +22,10 @@ That's all. The server is now running at [http://localhost:1337/](http://localho
 
 Bower is for packages that are sent to the client; Node packages are used for the server only. Each system also has different dependency resolution systems, where Bower is optimized for the web browser.
 
+### bin/serve
+
+Use this script to start up a local development server on port 4200. I recommend using this instead of `broccoli serve`, as this version handles the dynamic URLs for Backbone correctly.
+
 ### convert.js
 
 Converts output from weather-json.js to a format ready for push.js.

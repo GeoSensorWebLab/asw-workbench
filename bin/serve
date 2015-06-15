@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+process.title = 'broccoli'
+var app = require('../lib/cli.js')
+app()

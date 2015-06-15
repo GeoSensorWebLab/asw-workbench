@@ -47,6 +47,9 @@
     "broccoli-jade": "^1.0.1",
     "broccoli-merge-trees": "^0.2.1",
     "broccoli-mincer": "0.0.5",
-    "broccoli-sass": "^0.6.6"
+    "broccoli-sass": "^0.6.6",
+    "commander": "^2.8.1",
+    "copy-dereference": "^1.0.0",
+    "express": "^4.7.2"
   }
 }
