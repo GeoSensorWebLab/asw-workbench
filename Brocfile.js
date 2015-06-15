@@ -7,12 +7,12 @@ var minceTree = require('broccoli-mincer');
 var assetsTree = minceTree('src', {
   inputFiles: [
     'scripts/app.*',
-    'stylesheets/main.*'
+    'styles/main.*'
   ],
   paths: [
     '../bower_components',
     'scripts',
-    'stylesheets'
+    'styles'
   ]
 });
 
