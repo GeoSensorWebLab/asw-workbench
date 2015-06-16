@@ -172,5 +172,9 @@ http {
     # Prevent mobile network providers from modifying your site
     add_header "Cache-Control" "no-transform";
 
+    location ~* /sensors/?(.+)?$ {
+        try_files $uri /index.html;
+    }
+
   }
 }
