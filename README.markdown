@@ -111,7 +111,7 @@ There are also some configuration options that may be useful with Dokku. For exa
 
     $ ssh dokku@sarcee domains:set asw-workbench sensorweb.arcticconnect.org
 
-This tells the nginx instance running in Dokku to redirect requests to http://sensorweb.arcticconnect.org to this Node.js server.
+This tells the nginx instance running on the Dokku host to redirect requests to http://sensorweb.arcticconnect.org to the Docker container that is running `asw-workbench`.
 
 ## License
 
