@@ -2,25 +2,31 @@
 
 The ASW Workbench is a JavaScript Single-Page Application frontend to the GeoCENS Data Service. It is a customized version of the RPI Workbench and will have a more focused feature set. This means it will be designed to display Arctic Sensor Web data instead of generic sensor data.
 
+Arctic Sensor Web is part of [the ArcticConnect project](http://arcticconnect.org/).
+
 ## Development Environment
 
-The app is JavaScript/CoffeeScript and runs under Node.js. To start, install the base Node packages:
+The app is JavaScript/[CoffeeScript](http://coffeescript.org/) and builds using [Node.js](https://nodejs.org/). To start, install the base Node packages:
 
     $ npm install
 
-Then the assets can be installed with Bower:
+Then the assets can be installed with [Bower](http://bower.io/):
 
     $ bower install
 
-Now you can start the local development server with Gulp:
+Now you can start the local development server:
 
-    $ gulp
+    $ bin/serve
 
-That's all. The server is now running at [http://localhost:1337/](http://localhost:1337/).
+That's all. The server is now running at [http://localhost:4200/](http://localhost:4200/).
 
 ### What's the different between Node packages and Bower?
 
 Bower is for packages that are sent to the client; Node packages are used for the server only. Each system also has different dependency resolution systems, where Bower is optimized for the web browser.
+
+### bin/serve
+
+Use this script to start up a local development server on port 4200. I recommend using this instead of `broccoli serve`, as this version handles the dynamic URLs for Backbone correctly.
 
 ### convert.js
 
@@ -107,8 +113,10 @@ There are also some configuration options that may be useful with Dokku. For exa
 
     $ ssh dokku@sarcee domains:set asw-workbench sensorweb.arcticconnect.org
 
-This tells the nginx instance running in Dokku to redirect requests to http://sensorweb.arcticconnect.org to this Node.js server.
+This tells the nginx instance running on the Dokku host to redirect requests to http://sensorweb.arcticconnect.org to the Docker container that is running `asw-workbench`.
+
+The dokku/heroku configuration for this application uses the [Node.js buildpack](https://github.com/heroku/heroku-buildpack-nodejs) to compile the static site, and then uses an [nginx buildpack](https://github.com/GeoSensorWebLab/heroku-buildpack-nginx) to serve the static site. This does mean there are two levels of nginx running on the dokku host, first for all the dokku apps and a second inside the Docker container. This should be fast anyway because it is only serving static content. Note that the configuration in `conf/nginx.conf.erb` has redirect settings specific for this application such that URLs like `/sensors` and `/sensors/:uuid` load the Backbone application correctly.
 
 ## License
 
-Copyright GeoSensor Web Lab, James Badger, 2013-2015. All rights reserved.
+Copyright GeoSensorWeb Lab, James Badger, 2013-2015. All rights reserved.

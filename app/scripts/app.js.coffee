@@ -1,4 +1,12 @@
+#= require jquery/dist/jquery.min
+#= require jquery.transit/jquery.transit
+#= require json2/json2
 #= require jquery-deparam/jquery-deparam
+#= require proj4/dist/proj4
+#= require proj4leaflet/src/proj4leaflet
+#= require leaflet.markercluster/dist/leaflet.markercluster
+#= require polarmap/dist/polarmap
+
 #= require slow-ajax
 #= require bootstrap/dist/js/bootstrap
 #= require highstock-release/highstock

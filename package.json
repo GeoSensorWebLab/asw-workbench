@@ -4,13 +4,13 @@
   "description": "Arctic Sensor Web Workbench Interface",
   "main": "index.js",
   "engines": {
-    "node": "0.10.x"
-  },
-  "directories": {
-    "test": "test"
+    "node": "0.12.x",
+    "npm": "^2.7.5"
   },
   "scripts": {
-    "postinstall": "./node_modules/bower/bin/bower install",
+    "build": "broccoli build dist",
+    "postinstall": "./node_modules/bower/bin/bower install && rm -rf ./dist && ./node_modules/broccoli-cli/bin/broccoli build dist",
+    "start": "./bin/serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,21 +21,23 @@
   "license": "ISC",
   "dependencies": {
     "bower": "^1.3.8",
+    "broccoli": "^0.16.3",
+    "broccoli-cli": "^1.0.0",
+    "broccoli-coffee": "^0.4.1",
+    "broccoli-funnel": "^0.2.3",
+    "broccoli-jade": "^1.0.1",
+    "broccoli-merge-trees": "^0.2.1",
+    "broccoli-mincer": "0.0.5",
+    "broccoli-sass": "^0.6.6",
     "coffee-script": "^1.7.1",
-    "connect-assets": "git+https://github.com/openfirmware/connect-assets.git",
+    "commander": "^2.8.1",
+    "copy-dereference": "^1.0.0",
     "csv-parse": "0.0.6",
-    "ejs": "^1.0.0",
+    "ejs": "^2.3.1",
     "express": "^4.7.2",
-    "gulp": "^3.8.6",
-    "gulp-coffee": "^2.1.1",
-    "gulp-load-plugins": "^0.5.3",
-    "gulp-util": "^3.0.0",
-    "jade": "^1.5.0",
-    "logfmt": "^1.1.2",
-    "mincer": "^1.1.2",
     "moment": "^2.8.1",
     "moment-timezone": "^0.2.1",
-    "node-sass": "^0.9.3",
+    "node-sass": "^3.2.0",
     "request": "^2.40.0",
     "tiny-lr": "0.0.9",
     "yargs": "^1.3.1"

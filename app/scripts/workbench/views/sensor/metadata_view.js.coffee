@@ -35,7 +35,7 @@ class Workbench.Views.SensorMetadataView extends Backbone.Marionette.LayoutView
 
   onRender: ->
     @renderDeferred.resolve()
-    @ui.otherSensors.prop('href', "#{Backbone.history.root}sensors/?api_key=#{Workbench.source.api_key}")
+    @ui.otherSensors.prop('href', "#{Backbone.history.root}sensors?api_key=#{@model.get('api_key')}")
 
   loadAttributes: ->
     @renderDeferred.done =>
