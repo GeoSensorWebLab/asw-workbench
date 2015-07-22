@@ -119,4 +119,8 @@ The dokku/heroku configuration for this application uses the [Node.js buildpack]
 
 ## License
 
-Copyright GeoSensorWeb Lab, James Badger, 2013-2015. All rights reserved.
+See LICENSE.
+
+## Authors
+
+James Badger <jpbadger@ucalgary.ca>
