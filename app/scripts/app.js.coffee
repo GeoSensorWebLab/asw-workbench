@@ -1,5 +1,6 @@
-#= require ./marionette-override
+#= require marionette-override
 #= require workbench
+#= require_tree ./workbench
 
 $(document).on "click", "a:not([data-bypass])", (evt) ->
   href = { prop: $(this).prop("href"), attr: $(this).attr("href") }

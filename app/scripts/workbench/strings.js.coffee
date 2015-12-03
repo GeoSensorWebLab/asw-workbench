@@ -1,5 +1,3 @@
-#= require underscore
-
 strings =
   loading: "Loading…"
   noData: "No data"
@@ -46,4 +44,3 @@ window.t = (key) ->
     console.warn "Undefined string key:", key
 
   value
-
