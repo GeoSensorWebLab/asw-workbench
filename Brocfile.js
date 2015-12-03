@@ -10,105 +10,99 @@ var assetsTree = minceTree('app', {
     'styles/main.*'
   ],
   paths: [
-    '../bower_components',
     'scripts',
     'styles'
   ]
 });
 
 // Copy scripts to output directory
-var jquery = funnel('bower_components/jquery/dist', {
+var jquery = funnel('node_modules/jquery/dist', {
   destDir: 'scripts'
 });
 
-var jqueryTransit = funnel('bower_components/jquery.transit', {
+var jqueryTransit = funnel('node_modules/jquery.transit', {
   destDir: 'scripts',
   files: ['jquery.transit.js']
 });
 
-var json2 = funnel('bower_components/json2', {
+var json2 = funnel('node_modules/json2/lib', {
   destDir: 'scripts',
-  files: ['json2.js']
+  files: ['JSON2.js']
 });
 
-var jqueryDeparam = funnel('bower_components/jquery-deparam', {
+var jqueryDeparam = funnel('node_modules/jquery-deparam', {
   destDir: 'scripts',
   files: ['jquery-deparam.js']
 });
 
-var proj4 = funnel('bower_components/proj4/dist', {
+var proj4 = funnel('node_modules/proj4/dist', {
   destDir: 'scripts'
 });
 
-var proj4leaflet = funnel('bower_components/proj4leaflet/src', {
+var proj4leaflet = funnel('node_modules/proj4leaflet/src', {
   destDir: 'scripts'
 });
 
-var markerCluster = funnel('bower_components/leaflet.markercluster/dist', {
+var markerCluster = funnel('node_modules/leaflet.markercluster/dist', {
   destDir: 'scripts',
   files: ['leaflet.markercluster.js']
 });
 
-var polarmap = funnel('bower_components/polarmap/dist', {
+var polarmap = funnel('node_modules/polarmap/dist', {
   destDir: 'scripts'
 });
 
-var bootstrap = funnel('bower_components/bootstrap/dist/js', {
+var bootstrap = funnel('node_modules/bootstrap/dist/js', {
   destDir: 'scripts'
 });
 
-var highstock = funnel('bower_components/highstock-release', {
+var highstock = funnel('node_modules/highstock-release', {
   destDir: 'scripts',
   files: ['highstock.js', 'modules/exporting.js']
 });
 
-var underscore = funnel('bower_components/underscore', {
+var underscore = funnel('node_modules/underscore', {
   destDir: 'scripts',
   files: ['underscore-min.js', 'underscore-min.map']
 });
 
-var backbone = funnel('bower_components/backbone', {
+var backbone = funnel('node_modules/backbone', {
   destDir: 'scripts',
   files: ['backbone-min.js', 'backbone-min.map']
 });
 
-var backboneHAL = funnel('bower_components/backbone.hal', {
-  destDir: 'scripts',
-  files: ['backbone.hal.js']
-});
-
-var marionette = funnel('bower_components/marionette/lib', {
+var marionette = funnel('node_modules/backbone.marionette/lib', {
   destDir: 'scripts',
   files: ['backbone.marionette.js', 'backbone.marionette.map']
 });
 
-var geocens = funnel('bower_components/geocens-js-api', {
+var geocens = funnel('node_modules/geocens_js_api', {
   destDir: 'scripts',
   files: ['geocens.js', 'geocens-chart.js']
 });
 
 // Copy Font Awesome files to output directory
-var faFonts = funnel('bower_components/font-awesome/fonts', {
+var faFonts = funnel('node_modules/font-awesome/fonts', {
   destDir: 'fonts'
 });
-var faStyles = funnel('bower_components/font-awesome/css', {
+var faStyles = funnel('node_modules/font-awesome/css', {
   destDir: 'styles'
 });
 
 // Copy Leaflet Marker Clusterer files to output directory
-var clusterStyles = funnel('bower_components/leaflet.markercluster/dist', {
+var clusterStyles = funnel('node_modules/leaflet.markercluster/dist', {
   destDir: 'styles',
   files: ['MarkerCluster.css', 'MarkerCluster.Default.css']
 });
 
 // Copy PolarMap.js files to output directory
-var polarmapStyles = funnel('bower_components/polarmap/css', {
+var polarmapStyles = funnel('node_modules/polarmap/css', {
   destDir: 'styles',
   files: ['polarmap.css']
 });
 
 // Copy bootstrap files to output directory
-var bootstrapStyles = funnel('bower_components/bootstrap/dist/css', {
+var bootstrapStyles = funnel('node_modules/bootstrap/dist/css', {
   destDir: 'styles'
 });
 
@@ -121,4 +115,4 @@ module.exports = mergeTrees([assetsTree, views, faFonts, faStyles,
   clusterStyles, polarmapStyles, bootstrapStyles,
   jquery, json2, jqueryTransit, jqueryDeparam, proj4, proj4leaflet,
   markerCluster, polarmap, bootstrap, highstock, underscore, backbone,
-  backboneHAL, marionette, geocens]);
+  marionette, geocens]);

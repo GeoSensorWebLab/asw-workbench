@@ -6,7 +6,7 @@ Workbench.Models.Feature =  Backbone.Model.extend({
   }
 });
 
-Workbench.Models.Station = HAL.Model.extend({
+Workbench.Models.Station = Backbone.Model.extend({
   initialize: function(attributes, options) {
     this.geometry = new Workbench.Models.Feature(attributes.geo);
     this.unset("geo");
