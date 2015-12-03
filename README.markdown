@@ -6,7 +6,7 @@ Arctic Sensor Web is part of [the ArcticConnect project](http://arcticconnect.or
 
 ## Development Environment
 
-The app is JavaScript/[CoffeeScript](http://coffeescript.org/) and builds using [Node.js](https://nodejs.org/). To start, install the base Node packages:
+The app is JavaScript and builds using [Node.js](https://nodejs.org/). To start, install the base Node packages:
 
     $ npm install
 
