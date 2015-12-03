@@ -1,5 +1,5 @@
 Workbench.Views.SensorView = Backbone.Marionette.ItemView.extend({
-  template: "workbench/templates/sensor",
+  template: "sensor",
 
   tagName: "li",
   className: "sensor",

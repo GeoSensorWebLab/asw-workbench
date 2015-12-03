@@ -1,4 +1,4 @@
-strings = {
+var strings = {
   loading: "Loading…",
   noData: "No data",
 
@@ -41,6 +41,7 @@ strings = {
 // periods to denote hierarchy, e.g. "errors.timeout.header". Returns the string
 // or object at that level, if it exists.
 window.t = function(key) {
+  var value;
   var keys = key.split('.');
   try {
     value = _.reduce(keys, function(memo, item) {

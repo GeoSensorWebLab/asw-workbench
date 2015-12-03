@@ -1,5 +1,5 @@
 Workbench.Views.DatastreamLatestView = Backbone.Marionette.ItemView.extend({
-  template: "workbench/templates/latest",
+  template: "latest",
 
   // Animate out, update content, animate back in
   swapHtml: function($element, content) {

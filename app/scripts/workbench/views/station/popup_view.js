@@ -1,5 +1,5 @@
 Workbench.Views.StationPopupView = Backbone.View.extend({
-  popupTemplate: "workbench/templates/popup",
+  popupTemplate: "popup",
 
   className: "stationPopup",
 

@@ -1,5 +1,5 @@
 Workbench.Views.DatastreamView = Backbone.Marionette.LayoutView.extend({
-  template: 'workbench/templates/datastream',
+  template: 'datastream',
 
   tagName: "li",
   className: "datastream",

@@ -1,5 +1,5 @@
 Workbench.Views.SensorShowView = Backbone.Marionette.LayoutView.extend({
-  template: "workbench/templates/sensor_show",
+  template: "sensor_show",
   id: "sensorView",
   className: "page-header",
 

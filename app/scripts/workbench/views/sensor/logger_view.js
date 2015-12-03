@@ -1,5 +1,5 @@
 Workbench.Views.SensorLoggerView = Backbone.Marionette.ItemView.extend({
-  template: "workbench/templates/logger",
+  template: "logger",
 
   modelEvents: {
     "sensorLoaded": "loadAttributes"

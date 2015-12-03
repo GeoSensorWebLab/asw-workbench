@@ -1,5 +1,5 @@
 Workbench.Views.StationSensorView = Backbone.Marionette.ItemView.extend({
-  template: "workbench/templates/station_sensor"
+  template: "station_sensor"
 });
 
 Workbench.Views.StationSensorsView = Backbone.Marionette.CollectionView.extend({

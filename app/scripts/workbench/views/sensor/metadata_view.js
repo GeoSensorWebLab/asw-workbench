@@ -1,5 +1,5 @@
 Workbench.Views.SensorMetadataView = Backbone.Marionette.LayoutView.extend({
-  template: "workbench/templates/metadata",
+  template: "metadata",
 
   modelEvents: {
     "sensorLoaded": "loadAttributes"

@@ -1,5 +1,5 @@
 Workbench.Views.SensorIndexView = Backbone.Marionette.LayoutView.extend({
-  template: "workbench/templates/sensor_index",
+  template: "sensor_index",
   id: "listView",
 
   regions: {

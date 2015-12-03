@@ -1,0 +1,12 @@
+<h2><%= obj.id %></h2>
+
+<div class="data row">
+	<div id="chart_<%= obj.uid %>" class="chart col-md-9"><%= t('loading') %> <i class="fa fa-refresh fa-spin"></i></div>
+
+	<div class="chartSideView col-md-3">
+		<div id="latest_<%= obj.uid %>">
+			<p class="latest"><%= t('loading') %></p>
+			<p><date></date></p>
+		</div>
+	</div>
+</div>

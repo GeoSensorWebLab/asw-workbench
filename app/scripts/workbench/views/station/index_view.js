@@ -1,5 +1,5 @@
 Workbench.Views.StationIndexView = Backbone.Marionette.LayoutView.extend({
-  template: "workbench/templates/station_index",
+  template: "station_index",
 
   regions: {
     map: "#stationsMap"

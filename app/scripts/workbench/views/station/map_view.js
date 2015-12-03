@@ -45,12 +45,12 @@ Workbench.Views.StationsMapView = Backbone.Marionette.CollectionView.extend({
 
   onRender: function() {
     this.updateMapSize();
-    $(window).on("resize", this.updateMapSize);
+    $(window).on("resize", this.updateMapSize, this);
   },
 
   updateMapSize: function() {
-    windowHeight = $(window).height();
-    existingHeight = $("#content").height() - this.$el.height();
+    var windowHeight = $(window).height();
+    var existingHeight = $("#content").height() - this.$el.height();
     this.$el.height(windowHeight - existingHeight);
   }
 });

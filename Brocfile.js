@@ -1,18 +1,39 @@
-var assetsHelper = require('./lib/assets-helper');
+// This is the Brocfile. It sets up all the assets from the input JS/CSS/images
+// and so on and converts them to static assets in the output directory or
+// preview server.
+var _ = require('underscore');
+var babel = require('broccoli-babel-transpiler');
+var browserify = require('broccoli-browserify');
+var compileSass = require('broccoli-sass');
 var funnel = require('broccoli-funnel');
 var jade = require('broccoli-jade');
 var mergeTrees = require('broccoli-merge-trees');
-var minceTree = require('broccoli-mincer');
+var templateBuilder = require('broccoli-template-builder');
 
-var assetsTree = minceTree('app', {
-  inputFiles: [
-    'scripts/app.*',
-    'styles/main.*'
-  ],
-  paths: [
-    'scripts',
-    'styles'
-  ]
+var sassDir = 'app/styles';
+var scripts = 'app/scripts';
+
+// Covert main.scss stylesheet to app.css stylesheet in output directory
+var styles = compileSass([sassDir], 'main.scss', 'app.css');
+
+// Process all the JavaScript.
+// First we use babel to convert the ES6 to ES5 for web browsers.
+scripts = babel(scripts);
+// Then use browserify to handle any `require` statements and automatically
+// insert the required library inline.
+scripts = browserify(scripts, {
+  entries: ['./app.js'],
+  outputFile: 'app.js'
+});
+
+// This builds all the Javascript Templates (JST) into JS files where the
+// templates have been wrapped in functions using underscore's template system.
+var templates = templateBuilder('app/scripts/workbench/templates', {
+  extensions: ['jst'],
+  outputFile: 'templates.js',
+  compile: function(string) {
+    return _.template(string, { variable: "obj" }).source;
+  }
 });
 
 // Copy scripts to output directory
@@ -25,9 +46,9 @@ var jqueryTransit = funnel('node_modules/jquery.transit', {
   files: ['jquery.transit.js']
 });
 
-var json2 = funnel('node_modules/json2/lib', {
+var json2 = funnel('node_modules/json2/lib/JSON2/static', {
   destDir: 'scripts',
-  files: ['JSON2.js']
+  files: ['json2.js']
 });
 
 var jqueryDeparam = funnel('node_modules/jquery-deparam', {
@@ -106,13 +127,11 @@ var bootstrapStyles = funnel('node_modules/bootstrap/dist/css', {
   destDir: 'styles'
 });
 
-// Expose functions for mincer includes for the Jade templates
-var locals = assetsHelper(assetsTree);
 
-var views = jade('app/views', {data: locals});
+var views = jade('app/views');
 
-module.exports = mergeTrees([assetsTree, views, faFonts, faStyles,
-  clusterStyles, polarmapStyles, bootstrapStyles,
+module.exports = mergeTrees([styles, scripts, views, templates, faFonts,
+  faStyles, clusterStyles, polarmapStyles, bootstrapStyles,
   jquery, json2, jqueryTransit, jqueryDeparam, proj4, proj4leaflet,
   markerCluster, polarmap, bootstrap, highstock, underscore, backbone,
   marionette, geocens]);
