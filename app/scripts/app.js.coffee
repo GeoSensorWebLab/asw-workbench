@@ -1,4 +1,3 @@
-#= require slow-ajax
 #= require bootstrap/dist/js/bootstrap
 #= require highstock-release/highstock
 #= require highstock-release/modules/exporting
