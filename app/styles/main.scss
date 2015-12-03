@@ -1,3 +1,11 @@
+header h1 {
+  font-size: 18pt;
+}
+
+header h2 {
+  font-size: 14pt;
+}
+
 .logo {
   padding: 1em 0;
 }
@@ -16,6 +24,10 @@ date {
 
 #map {
   min-height: 200px;
+}
+
+#app h2 {
+  font-size: 14pt;
 }
 
 #stationsMap {

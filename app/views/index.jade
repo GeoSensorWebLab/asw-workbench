@@ -3,7 +3,7 @@ html.no-js
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    title Workbench
+    title Arctic Sensor Web
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css")
@@ -43,6 +43,15 @@ html.no-js
     <![endif]-->
 
     div#content.container
+      header.row
+        div.col-md-4
+          h1 
+            a(href="/", data-bypass="true")
+              | Arctic Sensor Web
+        div.col-md-8.text-right
+          h2
+            a(href="/about.html", data-bypass="true") About
+      
       div#app
 
     script(type='text/javascript').
