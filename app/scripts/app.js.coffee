@@ -1,14 +1,4 @@
-#= require bootstrap/dist/js/bootstrap
-#= require highstock-release/highstock
-#= require highstock-release/modules/exporting
-#= require underscore/underscore
-#= require backbone/backbone
-#= require backbone.hal/backbone.hal.js
-#= require marionette/lib/backbone.marionette
 #= require ./marionette-override
-#= require geocens-js-api/geocens
-#= require geocens-js-api/geocens-chart
-#
 #= require workbench
 
 $(document).on "click", "a:not([data-bypass])", (evt) ->

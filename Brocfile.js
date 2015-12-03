@@ -53,6 +53,40 @@ var polarmap = funnel('bower_components/polarmap/dist', {
   destDir: 'scripts'
 });
 
+var bootstrap = funnel('bower_components/bootstrap/dist/js', {
+  destDir: 'scripts'
+});
+
+var highstock = funnel('bower_components/highstock-release', {
+  destDir: 'scripts',
+  files: ['highstock.js', 'modules/exporting.js']
+});
+
+var underscore = funnel('bower_components/underscore', {
+  destDir: 'scripts',
+  files: ['underscore-min.js', 'underscore-min.map']
+});
+
+var backbone = funnel('bower_components/backbone', {
+  destDir: 'scripts',
+  files: ['backbone-min.js', 'backbone-min.map']
+});
+
+var backboneHAL = funnel('bower_components/backbone.hal', {
+  destDir: 'scripts',
+  files: ['backbone.hal.js']
+});
+
+var marionette = funnel('bower_components/marionette/lib', {
+  destDir: 'scripts',
+  files: ['backbone.marionette.js', 'backbone.marionette.map']
+});
+
+var geocens = funnel('bower_components/geocens-js-api', {
+  destDir: 'scripts',
+  files: ['geocens.js', 'geocens-chart.js']
+});
+
 // Copy Font Awesome files to output directory
 var faFonts = funnel('bower_components/font-awesome/fonts', {
   destDir: 'fonts'
@@ -86,4 +120,5 @@ var views = jade('app/views', {data: locals});
 module.exports = mergeTrees([assetsTree, views, faFonts, faStyles,
   clusterStyles, polarmapStyles, bootstrapStyles,
   jquery, json2, jqueryTransit, jqueryDeparam, proj4, proj4leaflet,
-  markerCluster, polarmap]);
+  markerCluster, polarmap, bootstrap, highstock, underscore, backbone,
+  backboneHAL, marionette, geocens]);
