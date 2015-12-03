@@ -103,8 +103,6 @@ There are also some configuration options that may be useful with Dokku. For exa
 
 This tells the nginx instance running on the Dokku host to redirect requests to http://sensorweb.arcticconnect.org to the Docker container that is running `asw-workbench`.
 
-The dokku/heroku configuration for this application uses the [Node.js buildpack](https://github.com/heroku/heroku-buildpack-nodejs) to compile the static site, and then uses an [nginx buildpack](https://github.com/GeoSensorWebLab/heroku-buildpack-nginx) to serve the static site. This does mean there are two levels of nginx running on the dokku host, first for all the dokku apps and a second inside the Docker container. This should be fast anyway because it is only serving static content. Note that the configuration in `conf/nginx.conf.erb` has redirect settings specific for this application such that URLs like `/sensors` and `/sensors/:uuid` load the Backbone application correctly.
-
 ## License
 
 See LICENSE.

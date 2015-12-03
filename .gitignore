@@ -1,6 +1,7 @@
-/node_modules
-/bower_components
-/dist
-/tmp
 /.data-service
 /.env
+/bower_components
+/dist
+/node_modules
+/public
+/tmp
