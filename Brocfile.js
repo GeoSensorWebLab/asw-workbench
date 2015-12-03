@@ -16,12 +16,35 @@ var assetsTree = minceTree('app', {
   ]
 });
 
+// Copy Font Awesome files to output directory
+var faFonts = funnel('bower_components/font-awesome/fonts', {
+  destDir: 'fonts'
+});
+var faStyles = funnel('bower_components/font-awesome/css', {
+  destDir: 'styles'
+});
+
+// Copy Leaflet Marker Clusterer files to output directory
+var clusterStyles = funnel('bower_components/leaflet.markercluster/dist', {
+  destDir: 'styles',
+  files: ['MarkerCluster.css', 'MarkerCluster.Default.css']
+});
+
+// Copy PolarMap.js files to output directory
+var polarmapStyles = funnel('bower_components/polarmap/css', {
+  destDir: 'styles',
+  files: ['polarmap.css']
+});
+
+// Copy bootstrap files to output directory
+var bootstrapStyles = funnel('bower_components/bootstrap/dist/css', {
+  destDir: 'styles'
+});
+
 // Expose functions for mincer includes for the Jade templates
 var locals = assetsHelper(assetsTree);
 
 var views = jade('app/views', {data: locals});
-var fonts = funnel('bower_components/font-awesome/fonts', {
-  destDir: 'fonts'
-});
 
-module.exports = mergeTrees([assetsTree, views, fonts]);
+module.exports = mergeTrees([assetsTree, views, faFonts, faStyles,
+  clusterStyles, polarmapStyles, bootstrapStyles]);
