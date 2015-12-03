@@ -10,23 +10,11 @@ The app is JavaScript and builds using [Node.js](https://nodejs.org/). To start,
 
     $ npm install
 
-Then the assets can be installed with [Bower](http://bower.io/):
-
-    $ bower install
-
 Now you can start the local development server:
 
-    $ bin/serve
+    $ node preview.js
 
 That's all. The server is now running at [http://localhost:4200/](http://localhost:4200/).
-
-### What's the different between Node packages and Bower?
-
-Bower is for packages that are sent to the client; Node packages are used for the server only. Each system also has different dependency resolution systems, where Bower is optimized for the web browser.
-
-### bin/serve
-
-Use this script to start up a local development server on port 4200. I recommend using this instead of `broccoli serve`, as this version handles the dynamic URLs for Backbone correctly.
 
 ### convert.js
 

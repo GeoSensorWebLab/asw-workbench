@@ -30,6 +30,7 @@
     "broccoli-merge-trees": "^0.2.1",
     "broccoli-mincer": "0.0.5",
     "broccoli-sass": "^0.6.6",
+    "broccoli-slow-trees": "^2.0.0",
     "commander": "^2.8.1",
     "copy-dereference": "^1.0.0",
     "csv-parse": "0.0.6",
