@@ -16,6 +16,8 @@ Now you can start the local development server:
 
 That's all. The server is now running at [http://localhost:4200/](http://localhost:4200/).
 
+## Included Tools
+
 ### convert.js
 
 Converts output from weather-json.js to a format ready for push.js.
