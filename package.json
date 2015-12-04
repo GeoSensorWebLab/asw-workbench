@@ -4,13 +4,10 @@
   "description": "Arctic Sensor Web Workbench Interface",
   "main": "index.js",
   "engines": {
-    "node": "0.12.x",
-    "npm": "^2.7.5"
+    "node": "4.1.x",
+    "npm": "2.14.x"
   },
   "scripts": {
-    "build": "broccoli build dist",
-    "postinstall": "rm -rf ./dist && ./node_modules/broccoli-cli/bin/broccoli build dist",
-    "start": "./bin/serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
