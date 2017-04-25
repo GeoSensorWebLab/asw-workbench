@@ -4,8 +4,7 @@
   "description": "Arctic Sensor Web Workbench Interface",
   "main": "index.js",
   "engines": {
-    "node": "4.1.x",
-    "npm": "2.14.x"
+    "node": "6.10.x"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
