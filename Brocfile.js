@@ -94,7 +94,7 @@ var backbone = funnel('node_modules/backbone', {
 
 var marionette = funnel('node_modules/backbone.marionette/lib', {
   destDir: 'scripts',
-  files: ['backbone.marionette.js', 'backbone.marionette.map']
+  files: ['backbone.marionette.js', 'backbone.marionette.min.js.map']
 });
 
 var geocens = funnel('node_modules/geocens_js_api', {
