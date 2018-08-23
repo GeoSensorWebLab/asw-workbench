@@ -84,7 +84,7 @@ var highstock = funnel('node_modules/highstock-release', {
 
 var underscore = funnel('node_modules/underscore', {
   destDir: 'scripts',
-  files: ['underscore-min.js', 'underscore-min.map']
+  files: ['underscore-min.js', 'underscore-min.js.map']
 });
 
 var backbone = funnel('node_modules/backbone', {
