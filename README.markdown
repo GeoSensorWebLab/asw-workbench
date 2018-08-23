@@ -2,7 +2,7 @@
 
 The ASW Workbench is a JavaScript Single-Page Application frontend to the GeoCENS Data Service. It is a customized version of the RPI Workbench and will have a more focused feature set. This means it will be designed to display Arctic Sensor Web data instead of generic sensor data.
 
-Arctic Sensor Web is part of [the ArcticConnect project](http://arcticconnect.org/).
+Arctic Sensor Web is part of [the ArcticConnect project](http://arcticconnect.ca/).
 
 ## Development Environment
 
@@ -101,9 +101,9 @@ Dokku will then build and deploy a server, automatically restarting the existing
 
 There are also some configuration options that may be useful with Dokku. For example, defining the default host:
 
-    $ ssh dokku@sarcee domains:set asw-workbench sensorweb.arcticconnect.org
+    $ ssh dokku@sarcee domains:add asw-workbench sensorweb.arcticconnect.ca arctic-sensor-web.gswlab.ca sensorweb.arcticconnect.org
 
-This tells the nginx instance running on the Dokku host to redirect requests to http://sensorweb.arcticconnect.org to the Docker container that is running `asw-workbench`.
+This tells the nginx instance running on the Dokku host to redirect requests to http://sensorweb.arcticconnect.ca to the Docker container that is running `asw-workbench`.
 
 ## License
 

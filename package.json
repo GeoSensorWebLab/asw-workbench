@@ -4,16 +4,17 @@
   "description": "Arctic Sensor Web Workbench Interface",
   "main": "index.js",
   "engines": {
-    "node": "6.10.x"
+    "node": "6.10.x",
+    "npm": "4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git@git.geocens.ca:workbench/workbench.git"
+    "url": "https://github.com/GeoSensorWebLab/asw-workbench"
   },
-  "author": "James Badger <jamesbadger@gmail.com>",
+  "author": "James Badger <james@jamesbadger.ca>",
   "license": "ISC",
   "dependencies": {
     "babel": "^6.1.18",
