@@ -42,7 +42,7 @@
     "font-awesome": "^4.5.0",
     "geocens_js_api": "canarie-sensor-rpi/geocens-js-api",
     "highstock-release": "^2.1.9",
-    "jquery": "^2.1.4",
+    "jquery": "^3.4.0",
     "jquery-deparam": "^0.4.2",
     "jquery.transit": "^0.9.12",
     "json2": "^0.4.0",
