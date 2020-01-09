@@ -1,14 +1,14 @@
 // This is the Brocfile. It sets up all the assets from the input JS/CSS/images
 // and so on and converts them to static assets in the output directory or
 // preview server.
-var _ = require('underscore');
-var babel = require('broccoli-babel-transpiler');
-var browserify = require('broccoli-browserify');
-var SassSourceMaps = require('broccoli-sass-source-maps');
-var Sass = require('sass');
-var funnel = require('broccoli-funnel');
-var jade = require('broccoli-jade');
-var mergeTrees = require('broccoli-merge-trees');
+var _               = require('underscore');
+var babel           = require('broccoli-babel-transpiler');
+var browserify      = require('broccoli-browserify');
+var SassSourceMaps  = require('broccoli-sass-source-maps');
+var Sass            = require('sass');
+var funnel          = require('broccoli-funnel');
+var jade            = require('broccoli-jade');
+var mergeTrees      = require('broccoli-merge-trees');
 var templateBuilder = require('broccoli-template-builder');
 
 const compileSass = SassSourceMaps(Sass);
