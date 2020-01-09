@@ -4,8 +4,8 @@
   "description": "Arctic Sensor Web Workbench Interface",
   "main": "index.js",
   "engines": {
-    "node": "6.10.x",
-    "npm": "4"
+    "node": "12",
+    "npm": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -29,7 +29,7 @@
     "broccoli-jade": "^1.0.1",
     "broccoli-merge-trees": "^0.2.1",
     "broccoli-mincer": "0.0.5",
-    "broccoli-sass": "^0.6.6",
+    "broccoli-sass-source-maps": "^4.0.0",
     "broccoli-slow-trees": "^2.0.0",
     "broccoli-template-builder": "git+https://github.com/GeoSensorWebLab/broccoli-template-builder.git",
     "browserify": "^12.0.1",
@@ -49,13 +49,13 @@
     "leaflet.markercluster": "^0.4.0",
     "moment": "^2.8.1",
     "moment-timezone": "^0.2.1",
-    "node-sass": "^3.2.0",
     "polarmap": "^1.0.1",
     "proj4": "^2.3.12",
     "proj4leaflet": "kartena/Proj4Leaflet#4e445dd765d4e5cfcb156e423c6a0b7b65adf535",
     "q": "^1.5.0",
     "request": "^2.40.0",
     "rimraf": "^2.4.4",
+    "sass": "^1.24.4",
     "tiny-lr": "0.0.9",
     "underscore": "^1.8.3",
     "yargs": "^1.3.1"

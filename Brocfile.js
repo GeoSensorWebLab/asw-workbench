@@ -4,11 +4,14 @@
 var _ = require('underscore');
 var babel = require('broccoli-babel-transpiler');
 var browserify = require('broccoli-browserify');
-var compileSass = require('broccoli-sass');
+var SassSourceMaps = require('broccoli-sass-source-maps');
+var Sass = require('sass');
 var funnel = require('broccoli-funnel');
 var jade = require('broccoli-jade');
 var mergeTrees = require('broccoli-merge-trees');
 var templateBuilder = require('broccoli-template-builder');
+
+const compileSass = SassSourceMaps(Sass);
 
 var sassDir = 'app/styles';
 var scripts = 'app/scripts';
