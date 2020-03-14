@@ -36,7 +36,7 @@
     "commander": "^2.8.1",
     "connect-gzip-static": "^2.0.1",
     "copy-dereference": "^1.0.0",
-    "csv-parse": "0.0.6",
+    "csv-parse": "4.4.6",
     "ejs": "^2.3.1",
     "express": "^4.7.2",
     "font-awesome": "^4.5.0",
