@@ -48,7 +48,7 @@
     "json2": "^0.4.0",
     "leaflet.markercluster": "^0.4.0",
     "moment": "^2.8.1",
-    "moment-timezone": "^0.2.1",
+    "moment-timezone": "^0.5.35",
     "polarmap": "^1.0.1",
     "proj4": "^2.3.12",
     "proj4leaflet": "github:kartena/Proj4Leaflet#4e445dd765d4e5cfcb156e423c6a0b7b65adf535",
